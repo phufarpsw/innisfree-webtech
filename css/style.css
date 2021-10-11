@@ -13,7 +13,7 @@ img{
     opacity: 0;
 }
 .container{
-    padding: 2rem 5rem;
+    padding: 0rem 5rem;
 }
 .navbar-intro{
     width: 65rem;
@@ -33,9 +33,9 @@ img{
         opacity: 1;
     }
 }
-/* .video-intro,
-.white-box-slide{
-    overflow: hidden;
-    width: 75rem;
-    height: 37rem;
-} */
+@media only screen and (max-width:1280px) {
+    video{
+        max-width: unset !important;
+        width: 60rem !important;
+    }
+}
