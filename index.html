@@ -13,15 +13,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
-<body style="width: 100vw; height: 100vh; overflow: hidden;">
-    <div class="container flex flex-col w-full h-full">
+<body class="flex items-center" style="width: 100vw; height: 100vh; overflow: hidden;">
+    <div class="container flex flex-col w-full">
         <nav class="navbar-intro w-10/12 flex justify-between">
             <p class="text-intro">October 2021</p>
             <p class="text-intro">Cherry Blossom</p>
             <p class="text-intro">Vol.13</p>
         </nav>
         <div class="body-content-intro flex">
-            <div class="video-intro w-10/12 relative">
+            <div class="video-intro relative">
                 <div class="white-box-slide w-full h-full bg-white absolute" id="video-slide"></div>
                 <video autoplay="" muted="true" preload="auto" playsinline="true" loop="">
                     <source src="https://www.innisfree.com/th/th/resources/upload/intro/intro_TH_170_L007_w.mp4"
@@ -43,7 +43,8 @@
         </div>
         <script>
             $(document).ready(function () {
-                $("#video-slide").animate({ width: '0px' }, "slow");
+                // $("#video-slide").animate({ width: '0px' }, "slow");
+                $("#video-slide").animate({ right: '1200px' }, 1000);
                 setTimeout(() => {
                     $("#intrologo").animate({ opacity: 1 })
                     $("#intrologo").css({ "-webkit-transform": "translate(0,20px)" });
