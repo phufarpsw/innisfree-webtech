@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
 </head>
 
 <body style="width: 100vw; height: 100vh; overflow: hidden;">
@@ -22,7 +23,9 @@
         </nav>
         <div class="body-content-intro flex">
             <div class="video-intro relative">
-                <div class="white-box-slide w-full h-full bg-white absolute" id="video-slide"></div>
+                <div class="badge"></div>
+                <div class="white-box-slide w-full h-full bg-white absolute" id="video-slide" style="z-index: 10;">
+                </div>
                 <video autoplay="" muted="true" preload="auto" playsinline="true" loop="">
                     <source src="https://www.innisfree.com/th/th/resources/upload/intro/intro_TH_170_L007_w.mp4"
                         type="video/mp4">
@@ -44,17 +47,40 @@
         <script>
             $(document).ready(function () {
                 // $("#video-slide").animate({ width: '0px' }, "slow");
-                $("#video-slide").animate({ right: '1200px' }, 1000);
+                // $("#video-slide").animate({ right: '1200px' }, 1000);
                 setTimeout(() => {
                     $("#intrologo").animate({ opacity: 1 })
                     $("#intrologo").css({ "-webkit-transform": "translate(0,20px)" });
                     setTimeout(() => {
-                        $(".text-intro").animate({ opacity: 1})
+                        $(".text-intro").animate({ opacity: 1 })
                         setTimeout(() => {
-                            $(".text-intro").css({ "-webkit-transform": "translate(0,0)"});
+                            $(".text-intro").css({ "-webkit-transform": "translate(0,0)" });
                         }, 250);
                     }, 500);
                 }, 1500);
+            })
+            var badge = document.querySelector(".badge");
+            document.addEventListener('mousemove', e => {
+                badge.setAttribute("style", "top: " + (e.pageY - 100) + "px; left: " + (e.pageX - 100) + "px;")
+                // var mouseX = 0;
+                // var mouseY = 0;
+    
+                // function getMousePosition(e) {
+                //     var eObj = window.event ? window.event : e;
+                //     mouseX = eObj.clientX;
+                //     mouseY = eObj.clientY + document.documentElement.scrollTop;
+                // }
+    
+                // function moveImg() {
+                //     var m_x = parseInt(badge.style.left.replace('px', ''));
+                //     var m_y = parseInt(badge.style.top.replace('px', ''));
+    
+                //     badge.style.left = Math.round(m_x + ((mouseX - m_x - 120) / 2)) + 'px';
+                //     badge.style.top = Math.round(m_y + ((mouseY - m_y - 120) / 2)) + 'px';
+                // }
+    
+                // document.onmousemove = getMousePosition;
+                // var moveInterval = setInterval("moveImg()", 10);
             })
         </script>
 </body>
