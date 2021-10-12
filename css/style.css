@@ -75,6 +75,10 @@ video{
       position: absolute;
       transition: all 100ms;
   }
+  .white-box-slide-after{
+      transition: all 3s;
+      transform: translate(1500px,0);
+  }
   @keyframes box-slide{
       0%{
           opacity: 1;

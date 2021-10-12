@@ -14,9 +14,10 @@
     <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
 </head>
 
-<body style="width: 100vw; height: 100vh; overflow: hidden;">
-    <div class="container flex flex-col w-full">
-        <nav class="navbar-intro w-10/12 flex justify-between">
+<body class="flex justify-center items-center overflow-hidden" style="width: 100vw; height: 100vh;">
+    <div class="white-box-slide-after w-screen h-screen bg-white absolute" style="z-index: -1;"></div>
+    <div class="container flex flex-col w-full relative">
+        <nav class="navbar-intro w-10/12 flex justify-between transit-intro">
             <p class="text-intro">October 2021</p>
             <p class="text-intro">Cherry Blossom</p>
             <p class="text-intro">Vol.13</p>
@@ -32,10 +33,10 @@
                 </video>
             </div>
             <div class="flex flex-col justify-between">
-                <div class="logo m-4" id="intrologo">
+                <div class="logo m-4 transit-intro" id="intrologo">
                     <img src="./img/introLogo.svg">
                 </div>
-                <div class="language-in w-48 space-y-2 ml-4 flex flex-col justify-center">
+                <div class="language-in w-48 space-y-2 ml-4 flex flex-col justify-center transit-intro">
                     <p class="text-intro">English</p>
                     <p class="text-intro">繁體中文</p>
                     <p class="text-intro">ภาษาไทย</p>
@@ -46,8 +47,6 @@
         </div>
         <script>
             $(document).ready(function () {
-                // $("#video-slide").animate({ width: '0px' }, "slow");
-                // $("#video-slide").animate({ right: '1200px' }, 1000);
                 setTimeout(() => {
                     $("#intrologo").animate({ opacity: 1 })
                     $("#intrologo").css({ "-webkit-transform": "translate(0,20px)" });
@@ -62,25 +61,14 @@
             var badge = document.querySelector(".badge");
             document.addEventListener('mousemove', e => {
                 badge.setAttribute("style", "top: " + (e.pageY - 100) + "px; left: " + (e.pageX - 100) + "px;")
-                // var mouseX = 0;
-                // var mouseY = 0;
-    
-                // function getMousePosition(e) {
-                //     var eObj = window.event ? window.event : e;
-                //     mouseX = eObj.clientX;
-                //     mouseY = eObj.clientY + document.documentElement.scrollTop;
-                // }
-    
-                // function moveImg() {
-                //     var m_x = parseInt(badge.style.left.replace('px', ''));
-                //     var m_y = parseInt(badge.style.top.replace('px', ''));
-    
-                //     badge.style.left = Math.round(m_x + ((mouseX - m_x - 120) / 2)) + 'px';
-                //     badge.style.top = Math.round(m_y + ((mouseY - m_y - 120) / 2)) + 'px';
-                // }
-    
-                // document.onmousemove = getMousePosition;
-                // var moveInterval = setInterval("moveImg()", 10);
+            })
+            document.querySelector(".video-intro").addEventListener("click",function(){
+                $(".transit-intro").animate({opacity:0});
+                setTimeout(() => {
+                    $(".white-box-slide-after").css({"zIndex":100});
+                    $(".white-box-slide-after").css({"-webkit-transform":"translate(0,0)"});
+                
+                }, 1000);
             })
         </script>
 </body>
