@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .prefix__cls-1,.prefix__cls-2{fill:none}.prefix__cls-2{stroke:#000;stroke-width:1.3px}
+        </style>
+    </defs>
+    <g id="prefix__icon_search" transform="translate(-331 -12)">
+        <path id="prefix__사각형_2796" d="M0 0H24V24H0z" class="prefix__cls-1" data-name="사각형 2796" transform="translate(331 12)"/>
+        <g id="prefix__타원_1171" class="prefix__cls-2" data-name="타원 1171" transform="translate(334.385 15)">
+            <circle cx="7.333" cy="7.333" r="7.333" style="stroke:none"/>
+            <circle cx="7.333" cy="7.333" r="6.683" class="prefix__cls-1"/>
+        </g>
+        <path id="prefix__선_168" d="M0 0L4.513 4.513" class="prefix__cls-2" data-name="선 168" transform="translate(348.487 29.102)"/>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12" height="32" viewBox="0 0 12 32">
+    <defs>
+        <style>
+            .cls-1{fill:#a23737;opacity:0}.cls-2{fill:#fff;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="icon_facebook" transform="translate(0 5.184)">
+        <path id="guide" d="M0 0h12v32H0z" class="cls-1" transform="translate(0 -5.184)"/>
+        <path id="패스_1" d="M87.268 21.447v-9.77H90.6l.477-3.813h-3.809V5.481c0-1.072.357-1.906 1.906-1.906H91.2V.119C90.724.119 89.532 0 88.221 0c-2.86 0-4.885 1.787-4.885 5v2.86H80v3.813h3.336v9.77z" class="cls-2" data-name="패스 1" transform="translate(-80)"/>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <circle id="prefix__타원_1160" cx="14" cy="14" r="14" class="prefix__cls-1" data-name="타원 1160"/>
+        </clipPath>
+        <style>
+            .prefix__cls-1{fill:none}.prefix__cls-3{fill:#1e1e1e}
+        </style>
+    </defs>
+    <g id="prefix__icon_member">
+        <path id="prefix__guide" d="M0 0H28V28H0z" class="prefix__cls-1"/>
+        <path id="prefix__패스_5155" d="M792.318 90.353H770.38v-.424a10.969 10.969 0 0121.938 0zm-21.08-.848h20.222a10.12 10.12 0 00-20.222 0z" class="prefix__cls-3" data-name="패스 5155" transform="translate(-767.349 -61.339)"/>
+        <path id="prefix__패스_5157" d="M782.4 75.156a5.091 5.091 0 115.091-5.091 5.1 5.1 0 01-5.091 5.091zm0-9.333a4.242 4.242 0 104.242 4.242 4.247 4.247 0 00-4.242-4.243z" class="prefix__cls-3" data-name="패스 5157" transform="translate(-768.398 -59.22)"/>
+    </g>
+</svg>

@@ -1,3 +1,7 @@
+.loading-innisfree,.loading{
+  transition: all 1s;
+  z-index: 10;
+}
 
 .swiper {
     width: 100%;
