@@ -1,0 +1,85 @@
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    pointer-events: none;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .swiper-wrapper,
+  .swiper-slide img{
+      
+      max-height: 37rem !important; 
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    /* object-fit: contain; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 100%; */
+    /* object-fit: cover; */
+  }
+.previous{
+    left: 5rem;
+    right: auto;
+  }
+.next{
+    right: 5rem;
+    left: auto;
+}
+.previous,
+.next{
+      position: absolute;
+      top: 50%;
+      width: calc(var(--swiper-navigation-size)/ 44 * 27);
+      height: var(--swiper-navigation-size);
+      margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+      z-index: 10;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+  }
+  .previous:hover,
+  .next:hover{
+      color: rgb(39, 38, 38);
+  }
+  .previous::after{
+    content:"previous";
+  }
+  .next::after{
+    content:"next";
+  }
+  .previous::after,
+  .next::after{
+    font-family: swiper-icons;
+    font-size: 2rem;
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+  }
+.carousel{
+}
