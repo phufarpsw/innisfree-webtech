@@ -1,3 +1,6 @@
+*{
+  transition: all .5s;
+}
 .loading-innisfree,.loading{
   transition: all 1s;
   z-index: 10;
@@ -85,5 +88,42 @@
     font-variant: initial;
     line-height: 1;
   }
-.carousel{
+
+
+/* Innistar of the month */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border: none;
 }
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.8);
+  border: 0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+  border: 0;
+  opacity: 0;
+}
+.contain-innistar{
+  height: 28.5rem;
+}
+.box-innistar{
+  opacity: 0;
+  color: white;
+  font-size: .75rem;
+  transition: all .5s;
+
+}
+.box-innistar:hover{
+  opacity: 1;
+  background-color: rgba(2, 65, 55, 0.9) !important;
+}
+/* .bg-contain{
+  min-width: 100% !important;
+  min-height: 100% !important;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+} */
