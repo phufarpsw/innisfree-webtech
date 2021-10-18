@@ -13,9 +13,6 @@
 </head>
 
 <body class="flex justify-center items-center overflow-hidden" style="width: 100vw; height: 100vh;">
-    <div class="loading w-full h-screen bg-white flex justify-center items-center absolute ">
-        <img class="loading-innisfree" src="./img/loading.gif" alt="">
-    </div>
     <div class="white-box-slide-after w-screen h-screen bg-white absolute" style="z-index: -1;"></div>
     <div class="container flex flex-col w-full relative" style="z-index: 4;">
         <nav class="navbar-intro w-10/12 flex justify-between transit-intro">
@@ -56,17 +53,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".loading").animate({
-                opacity: '0'
-            });
-            $(".loading-innisfree").css("transform", "translateY(1rem)");
-            setTimeout(() => {
-                $(".loading").hide();
-            }, 2000);
-
-        })
-        
         var badge = document.querySelector(".badge");
         // Early 
         $(document).ready(function () {

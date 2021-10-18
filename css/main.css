@@ -127,3 +127,27 @@
   height: auto;
   object-fit: contain;
 } */
+.a{
+  opacity: 0;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  
+}
+.a:after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #024137;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.a:hover:after {
+  width: 100%;
+  transform: scaleX(-50);
+  transform-origin: bottom left;
+}
