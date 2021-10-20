@@ -1,0 +1,25 @@
+
+.h2{
+    
+    text-align:center; 
+    font-size:32px;
+    color:#222222;
+}
+
+
+
+/* secแรก */
+.section1 {
+    height: 560px;
+    background:url(../img/sc1.jpg); 
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+
+/* secสอง */
+.section2 {
+    padding:100px 15px; 
+}
+
