@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
 *{
+  font-family: 'Niramit', sans-serif;
   transition: all .5s;
 }
 .loading-innisfree,.loading{
