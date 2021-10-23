@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
 *{
   font-family: 'Niramit', sans-serif;
-  transition: all .5s;
+}
+.reveal{
+  opacity: 0;
+  transition-duration: 1s !important;
+}
+.active{
+  opacity: 1 !important;
+  transform: translate(0px,0px) !important;
+}
+.fadeUp{
+  transform: translate(0,100px);
 }
 .loading-innisfree,.loading{
   transition: all 1s;
@@ -109,7 +120,8 @@
   opacity: 0;
 }
 .contain-innistar{
-  height: 28.5rem;
+  height: 32rem;
+  margin-bottom: 2rem;
 }
 .box-innistar{
   opacity: 0;
@@ -122,13 +134,6 @@
   opacity: 1;
   background-color: rgba(2, 65, 55, 0.9) !important;
 }
-/* .bg-contain{
-  min-width: 100% !important;
-  min-height: 100% !important;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-} */
 .a{
   opacity: 0;
   cursor: pointer;
@@ -152,4 +157,32 @@
   width: 100%;
   transform: scaleX(-50);
   transform-origin: bottom left;
+}
+/* Review of the Month */
+.review-month{
+  transition: 3s all !important;
+}
+/* Text Animation */
+.text-animation{
+  display: flex;
+  font-size: 80px;
+  align-items: center;
+  vertical-align: middle;
+  transition: all 3s !important;
+  font-family: 'Noto Sans', sans-serif !important;
+}
+.text-animation::after{
+  content: '';
+  display: inline-block;
+  width: 130px;
+  height: 1px;
+  background: #222;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.star{
+  background: url(../img/shape_star.png) left center no-repeat;
+  padding-left: 50px;
+  font-family: 'Noto Sans', sans-serif !important;
+  font-style: normal;
 }

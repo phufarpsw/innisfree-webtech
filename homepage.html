@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>innisfree official</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -49,6 +51,7 @@
         <div class="previous"></div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
+
     <div class="container flex flex-col items-center m-4">
         <div class="w-11/12">
             <div class="describe-slide-main space-y-2">
@@ -57,8 +60,36 @@
             </div>
         </div>
     </div>
-    <div class="contain-innistar w-3/4 grid grid-cols-5 gap-1"></div> 
-    <div class="md:container md:mx-auto slide-main swiper">
+    <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp">
+        <div class="w-11/12">
+            <p class="text-animation"></p>
+            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+        </div>
+    </div>
+    <!-- INNISTRINNIST OF THE MONTH -->
+    <div class="contain-innistar w-10/12 grid grid-cols-5 gap-1 reveal fadeUp"></div>
+
+    <!-- REVIEWREVIEW OF THE MONTH -->
+    <!-- <div class="review-month swiper w-full">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/TH_R_127_L007.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_125_L007.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_126_L007.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_128_L007.jpg" />
+            </div>
+        </div>
+        <div class="next"></div>
+        <div class="previous"></div>
+    </div> -->
+    <!--  -->
+    <div class="w-10/12 md:mx-auto slide-main swiper reveal fadeUp">
         <div class="swiper-wrapper box-content h-30 w- ">
             <div class="swiper-slide">
                 <img src="./img/new_1.jpeg" alt="">
@@ -75,6 +106,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script>
+        var i = 0;
+        var check = ["O", "X", "I", "O", "r", "s", "N", "I", "X", "e", "N", "O", "l", "W", "I", "Q", "o", "a", "S", "n", "P", "o", "T", "P", "D", "x", "R"];
+        var ans = "";
+        function typeWrite() {
+            if (i >= 23) { ans = "INNIST" } else if (i >= 19) { ans = "INNIS" } else if (i >= 15) { ans = "INNI" } else if (i >= 11) { ans = "INN" } else if (i >= 7) { ans = "IN" } else if (i >= 3) { ans = "I" }
+            if (i < check.length - 4) {
+                document.querySelector(".text-animation").innerHTML = ans + check[i];
+                i++
+                setTimeout(typeWrite, 100)
+            }
+            else if (i < 27) {
+                document.querySelector(".text-animation").innerHTML = ans + `<i class="star">${check[i]}</i>`;
+                i++
+                setTimeout(typeWrite, 100)
+            }
+
+        }
         $(document).ready(function () {
             $(".loading").animate({
                 opacity: '0'
@@ -92,34 +140,46 @@
                 nextEl: ".next",
                 prevEl: ".previous",
             },
-            // pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            // },
             autoplay:
             {
                 delay: 2500,
             },
             loop: true,
-
         });
-            let requestURL = 'data.json';
-            let request = new XMLHttpRequest();
-            request.onreadystatechange = function () {
-                if (request.readyState == 4 && request.status == 200) {
-                    dataReportStatus(JSON.parse(request.responseText));
-                }
-            };
-            request.open("GET", requestURL, true);
-            request.send();
-            function dataReportStatus(data) {
-                for (let i = 0; i < 10; i++) {
-                    var img = data[i].image;
-                    var name = data[i].name;
-                    var caption = data[i].caption;
-                    document.querySelector('.contain-innistar').innerHTML +=
-                        `
-                        <div class="bg-contain relative bg-no-repeat" style="background-image: url(${img});">
+        // var review = new Swiper(".review-month", {
+        //     speed:15000,
+        //     // spaceBetween: 30,
+        //     centeredSlides: true,
+        //     autoplay: {
+        //         delay: 1000,
+        //         disableOnInteraction: false,
+        //     },
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //     },
+        //     navigation: {
+        //         nextEl: ".next",
+        //         prevEl: ".previous",
+        //     },
+        // });
+        let requestURL = 'data.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        function dataReportStatus(data) {
+            for (let i = 0; i < 10; i++) {
+                var img = data[i].image;
+                var name = data[i].name;
+                var caption = data[i].caption;
+                document.querySelector('.contain-innistar').innerHTML +=
+                    `
+                        <div class="bg-cover relative bg-no-repeat bg-img" style="background-image: url(${img});">
                             <div class="box-innistar p-2 w-full h-full absolute space-y-2">
                                 <div class="user-ig flex space-x-1">
                                     <img class="profile w-8" src="./img/review-ig/404-profile.png">
@@ -129,8 +189,37 @@
                             </div>
                         </div>
                         `
+            }
+        }
+        window.addEventListener("scroll", () => {
+            reveal();
+            setTimeout(textCheck, 300);
+        });
+        function textCheck() {
+            if (document.querySelector(".text-animation").getBoundingClientRect().top < window.innerHeight - 100) {
+                typeWrite();
+            }
+        }
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 0.5;
+                if (revealtop < windowheight - revealpoint) {
+                    console.log("Hello");
+                    // $(reveals[i]).fadeIn(300);
+                    reveals[i].classList.add('active');
+
+
+
+                }
+                else {
+                    reveals[i].classList.remove('active');
+
                 }
             }
+        }
     </script>
 
 </body>
