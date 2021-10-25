@@ -102,6 +102,20 @@
         <div class="previous"></div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
+    <div class="ingredient-slide bg-contain w-full flex flex-col items-center">
+        <div class="ingredient-display bg-white rounded-full flex flex-col flex-wrap justify-center items-center">
+            <p class="text-lg">INGREDIENT</p>
+            <p class="green-innisfree text-5xl">Green Tea</p>
+            <img src="./img/ingredient/material_greentea.jpg" alt="">
+            
+        </div>
+        <div class="card-ingredient bg-white">
+            <p class="icon-ingredient flex flex-col flex-wrap items-center justify-center">
+                <img src="./img/ingredient/icon/icon_greentea.png" alt="">
+            </p>
+            <p>Green Tea</p>
+        </div>
+    </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
@@ -116,7 +130,7 @@
                 i++
                 setTimeout(typeWrite, 100)
             }
-            else if (i < 27) {
+            else if (i < 27) {  
                 document.querySelector(".text-animation").innerHTML = ans + `<i class="star">${check[i]}</i>`;
                 i++
                 setTimeout(typeWrite, 100)

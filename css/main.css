@@ -3,6 +3,9 @@
 *{
   font-family: 'Niramit', sans-serif;
 }
+.green-innisfree{
+  color: rgba(2, 65, 55, 1);
+}
 .reveal{
   opacity: 0;
   transition-duration: 1s !important;
@@ -185,4 +188,30 @@
   padding-left: 50px;
   font-family: 'Noto Sans', sans-serif !important;
   font-style: normal;
+}
+/* Ingredient Slide */
+.ingredient-slide{
+  background: url(../img/ingredient/bg_ingredient_greentea.jpg) no-repeat;
+  height: 50rem;
+}
+.ingredient-display{
+  width: 35rem;
+  height: 35rem;
+}
+.ingredient-display>p{
+  letter-spacing: 2.4px;
+  font-family: 'Noto Sans', sans-serif !important;
+}
+.ingredient-display>img{
+  max-width: 330px;
+}
+.card-ingredient{
+  width: 110px;
+  height: 150px;
+  position: relative;
+  border-radius: 30px;
+}
+.icon-ingredient{
+  width: 100p;
+  height: 30px;
 }
