@@ -186,3 +186,40 @@
   font-family: 'Noto Sans', sans-serif !important;
   font-style: normal;
 }
+
+/* Footerr */
+.container-footer {
+  background-color: rgb(2, 65, 55);
+}
+
+.contain-foot {
+  height: 91.5%;
+}
+
+.product {
+  width: 25%;
+  height: 60%;
+  font-size: .9rem;
+  color: white;
+}
+
+.detail-in-foot>p {
+  color: #acacac;
+  padding: .2rem 0rem;
+  font-size: smaller;
+}
+
+.navb-foot {
+  height: 8.5%;
+  border-top: 1px solid #acacac;
+}
+
+.detail-left-navb,
+.detail-right-navb {
+  font-size: small;
+  color: #acacac;
+}
+
+.detail-left-navb>p {
+  margin-right: 1rem;
+}
