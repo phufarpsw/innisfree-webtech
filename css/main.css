@@ -49,7 +49,6 @@
   }
   .swiper-wrapper,
   .swiper-slide img{
-      
       max-height: 37rem !important; 
   }
   .swiper-slide img {
@@ -65,7 +64,7 @@
 .previous{
     left: 5rem;
     right: auto;
-  }
+  } 
 .next{
     right: 5rem;
     left: auto;
@@ -192,11 +191,15 @@
 /* Ingredient Slide */
 .ingredient-slide{
   background: url(../img/ingredient/bg_ingredient_greentea.jpg) no-repeat;
-  height: 50rem;
 }
 .ingredient-display{
-  width: 35rem;
-  height: 35rem;
+  width: 575px;
+  height: 575px;
+  overflow: hidden;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 100px;
+  border-radius: 50%;
 }
 .ingredient-display>p{
   letter-spacing: 2.4px;
@@ -206,12 +209,20 @@
   max-width: 330px;
 }
 .card-ingredient{
-  width: 110px;
-  height: 150px;
+  width: 110px !important;
+  height: 150px !important;
   position: relative;
   border-radius: 30px;
 }
+.card-ingredient>p{
+  color: #fff;
+  font-size: 14px;
+  opacity: .5;
+}
 .icon-ingredient{
-  width: 100p;
-  height: 30px;
+  width: 45px;
+}
+.ingredient-main-slide{
+  position: absolute;
+  bottom: 0;
 }

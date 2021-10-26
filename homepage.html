@@ -102,24 +102,119 @@
         <div class="previous"></div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
-    <div class="ingredient-slide bg-contain w-full flex flex-col items-center">
-        <div class="ingredient-display bg-white rounded-full flex flex-col flex-wrap justify-center items-center">
+    <div class="ingredient-slide bg-cover w-full flex flex-col items-center relative" style="height: 960px;">
+        <div class="ingredient-display bg-white flex flex-col justify-center items-center absolute">
             <p class="text-lg">INGREDIENT</p>
             <p class="green-innisfree text-5xl">Green Tea</p>
             <img src="./img/ingredient/material_greentea.jpg" alt="">
-            
+
         </div>
-        <div class="card-ingredient bg-white">
-            <p class="icon-ingredient flex flex-col flex-wrap items-center justify-center">
-                <img src="./img/ingredient/icon/icon_greentea.png" alt="">
-            </p>
-            <p>Green Tea</p>
+        <div class="w-full absolute" style="bottom: 60px;">
+            <div class="ingredient-main-slide swiper w-8/12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #795c4f;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_soybean.png" alt="">
+                        </p>
+                        <p>Soy Bean</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color:#e5ad54;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_tangerine.png" alt="">
+                        </p>
+                        <p>Hallabong</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color:#97b489;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_greenbarley.png" alt="">
+                        </p>
+                        <p>Green Barley</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #afc7b5;;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_forestformen.png" alt="">
+                        </p>
+                        <p>Gotjawal</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #2e6259;;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_greentea.png" alt="">
+                        </p>
+                        <p>Green Tea</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #5dc7db;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_bija.png" alt="">
+                        </p>
+                        <p>Bija</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #5a75fc;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_seeweed.png" alt="">
+                        </p>
+                        <p>Seaweed</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #b388d0;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_orchid.png" alt="">
+                        </p>
+                        <p>Orchid</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #f48080;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_pomegranate.png" alt="">
+                        </p>
+                        <p>Pomeg-ranate</p>
+                    </div>
+                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #5c503b;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_greentea.png" alt="">
+                        </p>
+                        <p>Volcanic Cluster</p>
+                    </div>
+                </div>
+            </div>
+            <div class="next"></div>
+            <div class="previous"></div>
         </div>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script>
+        var ingredient = new Swiper('.ingredient-main-slide', {
+            slidesPerView: "auto",
+            spaceBetween: 25,
+            speed: 400,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.previous',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+            loop: true,
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
         var i = 0;
         var check = ["O", "X", "I", "O", "r", "s", "N", "I", "X", "e", "N", "O", "l", "W", "I", "Q", "o", "a", "S", "n", "P", "o", "T", "P", "D", "x", "R"];
         var ans = "";
@@ -130,7 +225,7 @@
                 i++
                 setTimeout(typeWrite, 100)
             }
-            else if (i < 27) {  
+            else if (i < 27) {
                 document.querySelector(".text-animation").innerHTML = ans + `<i class="star">${check[i]}</i>`;
                 i++
                 setTimeout(typeWrite, 100)
