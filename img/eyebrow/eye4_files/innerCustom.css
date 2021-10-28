@@ -1,0 +1,41 @@
+.rectangle {
+    display: none;
+}
+
+.rectangle-cover {
+    display: none;
+}
+
+.cover {
+    display: none;
+}
+
+#contents .item.fade.hover .item-wrap .overlay .hover {
+    background: rgba(2, 65, 55, 0.9);
+}
+#contents .item .overlay .hover .content {
+    text-align: left;
+}
+
+#container #footer #btn-view-more {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/embed_v2/ykjrBIMBCHNyAdA/new_viewmore.png);
+    background-size: 102px;
+    color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-width: 0;
+    
+}
+
+#container #footer #btn-view-more:hover {
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/embed_v2/ykjrBIMBCHNyAdA/new_viewmore_hover.png);
+    background-size: 102px;
+    color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-width: 0;
+}

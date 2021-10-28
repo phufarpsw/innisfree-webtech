@@ -1,0 +1,15 @@
+/*ปุ่มรีวิว*/
+.review-button{
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: black;
+    font-size: 15px;
+    color: white;
+}
+.review-button:hover{
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: #024137;
+    font-size: 15px;
+    color: white;
+}
