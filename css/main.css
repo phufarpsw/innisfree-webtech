@@ -263,3 +263,7 @@
 .detail-left-navb>p {
   margin-right: 1rem;
 }
+.banner{
+  cursor: pointer;
+  position: relative;
+}
