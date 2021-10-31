@@ -11,6 +11,7 @@
     <title>membership</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Niramit&display=swap');
@@ -19,6 +20,7 @@
             margin: 0; */
             box-sizing: border-box;
             font-family: 'Niramit', sans-serif;
+            /* border: 1px solid black; */
         }
         .navbar-select>p {
             color: #acacac;
@@ -27,6 +29,30 @@
         }
         .my-innisfree{
             background-image: url(./img/membership/guide_rewards_section1.jpg);
+        }
+        .absolute{
+            bottom: 0;
+            color: white;
+            text-align: center;
+        }
+        .sec1-member{
+            /* border: 1px solid #acacac; */
+        }
+        .text-wel-mem,
+        .text-pre-mem,
+        .text-vip-mem{
+            line-height: 20px;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            /* background-color: #83a48a; */
+        }
+        .member-level{
+            border: 1px solid #acacac;
+            border-radius: 3px;
+        }
+        .sec1-member{
+            border-top: 1px dashed #acacac;
         }
     </style>
 </head>
@@ -44,7 +70,168 @@
         <p class="text-4xl" style="color: white;">มาย อินนิสฟรี รีวอร์ด</p>
         <p class="text-xl mt-3" style="color: #7cc2a8;">สำหรับสมาชิกอินนิสฟรีเท่านั้น</p>
     </div>
+    <div class="tri-circle w-full h-72 flex justify-center items-center">
+        <div class="w-3/6 flex justify-between items-center">
+            <div class="welcome relative h-full">
+                <div class="absolute w-full h-2/5 text-xl" >เวลคัม</div>
+                <img src="./img/membership/rew_se2_Icon01.png">
+            </div>
+            <img src="./img/membership/rew_se2_arrow.png">
+            <div class="welcome relative h-full">
+                <div class="absolute w-full h-2/5 text-xl">พรีเมี่ยม</div>
+                <img src="./img/membership/rew_se2_Icon02.png">
+            </div>
+            <img src="./img/membership/rew_se2_arrow.png">
+            <div class="welcome relative h-full">
+                <div class="absolute w-full h-2/5 text-xl">วีไอพี</div>
+                <img src="./img/membership/rew_se2_Icon03.png">
+            </div>
+        </div>
+    </div>
+    <div class="h-32 w-full flex items-center justify-center">
+        <p class="text-2xl" style="color: #555;">มาย อินนิสฟรี รีวอร์ด</p>
+    </div>
+    <div class="innisfree-reward w-4/6 flex space-x-3 justify-center ">
+        <div class="member-level w-80 h-5/6">
+            <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
+                <img src="./img/membership/rew_se3_Icon01.png" alt="">
+                <p style="color: #222;">ระดับสมาชิก</p>
+            </div>
+            <div class="sec1-member h-44 flex w-full justify-center items-center">
+                <div class="h-5/6 flex flex-col justify-between space-y-2">
+                    <div class="sec1-member-1 h-1/3 flex ">
+                        <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
+                        <p class="text-sm ml-3" style="color: #333;">เมื่อซื้อสินค้าใดๆ<br>ในร้านอินนิสฟรี</p>
+                    </div>
+                    <div class="sec1-member-2 h-1/3 flex">
+                        <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                        <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง 3,000<br>บาท ในระยะเวลา 12 เดือน</p>
+                    </div>
+                    <div class="sec1-member-3 h-1/3 flex">
+                        <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                        <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง<br>6,000 บาท ในระยะเวลา 12 เดือน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1-member h-28 flex items-center justify-center ">
+                <p class="text-center text-sm" style="color: #333;">*ระดับสมาชิกจะถูกปรับอัตโนมัติ<br>ในวันแรกของเดือนถัดไป</p>
+            </div>
+        </div>
+        <div class="member-level w-80 h-5/6">
+            <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
+                <img src="./img/membership/rew_se3_Icon02.png" alt="">
+                <p style="color: #222;">การคำนวณคะแนนสะสม</p>
+            </div>
+            <div class="sec1-member h-44 flex w-full justify-center items-center">
+                <div class="h-5/6 flex flex-col justify-between">
+                    <div class="sec1-member-1 flex ">
+                        <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
+                        <p class="text-sm ml-3" style="color: #333;">100% ของยอดซื้อ</p>
+                    </div>
+                    <div class="sec1-member-2 flex">
+                        <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                        <p class="text-sm ml-3" style="color: #333;">150% ของยอดซื้อ</p>
+                    </div>
+                    <div class="sec1-member-3 flex">
+                        <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                        <p class="text-sm ml-3" style="color: #333;">200% ของยอดซื้อ<br>ทุก 50 คะแนนมีค่าเท่ากับ 1 บาท</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1-member h-28 flex items-center justify-center ">
+                <p class="text-center text-sm" style="color: #333;">*รับคะแนนสะสมเพิ่มเมื่อท่านเป็นสมาชิกวีไอพี<br>(7,500 คะแนน / 150 บาท)</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer !!!! -->
+    <div class="container-footer w-full h-screen">
+        <div class="contain-foot w-full flex flex-col items-center">
+            <div class="h-full w-full flex items-center justify-center ">
+                <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
+                    <div class="product">ผลิตภัณฑ์
+                        <div class="detail-in-foot mt-3 ">
+                            <p>ผลิตภัณฑ์บำรุงผิว</p>
+                            <p>เมคอัพ</p>
+                            <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
+                            <p>มีอะไรใหม่</p>
+                        </div>
+                    </div>
+                    <div class="product">ข้อเสนอ & อีเวนท์
+                        <div class="detail-in-foot mt-3">
+                            <p>ข้อเสนอปัจจุบัน</p>
+                            <p>ข้อเสนอหมดอายุ</p>
+                        </div>
+                    </div>
+                    <div class="product">ร้านค้า
+                        <div class="detail-in-foot mt-3">
+                            <p>ค้นหาร้านค้า</p>
+                            <p>ข่าวสารจากหน้าร้าน</p>
+                        </div>
+                    </div>
+                    <div class="product">เกี่ยวกับเรา
+                        <div class="detail-in-foot mt-3">
+                            <p>เรื่องราวของแบรนด์</p>
+                            <p>ส่วนผสม</p>
+                            <p>แตมเปญเพลย์กรีน</p>
+                            <p>แคมเปญป่าสีเขียว</p>
+                            <p>อาชีพ</p>
+                        </div>
+                    </div>
+                    <div class="product">บัญชีของฉัน
+                        <div class="detail-in-foot mt-3">
+                            <p>ประวัติการซื้อ</p>
+                            <p>คะแนนสะสม</p>
+                            <p>รีวิว</p>
+                            <p>คำถาม</p>
+                            <p>แก้ไขข้อมูลส่วนตัว</p>
+                        </div>
+                    </div>
+                    <div class="product">ลูกค้าสัมพันธ์
+                        <div class="detail-in-foot mt-3">
+                            <p>FAQs</p>
+                            <p>ติดต่อเรา</p>
+                            <p>มาย อินนิสฟรี รีวอร์ด</p>
+                        </div>
+                    </div>
+                    <div class="product">เข้าสู่ระบบ / ลงทะเบียน
+                        <div class="detail-in-foot mt-3">
+                            <p>เข้าสู่ระบบ</p>
+                            <p>ลงทะเบียน</p>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
+                <div class="logo-contact flex flex-col">
+                    <img width="160" src="./img/footer_logo.svg">
+                    <div class="h-full flex items-center">
+                        <div class="contact-foot flex w-1/2 justify-between ">
+                            <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
+                                    src="./img/icon_facebook.svg"></a>
+                            <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
+                                    src="./img/icon_instagram.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mark-foot">
+                    <img src="./img/footer_mark.svg">
+                </div>
+            </div>
+        </div>
+        <div class="navb-foot flex justify-center">
+            <div class="w-10/12 flex justify-between">
+                <div class="detail-left-navb h-full flex items-center">
+                    <p>ข้อกำหนดละเงื่อนไข</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ข้อกำหนดของ UGC</p>
+                </div>
+                <div class="detail-right-navb h-full flex items-center">
+                    <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
