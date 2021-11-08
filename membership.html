@@ -48,11 +48,17 @@
             /* background-color: #83a48a; */
         }
         .member-level{
-            border: 1px solid #acacac;
+            border: 1px solid #D3D3D3;
             border-radius: 3px;
         }
         .sec1-member{
-            border-top: 1px dashed #acacac;
+            border-top: 1px dashed #D3D3D3;
+        }
+        .bd-right{
+            border-right: 1px dashed #D3D3D3;
+        }
+        .bd-bottom{
+            border-bottom: 1px solid #cecccc;
         }
     </style>
 </head>
@@ -88,62 +94,145 @@
             </div>
         </div>
     </div>
-    <div class="h-32 w-full flex items-center justify-center">
-        <p class="text-2xl" style="color: #555;">มาย อินนิสฟรี รีวอร์ด</p>
-    </div>
-    <div class="innisfree-reward w-4/6 flex space-x-3 justify-center ">
-        <div class="member-level w-80 h-5/6">
-            <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
-                <img src="./img/membership/rew_se3_Icon01.png" alt="">
-                <p style="color: #222;">ระดับสมาชิก</p>
+    <div class="flex flex-col justify-center items-center" style="background-color: #f8f8f8;">
+        <div class="h-32 w-full flex items-center justify-center">
+            <p class="text-2xl" style="color: #555;">มาย อินนิสฟรี รีวอร์ด</p>
+        </div>
+        <div class="innisfree-reward w-4/6 flex space-x-3 justify-center">
+            <div class="member-level w-80 h-5/6 bg-white">
+                <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
+                    <img class="ml-4" src="./img/membership/rew_se3_Icon01.png" alt="">
+                    <p style="color: #222;">ระดับสมาชิก</p>
+                </div>
+                <div class="sec1-member h-44 flex w-full justify-center items-center">
+                    <div class="h-5/6 flex flex-col justify-between space-y-2">
+                        <div class="sec1-member-1 h-1/3 flex ">
+                            <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
+                            <p class="text-sm ml-3" style="color: #333;">เมื่อซื้อสินค้าใดๆ<br>ในร้านอินนิสฟรี</p>
+                        </div>
+                        <div class="sec1-member-2 h-1/3 flex">
+                            <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                            <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง 3,000<br>บาท ในระยะเวลา 12 เดือน</p>
+                        </div>
+                        <div class="sec1-member-3 h-1/3 flex">
+                            <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                            <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง<br>6,000 บาท ในระยะเวลา 12 เดือน</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec1-member h-28 flex items-center justify-center ">
+                    <p class="text-center text-sm" style="color: #333;">*ระดับสมาชิกจะถูกปรับอัตโนมัติ<br>ในวันแรกของเดือนถัดไป</p>
+                </div>
             </div>
-            <div class="sec1-member h-44 flex w-full justify-center items-center">
-                <div class="h-5/6 flex flex-col justify-between space-y-2">
-                    <div class="sec1-member-1 h-1/3 flex ">
-                        <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
-                        <p class="text-sm ml-3" style="color: #333;">เมื่อซื้อสินค้าใดๆ<br>ในร้านอินนิสฟรี</p>
+            <div class="member-level w-80 h-5/6 bg-white">
+                <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
+                    <img src="./img/membership/rew_se3_Icon02.png" alt="">
+                    <p style="color: #222;">การคำนวณคะแนนสะสม</p>
+                </div>
+                <div class="sec1-member h-44 flex w-full justify-center items-center">
+                    <div class="h-5/6 flex flex-col justify-between">
+                        <div class="sec1-member-1 flex ">
+                            <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
+                            <p class="text-sm ml-3" style="color: #333;">100% ของยอดซื้อ</p>
+                        </div>
+                        <div class="sec1-member-2 flex">
+                            <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                            <p class="text-sm ml-3" style="color: #333;">150% ของยอดซื้อ</p>
+                        </div>
+                        <div class="sec1-member-3 flex">
+                            <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                            <p class="text-sm ml-3" style="color: #333;">200% ของยอดซื้อ<br>ทุก 50 คะแนนมีค่าเท่ากับ 1 บาท</p>
+                        </div>
                     </div>
-                    <div class="sec1-member-2 h-1/3 flex">
-                        <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
-                        <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง 3,000<br>บาท ในระยะเวลา 12 เดือน</p>
+                </div>
+                <div class="sec1-member h-28 flex items-center justify-center ">
+                    <p class="text-center text-sm" style="color: #333;">*รับคะแนนสะสมเพิ่มเมื่อท่านเป็นสมาชิกวีไอพี<br>(7,500 คะแนน / 150 บาท)</p>
+                </div>
+            </div>
+            <div class="member-level w-80 h-5/6 bg-white">
+                <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
+                    <img src="./img/membership/rew_se3_Icon03.png" alt="">
+                    <p style="color: #222;">ของขวัญสุดพิเศษ</p>
+                </div>
+                <div class="sec1-member h-72 flex flex-col items-center justify-center ">
+                    <div class="h-1/3 w-full flex flex-col justify-center items-center space-y-2">
+                        <p class="text-center text-base" style="color: #333;">Welcome Kit(1 ครั้ง)</p>
+                        <div class="flex space-x-3">
+                            <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
+                            <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                            <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                        </div>
                     </div>
-                    <div class="sec1-member-3 h-1/3 flex">
-                        <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
-                        <p class="text-sm ml-3" style="color: #333;">เมื่อมียอดซื้อสะสมถึง<br>6,000 บาท ในระยะเวลา 12 เดือน</p>
+                    <div class="sec1-member h-1/3 w-full flex flex-col justify-center items-center space-y-2">
+                        <p class="text-center text-sm w-10/12" style="color: #333;">บัตรกำนัลส่วนลดพิเศษในเดือนเกิด (1 ครั้งต่อปี)</p>
+                        <div class="flex space-x-3">
+                            <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
+                            <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                        </div>
+                    </div>
+                    <div class="sec1-member h-1/3 w-full flex flex-col justify-center items-center space-y-2">
+                        <p class="text-center text-sm w-10/12" style="color: #333;">บัตรกำนัลส่วนลดพิเศษสำหรับสมาชิกวีไอพี
+                            (1 ครั้งต่อปี)</p>
+                        <div class="flex space-x-3">
+                            <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="sec1-member h-28 flex items-center justify-center ">
-                <p class="text-center text-sm" style="color: #333;">*ระดับสมาชิกจะถูกปรับอัตโนมัติ<br>ในวันแรกของเดือนถัดไป</p>
-            </div>
         </div>
-        <div class="member-level w-80 h-5/6">
-            <div class="sec1-member-level h-40 flex flex-col items-center justify-center">
-                <img src="./img/membership/rew_se3_Icon02.png" alt="">
-                <p style="color: #222;">การคำนวณคะแนนสะสม</p>
-            </div>
-            <div class="sec1-member h-44 flex w-full justify-center items-center">
-                <div class="h-5/6 flex flex-col justify-between">
-                    <div class="sec1-member-1 flex ">
-                        <div class="text-wel-mem w-20 h-5 text-xs" style="background-color: #83a48a;">เวลคัม</div>
-                        <p class="text-sm ml-3" style="color: #333;">100% ของยอดซื้อ</p>
-                    </div>
-                    <div class="sec1-member-2 flex">
-                        <div class="text-pre-mem w-20 h-5 text-xs" style="background-color: #41695e;">พรีเมี่ยม</div>
-                        <p class="text-sm ml-3" style="color: #333;">150% ของยอดซื้อ</p>
-                    </div>
-                    <div class="sec1-member-3 flex">
-                        <div class="text-vip-mem w-20 h-5 text-xs" style="background-color: #024137;">วีไอพี</div>
-                        <p class="text-sm ml-3" style="color: #333;">200% ของยอดซื้อ<br>ทุก 50 คะแนนมีค่าเท่ากับ 1 บาท</p>
-                    </div>
+        <div class="w-4/6 h-52 flex justify-center items-center">
+            <div class="member-level h-44 flex bg-white" style="width: 96%;">
+                <div class="w-4/12 h-full bd-right flex flex-col items-center justify-center space-y-2">
+                    <img src="./img/membership/rew_se3_Icon04.png" alt="">
+                    <p>รีไซเคิล แคมเปญ</p>
+                </div>
+                <div class="w-8/12 h-full flex flex-col justify-center items-center">
+                    <p>1 ขวด = 750 คะแนน (15 บาท)</p>
+                    <p>สามารถนำบรรจุภัณฑ์เปล่ามาแลกรับคะแนน ได้สูงสุด 5 ชิ้นต่อเดือน</p>
                 </div>
             </div>
-            <div class="sec1-member h-28 flex items-center justify-center ">
-                <p class="text-center text-sm" style="color: #333;">*รับคะแนนสะสมเพิ่มเมื่อท่านเป็นสมาชิกวีไอพี<br>(7,500 คะแนน / 150 บาท)</p>
+        </div>
+        <div class="w-4/6 h-48 flex justify-center">
+            <div class="member-level h-44 flex bg-white" style="width: 96%;">
+                <div class="w-4/12 h-full bd-right flex flex-col items-center justify-center space-y-2">
+                    <img src="./img/membership/rew_se3_Icon05.png" alt="">
+                    <p>อินนิสฟรี เดย์</p>
+                </div>
+                <div class="w-8/12 h-full flex flex-col justify-center items-center">
+                    <p>เพลิดเพลินกับโปรโมชั่นพิเศษเฉพาะสำหรับสมาชิก ในวันอินนิสฟรี เดย์</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-4/6 h-28 flex flex-col justify-center items-center text-gray-500 text-sm leading-6">
+            <p>* อินนิสฟรี ไทยแลนด์สงวนสิทธิ์ในการเปลี่ยนแปลงข้อตกลงและเงื่อนไข ของระบบการให้รีวอร์ดโดยมิแจ้งล่วงหน้า</p>
+            <p>*ขอสงวนสิทธิ์การรับบัตรกำนัลส่วนลดสำหรับสมาชิกวีไอพีและส่วนลดในเดือนเกิดให้กับสมาชิกระดับพรีเมี่ยมและวีไอพีที่ได้รับอีเมลแจ้งเตือนเท่านั้น</p>  
+            <p>*ในกรณีที่บัตรสมาชิกสูญหาย ชำรุด หรือถูกขโมย จะต้องมีค่าธรรมเนียมในการเปลี่ยนบัตรใหม่จำนวน 50 บาท</p>
+        </div>
+        <div class="w-3/4 h-44 flex flex-col justify-center items-center" style="border-bottom: 1px solid rgb(146, 144, 144);">
+            <p class="text-black text-2xl ">FAQs</p>
+        </div>
+        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 74%;">
+            <div class="w-full flex flex-col text-xs p-3">
+                <p class="py-2">มาย อินนิสฟรี รีวอร์ดของฉันคืออะไร?</p>
+                <p class="text-gray-500">มาย อินนิสฟรี รีวอร์ดคือระบบการเป็นสมาชิกในประเทศไทยที่ช่วยให้ท่านได้รับคะแนนสะสมในทุกครั้งที่ซื้อสินค้า และได้รับสิทธิประโยชน์เพิ่มเติมเฉพาะสำหรับสมาชิกเท่านั้น ลูกค้าจะได้เป็นสมาชิกระดับเวลคัม (Welcome) เมื่อซื้อสินค้าใดๆ ก็ได้ในร้านอินนิสฟรี</p>
+            </div>
+        </div>
+        <div class="h-48 flex justify-center items-center bd-bottom" style="width: 74%;">
+            <div class="w-full flex flex-col text-xs p-3">
+                <p class="py-3">สิทธิประโยชน์อื่นๆ เฉพาะสำหรับสมาชิก ที่นอกเหนือไปจากการได้รับคะแนนสะสมนั้นมีอะไรบ้าง?</p>
+                <p class="text-gray-500">ในเดือนเกิด สมาชิกอินนิสฟรีระดับเวลคัมสามารถสะสมคะแนนได้เป็นสองเท่า สมาชิกระดับพรีเมี่ยมจะได้รับบัตรกำนัลส่วนลด 15% และสมาชิกระดับวีไอพีจะได้รับบัตรกำนัลส่วนลด 20%</p>
+                <p class="py-4 text-gray-500 w-3/5">สมาชิกระดับวีไอพีจะได้รับบัตรกำนัลส่วนลดพิเศษสำหรับสมาชิกวีไอพีมูลค่า 300 บาท ปีละหนึ่งครั้ง โดยจะได้รับในเดือนกุมภาพันธ์ 2563
+                    ภายหลังจากเดือนกุมภาพันธ์ 2563 สมาชิกที่เพิ่งเลื่อนขั้นขึ้นมาเป็นสมาชิกวีไอพีจะได้รับบัตรกำนัลนี้ในเดือนที่ท่านได้เลื่อนขั้น
+                    โดยบัตรกำนัลนี้จะมีอายุหนึ่งเดือนนับตั้งแต่วันที่เริ่มมีผลบังคับใช้</p>
+                <p class="text-gray-500">*อินนิสฟรี ไทยแลนด์ ขอสงวนสิทธิ์ในการเปลี่ยนแปลงโดยไม่ต้องแจ้งให้ทราบล่วงหน้า หรือจำกัดสิทธิประโยชน์สำหรับสมาชิกเท่านั้น
+                </p>
             </div>
         </div>
     </div>
-    <!-- footer !!!! -->
+
+
+
+        <!-- footer !!!! -->
     <div class="container-footer w-full h-screen">
         <div class="contain-foot w-full flex flex-col items-center">
             <div class="h-full w-full flex items-center justify-center ">
