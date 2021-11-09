@@ -1,6 +1,6 @@
+<!-- เหลือใส่ navbar -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,10 +64,13 @@
 </head>
 
 <body class="w-full h-full flex flex-col items-center">
+    <div class="loading w-full h-screen bg-white flex justify-center items-center absolute ">
+        <img class="loading-innisfree" src="./img/loading.gif" alt="">
+    </div>
     <div class="navbar-select w-full h-16 flex justify-center items-center">
         <p>FAQs</p>
         <p>ติดต่อเรา</p>
-        <p>มาย อินนิสฟรี รีวอร์ด</p>
+        <p style="color: black;">มาย อินนิสฟรี รีวอร์ด</p>
         <p>ข้อกำหนดและเงื่อนไข</p>
         <p>นโยบายความเป็นส่วนตัว</p>
         <p>ข้อกำหนดของ UGC</p>
@@ -94,7 +97,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col justify-center items-center" style="background-color: #f8f8f8;">
+    <div class="w-full flex flex-col justify-center items-center" style="background-color: #FAFAFA;">
         <div class="h-32 w-full flex items-center justify-center">
             <p class="text-2xl" style="color: #555;">มาย อินนิสฟรี รีวอร์ด</p>
         </div>
@@ -203,22 +206,24 @@
                 </div>
             </div>
         </div>
-        <div class="w-4/6 h-28 flex flex-col justify-center items-center text-gray-500 text-sm leading-6">
+        <div class="w-4/6 h-36 flex flex-col justify-center items-center text-gray-500 text-sm leading-6">
             <p>* อินนิสฟรี ไทยแลนด์สงวนสิทธิ์ในการเปลี่ยนแปลงข้อตกลงและเงื่อนไข ของระบบการให้รีวอร์ดโดยมิแจ้งล่วงหน้า</p>
             <p>*ขอสงวนสิทธิ์การรับบัตรกำนัลส่วนลดสำหรับสมาชิกวีไอพีและส่วนลดในเดือนเกิดให้กับสมาชิกระดับพรีเมี่ยมและวีไอพีที่ได้รับอีเมลแจ้งเตือนเท่านั้น</p>  
             <p>*ในกรณีที่บัตรสมาชิกสูญหาย ชำรุด หรือถูกขโมย จะต้องมีค่าธรรมเนียมในการเปลี่ยนบัตรใหม่จำนวน 50 บาท</p>
         </div>
-        <div class="w-3/4 h-44 flex flex-col justify-center items-center" style="border-bottom: 1px solid rgb(146, 144, 144);">
+        </div>
+    <div class="flex flex-col justify-center items-center" style="background-color: #f8f8f8;">
+        <div class="w-4/5 h-36 flex flex-col justify-center items-center" style="border-bottom: 1px solid rgb(146, 144, 144);">
             <p class="text-black text-2xl ">FAQs</p>
         </div>
-        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 74%;">
-            <div class="w-full flex flex-col text-xs p-3">
+        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
                 <p class="py-2">มาย อินนิสฟรี รีวอร์ดของฉันคืออะไร?</p>
                 <p class="text-gray-500">มาย อินนิสฟรี รีวอร์ดคือระบบการเป็นสมาชิกในประเทศไทยที่ช่วยให้ท่านได้รับคะแนนสะสมในทุกครั้งที่ซื้อสินค้า และได้รับสิทธิประโยชน์เพิ่มเติมเฉพาะสำหรับสมาชิกเท่านั้น ลูกค้าจะได้เป็นสมาชิกระดับเวลคัม (Welcome) เมื่อซื้อสินค้าใดๆ ก็ได้ในร้านอินนิสฟรี</p>
             </div>
         </div>
-        <div class="h-48 flex justify-center items-center bd-bottom" style="width: 74%;">
-            <div class="w-full flex flex-col text-xs p-3">
+        <div class="h-60 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
                 <p class="py-3">สิทธิประโยชน์อื่นๆ เฉพาะสำหรับสมาชิก ที่นอกเหนือไปจากการได้รับคะแนนสะสมนั้นมีอะไรบ้าง?</p>
                 <p class="text-gray-500">ในเดือนเกิด สมาชิกอินนิสฟรีระดับเวลคัมสามารถสะสมคะแนนได้เป็นสองเท่า สมาชิกระดับพรีเมี่ยมจะได้รับบัตรกำนัลส่วนลด 15% และสมาชิกระดับวีไอพีจะได้รับบัตรกำนัลส่วนลด 20%</p>
                 <p class="py-4 text-gray-500 w-3/5">สมาชิกระดับวีไอพีจะได้รับบัตรกำนัลส่วนลดพิเศษสำหรับสมาชิกวีไอพีมูลค่า 300 บาท ปีละหนึ่งครั้ง โดยจะได้รับในเดือนกุมภาพันธ์ 2563
@@ -228,7 +233,43 @@
                 </p>
             </div>
         </div>
+        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
+                <p class="py-2">ฉันจะได้รับระดับพรีเมี่ยมได้อย่างไร?</p>
+                <p class="text-gray-500">สมาชิกระดับเวลคัมที่มียอดซื้อสะสมตั้งแต่ 3,000 บาท ภายในระยะเวลา 12 เดือน จะได้รับการเลื่อนระดับโดยอัตโนมัติเป็นสมาชิกระดับพรีเมี่ยมนับจากวันแรกของเดือนถัดไป</p>
+            </div>
+        </div>
+        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
+                <p class="py-2">ฉันจะได้รับระดับวีไอพีได้อย่างไร?</p>
+                <p class="text-gray-500">สมาชิกระดับเวลคัม/สมาชิกพรีเมี่ยมที่มียอดซื้อสะสมตั้งแต่ 6,000 บาท ภายในระยะเวลา 12 เดือน จะได้รับการเลื่อนระดับโดยอัตโนมัติเป็นสมาชิกระดับวีไอพีนับจากวันแรกของเดือนถัดไป</p>
+            </div>
+        </div>
+        <div class="h-40 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
+                <p class="">วิธีการได้รับคะแนนสะสม?</p>
+                <p class="text-gray-500 py-2">- สมาชิกจะได้รับสิทธิในการได้รับคะแนนสะสมสำหรับสินค้าราคาปกติที่ไม่ร่วมโปรโมชั่นใดๆ (100% ของจำนวนเงินที่ซื้อรวมทั้งหมดสำหรับสมาชิกเวลคัม/ 150% สำหรับสมาชิกพรีเมี่ยม / 200% สำหรับสมาชิกวีไอพี)</p>
+                <p class="text-gray-500">*ไม่สามารถได้รับคะแนนสะสมจากการซื้อสินค้าราคาพิเศษและรายการส่งเสริมการขายใดๆ</p>
+                <p class="text-gray-500">*สมาชิกจะต้องแจ้งให้อินนิสฟรี ไทยแลนด์ ทราบหากมีปัญหาใดๆ เกี่ยวกับคะแนนสะสมคงเหลือ ภายใน 30 วันของการทำธุรกรรม</p>
+            </div>
+        </div>
+        <div class="h-40 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
+                <p>วิธีการใช้คะแนนสะสม? (50 คะแนนมีค่าเท่ากับ 1 บาท)</p>
+                <p class="text-gray-500 py-2">คะแนนสะสมทั้งหมดสามารถนำไปใช้กับการซื้อได้ (50 คะแนนมีค่าเท่ากับ 1 บาท / 1,000 คะแนนมีค่าเท่ากับ 20 บาท)</p>
+                <p class="text-gray-500">*คะแนนสะสมไม่สามารถแลกเปลี่ยนเป็นเงินสดได้</p>
+                <p class="text-gray-500">*รายการสินค้าที่ชำระเต็มจำนวน หรือบางส่วนโดยใช้คะแนนสะสมนั้น ไม่ได้รับอนุญาตสำหรับการแลกเปลี่ยนหรือการเปลี่ยนคืนโดยเด็ดขาด</p>
+            </div>
+        </div>
+        <div class="h-32 flex justify-center items-center bd-bottom" style="width: 79%;">
+            <div class="w-full flex flex-col text-xs p-3 tracking-wide leading-5">
+                <p class="py-2">คะแนนสะสมของฉันจะหมดอายุเมื่อไหร่?</p>
+                <p class="text-gray-500">คะแนนสะสมทั้งหมดจะถือเป็นโมฆะ หากไม่ถูกใช้เป็นเวลา 1 ปี</p>
+            </div>
+        </div>
+        <div class="h-20 w-full"></div>
     </div>
+    <div class="h-14 w-full"></div>
 
 
 
@@ -321,6 +362,19 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".loading").animate({
+                opacity: '0'
+            });
+            $(".loading-innisfree").css("transform", "translateY(1rem)");
+            setTimeout(() => {
+                $(".loading").hide();
+            }, 2000);
+
+        })
+    </script>
 </body>
 
 </html>
