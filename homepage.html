@@ -17,7 +17,7 @@
 </head>
 
 <body class="w-full h-full flex flex-col items-center">
-    <div class="loading w-full h-screen bg-white flex justify-center items-center absolute ">
+    <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
     <nav class="w-full h-24 sticky-top-0 justify-center items-center">
@@ -424,7 +424,6 @@
                 var revealtop = reveals[i].getBoundingClientRect().top;
                 var revealpoint = 0.5;
                 if (revealtop < windowheight - revealpoint) {
-                    console.log("Hello");
                     // $(reveals[i]).fadeIn(300);
                     reveals[i].classList.add('active');
 
