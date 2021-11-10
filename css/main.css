@@ -326,10 +326,7 @@
 .detail-left-navb>p {
   margin-right: 1rem;
 }
-.banner{
-  cursor: pointer;
-  position: relative;
-}
+
 
 
 #pim {
@@ -338,10 +335,12 @@
 }
 #pim img {
   display: block;
-  transition: transform .4s; 
+  transition: transform .4s;
 }
 #pim:hover img {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  transform: translateY();
+  
 }
 /* product of the month */
 .simple-label{

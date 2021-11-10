@@ -11,3 +11,12 @@
     background-position: center;
 }
 
+.button1{
+    background-color: #222; 
+    color: white;
+}
+
+.button1:hover{
+    background-color: #024137;
+}
+
