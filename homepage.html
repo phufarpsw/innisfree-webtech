@@ -18,18 +18,33 @@
     <div class="loading w-full h-screen bg-white flex justify-center items-center absolute ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
-    <nav class="w-full h-24 sticky-top-0 justify-center items-center">
-        <div class="w-full h-full flex justify-between items-center">
-            <div class="flex items-center m-4 space-x-6">
-                <a href="" class="text-sm">ผลิตภัณฑ์</a>
-                <a href="" class="text-sm">ข้อเสนอ & อีเวนท์</a>
-                <a href="" class="text-sm">ร้านค้า</a>
-                <a href="" class="text-sm">เกี่ยวกับเรา</a>
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24" style="z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <!-- <a href="" class="text-sm bg-red-200 py-4 dropdown">เกี่ยวกับเรา</a> -->
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-4"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center mt-4">
+                            <div class="w-9/12 py-4">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="#" class="text-sm">ส่วนผสม</a>
+                                <a href="#" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="#" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
             </div>
-            <div class="w-full flex justify-center absolute">
-                <img class="w-44" src="./img/header_logo.svg" alt="">
-            </div>
-            <div></div>
+        </div>
+        <div class="w-full flex justify-center absolute">
+            <img class="w-44" src="./img/header_logo.svg" alt="">
+        </div>
         </div>
     </nav>
     <div class="slide-main swiper">
@@ -88,7 +103,24 @@
         <div class="next"></div>
         <div class="previous"></div>
     </div> -->
-    <!--  -->
+    <!-- product of the month -->
+    <div class="product-month w-full h-screen flex justify-center m-4">
+        <div class="w-10/12 h-full flex justify-between items-center">
+            <div class="flex space-x-6">
+                <div class="simple-label">
+                    <img src="./img/product-month/TH_L_40_L007_2.jpg" width="320" alt="">
+                </div>
+                <div class="simple-label">
+                    <img src="./img/product-month/TH_L_40_L007_3.jpg" width="320" alt="">
+                </div>
+            </div>
+            <div class="simple-label">
+                <img src="./img/product-month/TH_L_40_L007.jpg" width="600" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- ingredient -->
     <div class="ingredient-slide bg-cover w-full flex flex-col items-center relative" style="height: 960px;">
         <div class="ingredient-display bg-white flex flex-col justify-center items-center absolute">
             <p class="text-lg">INGREDIENT</p>
@@ -195,7 +227,7 @@
             <img class="flex-1 w-96 px-4" src="./img/membership.jpeg">
             <p class="absolute text-white text-xl -mt-32 mx-32">MEMBERSHIP</p>
         </div>
-        <div class="inline-block" id="pim"> 
+        <div class="inline-block" id="pim">
             <img class="flex-1 w-96 px-4" src="./img/brandstory.jpeg">
             <p class="absolute text-white text-xl -mt-32 mx-32">BRAND STORY</p>
         </div>
@@ -313,6 +345,7 @@
                 },
             },
             loop: true,
+            autoplay: true,
         });
 
         function getDirection() {
