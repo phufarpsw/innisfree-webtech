@@ -44,7 +44,7 @@
   position: absolute;
   left: 0;
   z-index: 10;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(221, 221, 221, 0.719) ;
 }
 
 .dropdown-content a {
@@ -60,7 +60,7 @@
   color: #024137;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-content:hover {
   display: flex;
 }
 .navbar-topic{
