@@ -3,6 +3,9 @@
 *{
   font-family: 'Niramit', sans-serif;
 }
+.margin-top-innis{
+  margin-top: 170px;
+}
 .green-innisfree{
   color: #024137;
 }
@@ -19,7 +22,7 @@
 }
 .loading-innisfree,.loading{
   transition: all 1s;
-  z-index: 10;
+  z-index: 11;
 }
 /* Navbar */
 .dropdown {
@@ -358,4 +361,7 @@
 }
 .simple-label:hover img{
   transform: scale(1.02);
-} 
+}
+.hover-store:hover{
+  border-bottom: 1px solid #024137;
+}

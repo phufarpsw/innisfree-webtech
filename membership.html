@@ -30,7 +30,7 @@
         .my-innisfree{
             background-image: url(./img/membership/guide_rewards_section1.jpg);
         }
-        .absolute{
+        .absolute-p{
             bottom: 0;
             color: white;
             text-align: center;
@@ -64,9 +64,42 @@
 </head>
 
 <body class="w-full h-full flex flex-col items-center">
-    <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
+    <div class="loading w-full h-screen fixed bg-white flex justify-center items-center" style="z-index: 19;">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24" style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="#" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="#" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
+        </div>
+        </div>
+    </nav>
     <div class="navbar-select w-full h-16 flex justify-center items-center">
         <p>FAQs</p>
         <p>ติดต่อเรา</p>
@@ -82,17 +115,17 @@
     <div class="tri-circle w-full h-72 flex justify-center items-center">
         <div class="w-3/6 flex justify-between items-center">
             <div class="welcome relative h-full">
-                <div class="absolute w-full h-2/5 text-xl" >เวลคัม</div>
+                <div class="absolute-p w-full h-2/5 text-xl" >เวลคัม</div>
                 <img src="./img/membership/rew_se2_Icon01.png">
             </div>
             <img src="./img/membership/rew_se2_arrow.png">
             <div class="welcome relative h-full">
-                <div class="absolute w-full h-2/5 text-xl">พรีเมี่ยม</div>
+                <div class="absolute-p w-full h-2/5 text-xl">พรีเมี่ยม</div>
                 <img src="./img/membership/rew_se2_Icon02.png">
             </div>
             <img src="./img/membership/rew_se2_arrow.png">
             <div class="welcome relative h-full">
-                <div class="absolute w-full h-2/5 text-xl">วีไอพี</div>
+                <div class="absolute-p w-full h-2/5 text-xl">วีไอพี</div>
                 <img src="./img/membership/rew_se2_Icon03.png">
             </div>
         </div>
