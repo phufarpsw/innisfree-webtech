@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,166 +11,188 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-    <body class="w-full h-full">
-        <nav class="w-full h-24 sticky-top-0 justify-center items-center">
-            <div class="w-full h-full flex justify-between items-center">
+<body class="w-full h-full">
+    <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
+        <img class="loading-innisfree" src="./img/loading.gif" alt="">
+    </div>
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
+        style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
                 <div class="flex items-center m-4 space-x-6">
-                    <a href="">ผลิตภัณฑ์</a>
-                    <a href="">ข้อเสนอ & อีเวนท์</a>
-                    <a href="">ร้านค้า</a>
-                    <a href="">เกี่ยวกับเรา</a>
-                </div>
-                <div class="w-full flex justify-center absolute">
-                    <img class="w-44" src="./img/header_logo.svg" alt="">
-                </div>
-            </div>
-        </nav>
-        <div>
-            <h2 class="text-center text-4xl p-6">เกี่ยวกับอินนิสฟรี</h2>
-            <nav class="w-full h-5 justify-center items-center">
-                <div class="w-full h-full items-center">
-                    <div class="flex justify-center items-center m-4 space-x-10">
-                        <a href="" style="color:#024137; border-bottom:2px solid #024137;">เรื่องราวของอินนิสฟรี</a>
-                        <a href="">ส่วนผสม</a>
-                        <a href="">PLAY GREEN CAMPAIGN</a>
-                        <a href="">GREEN FOREST CAMPAIGN</a>
-                        <a href="">อาชีพ</a>
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="./Ingredient/green_tea.html" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="./careers.html" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
-    
-            <nav class="w-full h-20 justify-center items-center">
-                <div class="text-center items-center">
-                    <div class="flex text-sm items-center justify-center m-4 space-x-8">
-                        <a href="" style="color:#024137;">ECO-HANDKERCHIEF</a>
-                        <a href="">รีไซเคิลบรรจุภัณฑ์</a>
-                    </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
                 </div>
-            </nav>
-        </div>
-        <!--section 1-->
-        <div class="text-center" style="height:560px; background:url(img/brandstory/brand_concept_section1.jpeg) no-repeat center center; background-size:cover;">
-            <div class="">
-                <h3 class="text-black text-6xl pt-48">1</h3><br>
-                <p class="text-black text-3xl">แนวคิดของแบรนด์</p>
-                <p class="text-black text-base pt-2">เราขอแนะนำอินนิสฟรี เกาะที่ช่วยให้ผิวได้รับการพักผ่อน</p>
             </div>
         </div>
-        <!-- section 2-->
-        <div class="md:container mx:auto pl-24">
-            <img class="float-right" src="./img/brandstory/brand_concept_section2.jpeg">
-            <p class="text-lg text-black text-center pt-48">อินนิสฟรี เกาะอันเก่าแก่ สถานที่ที่มีความสะอาดเป็นธรรมชาติและมีความ<br>สวยงามสุขภาพดีอย่างกลมกลืน</p><br><br>
-            <p class="text-gray-400 text-sm text-center">อินนิสฟรี เป็นแบรนด์ที่แบ่งปันสิ่งดีๆจากธรรมชาติจากเกาะเชจูอันเก่าแก่ และดำเนินตามวิถีชีวิตที่เป็นมิตรต่อสิ่ง<br>แวดล้อม เพื่อรักษาความสมดุลของธรรมชาติ
-            </p>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
         </div>
+        </div>
+    </nav>
+    <nav class="w-full h-20 justify-center items-center">
+        <div class="text-center items-center">
+            <div class="flex text-sm items-center justify-center m-4 space-x-8">
+                <a href="" style="color:#024137;">ECO-HANDKERCHIEF</a>
+                <a href="">รีไซเคิลบรรจุภัณฑ์</a>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <!--section 1-->
+    <div class="text-center"
+        style="height:560px; background:url(img/brandstory/brand_concept_section1.jpeg) no-repeat center center; background-size:cover;">
+        <div class="">
+            <h3 class="text-black text-6xl pt-48">1</h3><br>
+            <p class="text-black text-3xl">แนวคิดของแบรนด์</p>
+            <p class="text-black text-base pt-2">เราขอแนะนำอินนิสฟรี เกาะที่ช่วยให้ผิวได้รับการพักผ่อน</p>
+        </div>
+    </div>
+    <!-- section 2-->
+    <div class="md:container mx:auto pl-24">
+        <img class="float-right" src="./img/brandstory/brand_concept_section2.jpeg">
+        <p class="text-lg text-black text-center pt-48">อินนิสฟรี เกาะอันเก่าแก่
+            สถานที่ที่มีความสะอาดเป็นธรรมชาติและมีความ<br>สวยงามสุขภาพดีอย่างกลมกลืน</p><br><br>
+        <p class="text-gray-400 text-sm text-center">อินนิสฟรี
+            เป็นแบรนด์ที่แบ่งปันสิ่งดีๆจากธรรมชาติจากเกาะเชจูอันเก่าแก่
+            และดำเนินตามวิถีชีวิตที่เป็นมิตรต่อสิ่ง<br>แวดล้อม เพื่อรักษาความสมดุลของธรรมชาติ
+        </p>
+    </div>
 
-        <!--section 3-->
-        <div class="text-center mx:auto pt-80">
-            <h1 class="text-black text-2xl text-center">อัตลักษณ์ของอินนิสฟรี</h1><br><br><br>
+    <!--section 3-->
+    <div class="text-center mx:auto pt-80">
+        <h1 class="text-black text-2xl text-center">อัตลักษณ์ของอินนิสฟรี</h1><br><br><br>
+        <div class="flex justify-center text-center">
             <div class="flex justify-center text-center">
-                <div class="flex justify-center text-center">
-                    <img src="img/brandstory/brand_concept_section3_logo1.gif">
-                </div>
-                <div class="flex justify-center text-center">
-                    <img src="img/brandstory/brand_concept_section3_logo2.gif">
-                </div>
-                <div class="flex justify-center text-center">
-                    <img src="img/brandstory/brand_concept_section3_logo3.gif">
-                </div>
-            </div><br><br>
-            <div class="container w-screen h-44 bg-gray-200 mx-auto"><br>
-                <div class="w-48 h-32 mx-28" style="background: #024137;"><p class=" text-white font-bold pt-7 text-lg">สีเขียวของอินนิสฟรี</p><p class="text-white text-sm text-left mx-5">เฉดสีเขียวเข้ม<br>ของป่าบิจาบนเกาะเชจู</p></div>
-                <p class="float-right -mt-24 mr-36 text-left text-sm">โลโก้ของเราแสดงถึงความพยายามอันจริงใจของอินนิสฟรี ในการมอบความงามที่มีสุขภาพดี<br>ด้วยตัวอักษรที่แสดงถึงคำมั่นสัญญาและความมุ่งมั่น
-                    <br>ผสานกับสีสันที่ได้รับแรงบันดาลใจจากเฉดสีเขียวชอุ่มของป่าบิจาบนเกาะเชจูซึ่งเป็นสัญลักษณ์ความมีชีวิตชีวาแห่งธรรมชาติ</p>
-            </div><br><br>
-        </div>
-        <div class="container-footer w-full h-screen">
-            <div class="contain-foot w-full flex flex-col items-center">
-                <div class="h-full w-full flex items-center justify-center ">
-                    <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
-                        <div class="product">ผลิตภัณฑ์
-                            <div class="detail-in-foot mt-3 ">
-                                <p>ผลิตภัณฑ์บำรุงผิว</p>
-                                <p>เมคอัพ</p>
-                                <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
-                                <p>มีอะไรใหม่</p>
-                            </div>
-                        </div>
-                        <div class="product">ข้อเสนอ & อีเวนท์
-                            <div class="detail-in-foot mt-3">
-                                <p>ข้อเสนอปัจจุบัน</p>
-                                <p>ข้อเสนอหมดอายุ</p>
-                            </div>
-                        </div>
-                        <div class="product">ร้านค้า
-                            <div class="detail-in-foot mt-3">
-                                <p>ค้นหาร้านค้า</p>
-                                <p>ข่าวสารจากหน้าร้าน</p>
-                            </div>
-                        </div>
-                        <div class="product">เกี่ยวกับเรา
-                            <div class="detail-in-foot mt-3">
-                                <p>เรื่องราวของแบรนด์</p>
-                                <p>ส่วนผสม</p>
-                                <p>แตมเปญเพลย์กรีน</p>
-                                <p>แคมเปญป่าสีเขียว</p>
-                                <p>อาชีพ</p>
-                            </div>
-                        </div>
-                        <div class="product">บัญชีของฉัน
-                            <div class="detail-in-foot mt-3">
-                                <p>ประวัติการซื้อ</p>
-                                <p>คะแนนสะสม</p>
-                                <p>รีวิว</p>
-                                <p>คำถาม</p>
-                                <p>แก้ไขข้อมูลส่วนตัว</p>
-                            </div>
-                        </div>
-                        <div class="product">ลูกค้าสัมพันธ์
-                            <div class="detail-in-foot mt-3">
-                                <p>FAQs</p>
-                                <p>ติดต่อเรา</p>
-                                <p>มาย อินนิสฟรี รีวอร์ด</p>
-                            </div>
-                        </div>
-                        <div class="product">เข้าสู่ระบบ / ลงทะเบียน
-                            <div class="detail-in-foot mt-3">
-                                <p>เข้าสู่ระบบ</p>
-                                <p>ลงทะเบียน</p>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
-                    <div class="logo-contact flex flex-col">
-                        <img width="160" src="./img/footer_logo.svg">
-                        <div class="h-full flex items-center">
-                            <div class="contact-foot flex w-1/2 justify-between ">
-                                <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
-                                        src="./img/icon_facebook.svg"></a>
-                                <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
-                                        src="./img/icon_instagram.svg"></a>
-                            </div>
+                <img src="img/brandstory/brand_concept_section3_logo1.gif">
+            </div>
+            <div class="flex justify-center text-center">
+                <img src="img/brandstory/brand_concept_section3_logo2.gif">
+            </div>
+            <div class="flex justify-center text-center">
+                <img src="img/brandstory/brand_concept_section3_logo3.gif">
+            </div>
+        </div><br><br>
+        <div class="container w-screen h-44 bg-gray-200 mx-auto"><br>
+            <div class="w-48 h-32 mx-28" style="background: #024137;">
+                <p class=" text-white font-bold pt-7 text-lg">สีเขียวของอินนิสฟรี</p>
+                <p class="text-white text-sm text-left mx-5">เฉดสีเขียวเข้ม<br>ของป่าบิจาบนเกาะเชจู</p>
+            </div>
+            <p class="float-right -mt-24 mr-36 text-left text-sm">โลโก้ของเราแสดงถึงความพยายามอันจริงใจของอินนิสฟรี
+                ในการมอบความงามที่มีสุขภาพดี<br>ด้วยตัวอักษรที่แสดงถึงคำมั่นสัญญาและความมุ่งมั่น
+                <br>ผสานกับสีสันที่ได้รับแรงบันดาลใจจากเฉดสีเขียวชอุ่มของป่าบิจาบนเกาะเชจูซึ่งเป็นสัญลักษณ์ความมีชีวิตชีวาแห่งธรรมชาติ
+            </p>
+        </div><br><br>
+    </div>
+    <div class="container-footer w-full h-screen">
+        <div class="contain-foot w-full flex flex-col items-center">
+            <div class="h-full w-full flex items-center justify-center ">
+                <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
+                    <div class="product">ผลิตภัณฑ์
+                        <div class="detail-in-foot mt-3 ">
+                            <p>ผลิตภัณฑ์บำรุงผิว</p>
+                            <p>เมคอัพ</p>
+                            <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
+                            <p>มีอะไรใหม่</p>
                         </div>
                     </div>
-                    <div class="mark-foot">
-                        <img src="./img/footer_mark.svg">
+                    <div class="product">ข้อเสนอ & อีเวนท์
+                        <div class="detail-in-foot mt-3">
+                            <p>ข้อเสนอปัจจุบัน</p>
+                            <p>ข้อเสนอหมดอายุ</p>
+                        </div>
                     </div>
+                    <div class="product">ร้านค้า
+                        <div class="detail-in-foot mt-3">
+                            <p>ค้นหาร้านค้า</p>
+                            <p>ข่าวสารจากหน้าร้าน</p>
+                        </div>
+                    </div>
+                    <div class="product">เกี่ยวกับเรา
+                        <div class="detail-in-foot mt-3">
+                            <p>เรื่องราวของแบรนด์</p>
+                            <p>ส่วนผสม</p>
+                            <p>แตมเปญเพลย์กรีน</p>
+                            <p>แคมเปญป่าสีเขียว</p>
+                            <p>อาชีพ</p>
+                        </div>
+                    </div>
+                    <div class="product">บัญชีของฉัน
+                        <div class="detail-in-foot mt-3">
+                            <p>ประวัติการซื้อ</p>
+                            <p>คะแนนสะสม</p>
+                            <p>รีวิว</p>
+                            <p>คำถาม</p>
+                            <p>แก้ไขข้อมูลส่วนตัว</p>
+                        </div>
+                    </div>
+                    <div class="product">ลูกค้าสัมพันธ์
+                        <div class="detail-in-foot mt-3">
+                            <p>FAQs</p>
+                            <p>ติดต่อเรา</p>
+                            <p>มาย อินนิสฟรี รีวอร์ด</p>
+                        </div>
+                    </div>
+                    <div class="product">เข้าสู่ระบบ / ลงทะเบียน
+                        <div class="detail-in-foot mt-3">
+                            <p>เข้าสู่ระบบ</p>
+                            <p>ลงทะเบียน</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="navb-foot flex justify-center">
-                <div class="w-10/12 flex justify-between">
-                    <div class="detail-left-navb h-full flex items-center">
-                        <p>ข้อกำหนดละเงื่อนไข</p>
-                        <p>นโยบายความเป็นส่วนตัว</p>
-                        <p>ข้อกำหนดของ UGC</p>
+            <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
+                <div class="logo-contact flex flex-col">
+                    <img width="160" src="./img/footer_logo.svg">
+                    <div class="h-full flex items-center">
+                        <div class="contact-foot flex w-1/2 justify-between ">
+                            <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
+                                    src="./img/icon_facebook.svg"></a>
+                            <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
+                                    src="./img/icon_instagram.svg"></a>
+                        </div>
                     </div>
-                    <div class="detail-right-navb h-full flex items-center">
-                        <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
-                    </div>
+                </div>
+                <div class="mark-foot">
+                    <img src="./img/footer_mark.svg">
                 </div>
             </div>
         </div>
+        <div class="navb-foot flex justify-center">
+            <div class="w-10/12 flex justify-between">
+                <div class="detail-left-navb h-full flex items-center">
+                    <p>ข้อกำหนดละเงื่อนไข</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ข้อกำหนดของ UGC</p>
+                </div>
+                <div class="detail-right-navb h-full flex items-center">
+                    <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/loading.js"></script>
+</body>
 
 </html>

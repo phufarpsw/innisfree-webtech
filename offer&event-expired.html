@@ -1,32 +1,74 @@
 <!-- เหลือใส่ navbar -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>OFFERS & EVENT - EXPIRED OFFERS | innisfree</title>
     <style>
-        .url{
+        .url {
             background-repeat: no-repeat;
             background-size: contain;
         }
-        .bd-gray{
+
+        .bd-gray {
             border: 1px solid #D3D3D3;
         }
     </style>
 </head>
+
 <body class="w-full h-full flex flex-col items-center">
     <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
+        style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="./Ingredient/green_tea.html" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="./careers.html" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
+        </div>
+        </div>
+    </nav>
     <div class="w-full h-44 flex flex-col justify-center items-center text-3xl space-y-8">
         <p>ข้อเสนอ & อีเวนท์</p>
         <div class="w-full  flex justify-center items-center text-base space-x-9 ">
-            <p class="text-gray-500">ข้อเสนอปัจจุบัน</p>
-            <p class="text-black p-1" style="border-bottom: 2px solid #024137;">ข้อเสนอหมดอายุ</p>
+            <a href="./offer&event-now.html">
+                <p class="text-gray-500">ข้อเสนอปัจจุบัน</p>
+            </a>
+            <a href="">
+                <p class="text-black p-1" style="border-bottom: 2px solid #024137;">ข้อเสนอหมดอายุ</p>
+
+            </a>
         </div>
     </div>
     <div class="w-11/12 flex flex-col space-y-8">
@@ -36,7 +78,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>A Clean Vegan Makeup With Simple Label</p>
                     <p class="text-gray-500">For you and For Earth</p>
-                    <p class="text-gray-400 p-2 text-sm">Live Simply, Naturally You</p>							
+                    <p class="text-gray-400 p-2 text-sm">Live Simply, Naturally You</p>
                 </div>
             </div>
             <div class="h-full">
@@ -44,7 +86,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>Moment แห่ง Cherry Blossom ด้วยเซตสกินแคร์</p>
                     <p class="text-gray-500">3 สเต็ปบำรุงให้ผิวกระจ่างใสอย่างเป็นธรรมชาติ</p>
-                    <p class="text-gray-400 p-2 text-sm">และเพิ่มความชุ่มชื้นตลอดวัน</p>							
+                    <p class="text-gray-400 p-2 text-sm">และเพิ่มความชุ่มชื้นตลอดวัน</p>
                 </div>
             </div>
         </div>
@@ -54,7 +96,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>ทำความสะอาดผิวหน้า พร้อมบำรุง</p>
                     <p class="text-gray-500">ผิวด้วยสารสกัดจากธรรมชาติ</p>
-                    <p class="text-gray-400 p-2 text-sm">Cleansing Specials</p>							
+                    <p class="text-gray-400 p-2 text-sm">Cleansing Specials</p>
                 </div>
             </div>
             <div class="h-full">
@@ -62,7 +104,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>Your Best Pore Cleansing Solution Mask</p>
                     <p class="text-gray-500">ตัวช่วยเรื่องรูขุมขนของคุณ ด้วยมาส์กจากหินภูเขาไฟบนเกาะเชจู</p>
-                    <p class="text-gray-400 p-2">Store Promotion</p>							
+                    <p class="text-gray-400 p-2">Store Promotion</p>
                 </div>
             </div>
         </div>
@@ -72,7 +114,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>October Special</p>
                     <p class="text-gray-500">Gift with Purchase</p>
-                    <p class="text-gray-400 p-2 text-sm">While stocks last</p>							
+                    <p class="text-gray-400 p-2 text-sm">While stocks last</p>
                 </div>
             </div>
             <div class="h-full">
@@ -80,7 +122,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>PINK GLOW 3-STEP</p>
                     <p class="text-gray-500">With Jeju Cherry Blossom</p>
-                    <p class="text-gray-400 p-2">Light Up Your Skin, Glow Up Your Day</p>							
+                    <p class="text-gray-400 p-2">Light Up Your Skin, Glow Up Your Day</p>
                 </div>
             </div>
         </div>
@@ -90,15 +132,16 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>เติมความกระจ่างใสอมชมพู เพิ่มความสดใสให้คุณ</p>
                     <p class="text-gray-500">Jeju Cherry Blossom Tone Up Cream</p>
-                    <p class="text-gray-400 p-2 text-sm">Jeju Cherry Blossom Tone Up Cream</p>							
+                    <p class="text-gray-400 p-2 text-sm">Jeju Cherry Blossom Tone Up Cream</p>
                 </div>
             </div>
             <div class="h-full">
                 <img src="./img/offer&event/2375_L007_1.jpg" alt="">
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>กู้คืนผิวสวย แค่เพียงสัมผัสเดียว</p>
-                    <p class="text-gray-500">ดูแลความกระชับอย่างเข้มข้น ด้วยพลังในการ ต่อต้านอนุมูลอิสระจาก Black Tea</p>
-                    <p class="text-gray-400 p-2">Antioxdant Ampoule</p>							
+                    <p class="text-gray-500">ดูแลความกระชับอย่างเข้มข้น ด้วยพลังในการ ต่อต้านอนุมูลอิสระจาก Black Tea
+                    </p>
+                    <p class="text-gray-400 p-2">Antioxdant Ampoule</p>
                 </div>
             </div>
         </div>
@@ -108,7 +151,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>TODAY’S OFFER</p>
                     <p class="text-gray-500">Sheet Mask Special</p>
-                    <p class="text-gray-400 p-2 text-sm">Store Promotion</p>							
+                    <p class="text-gray-400 p-2 text-sm">Store Promotion</p>
                 </div>
             </div>
             <div class="h-full">
@@ -116,7 +159,7 @@
                 <div class="w-full h-36 bd-gray flex flex-col justify-center items-center text-base leading-6">
                     <p>September Special</p>
                     <p class="text-gray-500">Gift with Purchase</p>
-                    <p class="text-gray-400 p-2">While stocks last</p>							
+                    <p class="text-gray-400 p-2">While stocks last</p>
                 </div>
             </div>
         </div>
@@ -211,19 +254,9 @@
             </div>
         </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".loading").animate({
-                opacity: '0'
-            });
-            $(".loading-innisfree").css("transform", "translateY(1rem)");
-            setTimeout(() => {
-                $(".loading").hide();
-            }, 2000);
 
-        })
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/loading.js"></script>
 </body>
+
 </html>

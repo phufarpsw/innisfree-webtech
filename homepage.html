@@ -25,7 +25,7 @@
         <div class="w-full h-full flex justify-center items-center">
             <div class="w-11/12 hidden justify-between items-center xl:flex">
                 <div class="flex items-center m-4 space-x-6">
-                    <a href="" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
                     <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
                     <div class="dropdown">
                         <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
@@ -255,10 +255,12 @@
 
     <!--member brandstory campaign-->
     <div class="w-10/12 flex justify-between space-x-6 mt-4">
-        <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
-            <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">MEMBERSHIP</p>
-            <img class="" src="img/membership.jpeg">
-        </div>
+        <a href="./membership.html">
+            <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
+                <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">MEMBERSHIP</p>
+                <img class="" src="img/membership.jpeg">
+            </div>
+        </a>
         <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
             <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">BRAND STORY</p>
             <img class="" src="img/brandstory.jpeg">
@@ -384,6 +386,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="./js/loading.js"></script>
     <script>
         var imgzoom = document.querySelectorAll(".img-zoomout")
         function imgZoomIn(e) {
@@ -429,16 +432,6 @@
             }
 
         }
-        $(document).ready(function () {
-            $(".loading").animate({
-                opacity: '0'
-            });
-            $(".loading-innisfree").css("transform", "translateY(1rem)");
-            setTimeout(() => {
-                $(".loading").hide();
-            }, 2000);
-
-        })
         var swiper = new Swiper(".slide-main", {
             spaceBetween: 30,
             effect: "fade",

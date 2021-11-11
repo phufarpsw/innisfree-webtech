@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
-    <title>ABOUT US</title>
+    <title>ABOUT US - INGREDIENTS GREENTEA | innisfree</title>
     <style>
+        body{
+            transition: all 1.5s;
+        }
         .topic-ingredient>p {
             padding: 0 1rem;
             border-right: 1px solid #D3D3D3;
@@ -68,13 +71,13 @@
     </style>
 </head>
 
-<body class="w-full h-full flex flex-col items-center bg-gray-300">
+<body class="w-full h-full flex flex-col items-center">
     <!-- <div class="loading w-full h-screen fixed bg-white flex justify-center items-center">
         <img class="loading-innisfree" src="../img/loading.gif" alt="">
     </div> -->
     <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
         style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
-        <div class="w-full h-full flex justify-center items-center">
+        <div class="w-full h-full flex justify-center items-center">    
             <div class="w-11/12 hidden justify-between items-center xl:flex">
                 <div class="flex items-center m-4 space-x-6">
                     <a href="" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
@@ -698,6 +701,31 @@
     <script src="/js/ingredient.js"> </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="/js/loading.js"></script>
+    <script>
+        window.addEventListener("scroll",function(){
+            // #f3f5f5
+            // #a0b2b0
+            // #738e8a
+            // #456862
+            // #224b44
+            // #123e36
+            // #0b312c
+            let y = window.scrollY;
+            if (y < 3000){
+                $("body").css({"background-color": "#f3f5f5"})
+            }
+            else if (y < 3600){
+                $("body").css({"background-color": "#a0b2b0"})
+            }
+            else if (y < 4300){
+                $("body").css({"background-color": "#738e8a"})
+            }
+            else{
+                $("body").css({"background-color": "#456862"})
+            }
+            console.log(y);
+        })
+    </script>
 </body>
 
 </html>

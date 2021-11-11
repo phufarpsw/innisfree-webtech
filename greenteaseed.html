@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,108 +11,143 @@
     <link rel="stylesheet" href="css/tonkla.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
- 
+
 </head>
+
 <body class="w-full h-full ">
-    <nav class="w-full h-24 sticky-top-0 justify-center items-center">
-        <div class="w-full h-full flex justify-between items-center">
-            <div class="flex items-center m-4 space-x-6">
-                <a href="">ผลิตภัณฑ์</a>
-                <a href="">ข้อเสนอ & อีเวนท์</a>
-                <a href="">ร้านค้า</a>
-                <a href="">เกี่ยวกับเรา</a>
-            </div>
-            <div class="w-full flex justify-center absolute">
-                <img class="w-44" src="./img/header_logo.svg" alt="">
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
+        style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="./Ingredient/green_tea.html" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="./careers.html" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
             </div>
         </div>
-        <div></div>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
+        </div>
+        </div>
     </nav>
 
 
     <!--แรกยังไม่ได้ใส่พื้นหลัง-->
-        <!--แรกยังไม่ได้ใส่พื้นหลัง-->
-        <div style="background: #F9FFF6;" class="pb-16">
-            <div class="text-center" style="background:url(img/greentea/greeatea.png)no-repeat center top;">
-                <img src="img/greentea/35964_l.png" class="m-auto">
-                <p class="text-4xl mt-16">Green Tea Seed Serum Set [2021 Green Holidays LTD<br> Edition] 160mL</p>
-                <p class="text-xl mt-4">Green Tea Seed Serum Set [2021 Green Holidays LTD Edition] for plump dewy skin in the holidays4-piece skincare<br> 
-                    set with Green Tea Seed Serum for caring skin damages* due to moisture loss and breakouts for hydrated<br>  soothed skin without 
-                    dryness within*Dryness, texture concerns, tightness, roughness, flakiness due to cleansing<br>  or other external stimuliGreen
-                     Tea Seed Serum Set includes: Green Tea Seed Serum(80ml) + innisfree Green Tea<br>  Balancing Skin EX(30mL) + 
-                    innisfree Green Tea Balancing Lotion EX(30mL) + innisfree Green Tea Balancing Cream<br>  EX(20mL)</p>
-                </div>
-            <div class="flex justify-center text-center mt-8">
-                <a href=""><img class="w-3/4" src="img/greentea/icon_twitter.png"></a>
-                <a href=""><img class="w-3/4" src="img/greentea/icon_facebook.png"></a>
-                <a href=""><img class="w-3/4" src="img/greentea/icon_pinterest.png"></a>
-            </div>
-            
-     </div>
-
-             <!--icon-->
-
-        
-
-  <!--บาร์-->
-
-        <div class="flex justify-center text-center mt-16" id="data">
-            <div>
-                <a class="mr-16 text-xl" href="#data" style="color:#024137; border-bottom:2px solid #024137">ข้อมูลผลิตภัณฑ์</a>
-                <a class="text-xl" href="#review">รีวิว(0)</a>
-            </div>
+    <!--แรกยังไม่ได้ใส่พื้นหลัง-->
+    <div style="background: #F9FFF6;" class="pb-16">
+        <div class="text-center" style="background:url(img/greentea/greeatea.png)no-repeat center top;">
+            <img src="img/greentea/35964_l.png" class="m-auto">
+            <p class="text-4xl mt-16">Green Tea Seed Serum Set [2021 Green Holidays LTD<br> Edition] 160mL</p>
+            <p class="text-xl mt-4">Green Tea Seed Serum Set [2021 Green Holidays LTD Edition] for plump dewy skin in
+                the holidays4-piece skincare<br>
+                set with Green Tea Seed Serum for caring skin damages* due to moisture loss and breakouts for
+                hydrated<br> soothed skin without
+                dryness within*Dryness, texture concerns, tightness, roughness, flakiness due to cleansing<br> or other
+                external stimuliGreen
+                Tea Seed Serum Set includes: Green Tea Seed Serum(80ml) + innisfree Green Tea<br> Balancing Skin
+                EX(30mL) +
+                innisfree Green Tea Balancing Lotion EX(30mL) + innisfree Green Tea Balancing Cream<br> EX(20mL)</p>
         </div>
+        <div class="flex justify-center text-center mt-8">
+            <a href=""><img class="w-3/4" src="img/greentea/icon_twitter.png"></a>
+            <a href=""><img class="w-3/4" src="img/greentea/icon_facebook.png"></a>
+            <a href=""><img class="w-3/4" src="img/greentea/icon_pinterest.png"></a>
+        </div>
+
+    </div>
+
+    <!--icon-->
+
+
+
+    <!--บาร์-->
+
+    <div class="flex justify-center text-center mt-16" id="data">
+        <div>
+            <a class="mr-16 text-xl" href="#data"
+                style="color:#024137; border-bottom:2px solid #024137">ข้อมูลผลิตภัณฑ์</a>
+            <a class="text-xl" href="#review">รีวิว(0)</a>
+        </div>
+    </div>
 
 
     <!--ข้อมูล-->
-    
-    <div class="flex mt-32" >
+
+    <div class="flex mt-32">
         <div class="flex-1">
             <p class="text-7xl text-center">Product Details</p>
-            <p class="text-xl mt-16 pl-52 pr-52">1.Green Tea full package with innisfree flagship intensive hydrating serum
+            <p class="text-xl mt-16 pl-52 pr-52">1.Green Tea full package with innisfree flagship intensive hydrating
+                serum
                 Green tea bestsellers, perfect with biome science applied upgraded GTSS, as free gift!
                 The best value for money, LTD GTSS Set</p>
             <p class="text-xl mt-8 pl-52 pr-52">2.LTD package design with special Steven Harrington design
-                Special LTD collaboration with Steven Harrington, famous for witty design, gives more reasons to buy!</p>
+                Special LTD collaboration with Steven Harrington, famous for witty design, gives more reasons to buy!
+            </p>
             <p class="text-xl mt-8 pl-52 pr-52">3.Get glowing skin for holiday season with radiant hydration
-                GTSS infused with Green Tea Biome to strengthen moisture barrier and boost hydration level for dewy glowing skin</p>
-                
+                GTSS infused with Green Tea Biome to strengthen moisture barrier and boost hydration level for dewy
+                glowing skin</p>
+
         </div>
         <div class="flex-1 mt-12">
             <p class="text-3xl">ส่วนประกอบ</p>
             <img class="mt-4 w-72" src="img/greentea/PL05_PL0512.jpg">
             <p class="text-xl mt-2">เกิดมาเพื่อผิว Beauty Green Tea จากเกาะเชจู</p>
-            <p class="text-xl mt-6">“Beauty Green Tea” อันดับหนึ่งจากอินนิสฟรี ส่วนผสมความชุ่มชื้นเฉพาะที่ได้รับการพัฒนาขึ้นหลัง<br>จากการศึกษาพันธุ์ชาเขียวในประเทศเกาหลีกว่า 2,401 ชนิด<br>
-                พวกเราได้เริ่มต้นวิจัยเพื่อค้นหามอยซ์เจอร์สำหรับสภาพผิวในอุดมคติ และสร้าง Beauty Green Tea<br>ที่มีส่วนผสมของกรดอะมิโนสูง เหมาะสำหรับภาวะน้ำและความชุ่มชื้น</p>
+            <p class="text-xl mt-6">“Beauty Green Tea” อันดับหนึ่งจากอินนิสฟรี
+                ส่วนผสมความชุ่มชื้นเฉพาะที่ได้รับการพัฒนาขึ้นหลัง<br>จากการศึกษาพันธุ์ชาเขียวในประเทศเกาหลีกว่า 2,401
+                ชนิด<br>
+                พวกเราได้เริ่มต้นวิจัยเพื่อค้นหามอยซ์เจอร์สำหรับสภาพผิวในอุดมคติ และสร้าง Beauty Green
+                Tea<br>ที่มีส่วนผสมของกรดอะมิโนสูง เหมาะสำหรับภาวะน้ำและความชุ่มชื้น</p>
             <p class="text-xl mt-6">เปลี่ยน Fresh Green Tea Water 2.0™ ใหม่ตามปกติด้วยวิธีบีบสองครั้ง<br>
-                Fresh Green Tea Water 2.0™ ทำมาจากการสกัดส่วนผสมสารบำรุงจากใบชาเขียว Beauty Green Tea<br> สด ซึ่งมีความแตกต่างอย่างมาก ด้วยความชุ่มชื้นที่ยอดเยี่ยม เป็นประโยชน์ต่อผิว ทำจากกรดอะ<br>
+                Fresh Green Tea Water 2.0™ ทำมาจากการสกัดส่วนผสมสารบำรุงจากใบชาเขียว Beauty Green Tea<br> สด
+                ซึ่งมีความแตกต่างอย่างมาก ด้วยความชุ่มชื้นที่ยอดเยี่ยม เป็นประโยชน์ต่อผิว ทำจากกรดอะ<br>
                 มิโน 16 ชนิด เข้มข้นกว่าเดิมถึง 3.5 เท่า</p>
             <p class="text-3xl mt-16">วิธีการใช้</p>
             <p class="text-xl mt-6">[Usage Order] Serum - Skin - Lotion - Cream<br>
-                [How to use] Apply an appropriate amount over face and neck then gently smooth for better absorption.</p>
+                [How to use] Apply an appropriate amount over face and neck then gently smooth for better absorption.
+            </p>
 
             <p class="text-xl mt-16">คำเตือน</p>
-            <p class="text-base mt-4 mb-8">(1) For external use only. (2) Avoid direct contact with eyes. (3) If contact occurs rinse thoroughly with water.<br>
+            <p class="text-base mt-4 mb-8">(1) For external use only. (2) Avoid direct contact with eyes. (3) If contact
+                occurs rinse thoroughly with water.<br>
                 (4) Discontinue use and consult a doctor if irritation occurs. (5) Keep out of reach of children.</p>
             <a class="text base" href="" style="border-bottom:1px solid black;">ดูส่วนประกอบแบบเต็ม</a>
-            
+
         </div>
 
-      </div>
+    </div>
 
 
-       <!--บาร์-->
+    <!--บาร์-->
 
     <div class="flex justify-center text-center mt-16" id="review">
         <div>
-            <a class="mr-16 text-xl" href="#data" >ข้อมูลผลิตภัณฑ์</a>
+            <a class="mr-16 text-xl" href="#data">ข้อมูลผลิตภัณฑ์</a>
             <a class="text-xl" href="#review" style="color:#024137; border-bottom:2px solid #024137">รีวิว(0)</a>
         </div>
     </div>
 
 
     <!--review-->
-    <div  style="background: #d7e5e0;" >
+    <div style="background: #d7e5e0;">
         <div class="flex justify-center text-center mt-16">
             <div>
                 <p class="text-xl mt-12">เป็นคนแรกที่รีวิวผลิตภัณฑ์นี้</p>
@@ -131,7 +167,7 @@
             <div class="w-11/12">
                 <p class="text-center text-xl">#INNISFREE #INNISTAR</p>
                 <p class="text-center text-8xl mt-2">INNIST<i class="star"></i>R</p>
-                
+
             </div>
         </div>
         <!-- INNISTRINNIST OF THE MONTH -->
@@ -160,98 +196,98 @@
     <!--  -->
 
 
-        <!-- footer !!!! -->
-        <div class="container-footer w-full h-screen">
-            <div class="contain-foot w-full flex flex-col items-center">
-                <div class="h-full w-full flex items-center justify-center ">
-                    <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
-                        <div class="product">ผลิตภัณฑ์
-                            <div class="detail-in-foot mt-3 ">
-                                <p>ผลิตภัณฑ์บำรุงผิว</p>
-                                <p>เมคอัพ</p>
-                                <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
-                                <p>มีอะไรใหม่</p>
-                            </div>
-                        </div>
-                        <div class="product">ข้อเสนอ & อีเวนท์
-                            <div class="detail-in-foot mt-3">
-                                <p>ข้อเสนอปัจจุบัน</p>
-                                <p>ข้อเสนอหมดอายุ</p>
-                            </div>
-                        </div>
-                        <div class="product">ร้านค้า
-                            <div class="detail-in-foot mt-3">
-                                <p>ค้นหาร้านค้า</p>
-                                <p>ข่าวสารจากหน้าร้าน</p>
-                            </div>
-                        </div>
-                        <div class="product">เกี่ยวกับเรา
-                            <div class="detail-in-foot mt-3">
-                                <p>เรื่องราวของแบรนด์</p>
-                                <p>ส่วนผสม</p>
-                                <p>แตมเปญเพลย์กรีน</p>
-                                <p>แคมเปญป่าสีเขียว</p>
-                                <p>อาชีพ</p>
-                            </div>
-                        </div>
-                        <div class="product">บัญชีของฉัน
-                            <div class="detail-in-foot mt-3">
-                                <p>ประวัติการซื้อ</p>
-                                <p>คะแนนสะสม</p>
-                                <p>รีวิว</p>
-                                <p>คำถาม</p>
-                                <p>แก้ไขข้อมูลส่วนตัว</p>
-                            </div>
-                        </div>
-                        <div class="product">ลูกค้าสัมพันธ์
-                            <div class="detail-in-foot mt-3">
-                                <p>FAQs</p>
-                                <p>ติดต่อเรา</p>
-                                <p>มาย อินนิสฟรี รีวอร์ด</p>
-                            </div>
-                        </div>
-                        <div class="product">เข้าสู่ระบบ / ลงทะเบียน
-                            <div class="detail-in-foot mt-3">
-                                <p>เข้าสู่ระบบ</p>
-                                <p>ลงทะเบียน</p>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-                <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
-                    <div class="logo-contact flex flex-col">
-                        <img width="160" src="./img/footer_logo.svg">
-                        <div class="h-full flex items-center">
-                            <div class="contact-foot flex w-1/2 justify-between ">
-                                <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
-                                        src="./img/icon_facebook.svg"></a>
-                                <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
-                                        src="./img/icon_instagram.svg"></a>
-                            </div>
+    <!-- footer !!!! -->
+    <div class="container-footer w-full h-screen">
+        <div class="contain-foot w-full flex flex-col items-center">
+            <div class="h-full w-full flex items-center justify-center ">
+                <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
+                    <div class="product">ผลิตภัณฑ์
+                        <div class="detail-in-foot mt-3 ">
+                            <p>ผลิตภัณฑ์บำรุงผิว</p>
+                            <p>เมคอัพ</p>
+                            <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
+                            <p>มีอะไรใหม่</p>
                         </div>
                     </div>
-                    <div class="mark-foot">
-                        <img src="./img/footer_mark.svg">
+                    <div class="product">ข้อเสนอ & อีเวนท์
+                        <div class="detail-in-foot mt-3">
+                            <p>ข้อเสนอปัจจุบัน</p>
+                            <p>ข้อเสนอหมดอายุ</p>
+                        </div>
                     </div>
+                    <div class="product">ร้านค้า
+                        <div class="detail-in-foot mt-3">
+                            <p>ค้นหาร้านค้า</p>
+                            <p>ข่าวสารจากหน้าร้าน</p>
+                        </div>
+                    </div>
+                    <div class="product">เกี่ยวกับเรา
+                        <div class="detail-in-foot mt-3">
+                            <p>เรื่องราวของแบรนด์</p>
+                            <p>ส่วนผสม</p>
+                            <p>แตมเปญเพลย์กรีน</p>
+                            <p>แคมเปญป่าสีเขียว</p>
+                            <p>อาชีพ</p>
+                        </div>
+                    </div>
+                    <div class="product">บัญชีของฉัน
+                        <div class="detail-in-foot mt-3">
+                            <p>ประวัติการซื้อ</p>
+                            <p>คะแนนสะสม</p>
+                            <p>รีวิว</p>
+                            <p>คำถาม</p>
+                            <p>แก้ไขข้อมูลส่วนตัว</p>
+                        </div>
+                    </div>
+                    <div class="product">ลูกค้าสัมพันธ์
+                        <div class="detail-in-foot mt-3">
+                            <p>FAQs</p>
+                            <p>ติดต่อเรา</p>
+                            <p>มาย อินนิสฟรี รีวอร์ด</p>
+                        </div>
+                    </div>
+                    <div class="product">เข้าสู่ระบบ / ลงทะเบียน
+                        <div class="detail-in-foot mt-3">
+                            <p>เข้าสู่ระบบ</p>
+                            <p>ลงทะเบียน</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="navb-foot flex justify-center">
-                <div class="w-10/12 flex justify-between">
-                    <div class="detail-left-navb h-full flex items-center">
-                        <p>ข้อกำหนดละเงื่อนไข</p>
-                        <p>นโยบายความเป็นส่วนตัว</p>
-                        <p>ข้อกำหนดของ UGC</p>
+            <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
+                <div class="logo-contact flex flex-col">
+                    <img width="160" src="./img/footer_logo.svg">
+                    <div class="h-full flex items-center">
+                        <div class="contact-foot flex w-1/2 justify-between ">
+                            <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
+                                    src="./img/icon_facebook.svg"></a>
+                            <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
+                                    src="./img/icon_instagram.svg"></a>
+                        </div>
                     </div>
-                    <div class="detail-right-navb h-full flex items-center">
-                        <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
-                    </div>
+                </div>
+                <div class="mark-foot">
+                    <img src="./img/footer_mark.svg">
                 </div>
             </div>
         </div>
+        <div class="navb-foot flex justify-center">
+            <div class="w-10/12 flex justify-between">
+                <div class="detail-left-navb h-full flex items-center">
+                    <p>ข้อกำหนดละเงื่อนไข</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ข้อกำหนดของ UGC</p>
+                </div>
+                <div class="detail-right-navb h-full flex items-center">
+                    <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-   
+
 
 
 
@@ -259,146 +295,8 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script>
-        var ingredient = new Swiper('.ingredient-main-slide', {
-            slidesPerView: "auto",
-            spaceBetween: 25,
-            speed: 400,
-            direction: getDirection(),
-            navigation: {
-                nextEl: '.next',
-                prevEl: '.previous',
-            },
-            on: {
-                resize: function () {
-                    swiper.changeDirection(getDirection());
-                },
-            },
-            loop: true,
-        });
-
-        function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-            return direction;
-        }
-        var i = 0;
-        var check = ["O", "X", "I", "O", "r", "s", "N", "I", "X", "e", "N", "O", "l", "W", "I", "Q", "o", "a", "S", "n", "P", "o", "T", "P", "D", "x", "R"];
-        var ans = "";
-        function typeWrite() {
-            if (i >= 23) { ans = "INNIST" } else if (i >= 19) { ans = "INNIS" } else if (i >= 15) { ans = "INNI" } else if (i >= 11) { ans = "INN" } else if (i >= 7) { ans = "IN" } else if (i >= 3) { ans = "I" }
-            if (i < check.length - 4) {
-                document.querySelector(".text-animation").innerHTML = ans + check[i];
-                i++
-                setTimeout(typeWrite, 100)
-            }
-            else if (i < 27) {
-                document.querySelector(".text-animation").innerHTML = ans + `<i class="star">${check[i]}</i>`;
-                i++
-                setTimeout(typeWrite, 100)
-            }
-
-        }
-        $(document).ready(function () {
-            $(".loading").animate({
-                opacity: '0'
-            });
-            $(".loading-innisfree").css("transform", "translateY(1rem)");
-            setTimeout(() => {
-                $(".loading").hide();
-            }, 2000);
-
-        })
-        var swiper = new Swiper(".slide-main", {
-            spaceBetween: 30,
-            effect: "fade",
-            navigation: {
-                nextEl: ".next",
-                prevEl: ".previous",
-            },
-            autoplay:
-            {
-                delay: 2500,
-            },
-            loop: true,
-        });
-        // var review = new Swiper(".review-month", {
-        //     speed:15000,
-        //     // spaceBetween: 30,
-        //     centeredSlides: true,
-        //     autoplay: {
-        //         delay: 1000,
-        //         disableOnInteraction: false,
-        //     },
-        //     pagination: {
-        //         el: ".swiper-pagination",
-        //         clickable: true,
-        //     },
-        //     navigation: {
-        //         nextEl: ".next",
-        //         prevEl: ".previous",
-        //     },
-        // });
-        let requestURL = 'data.json';
-        let request = new XMLHttpRequest();
-        request.onreadystatechange = function () {
-            if (request.readyState == 4 && request.status == 200) {
-                dataReportStatus(JSON.parse(request.responseText));
-            }
-        };
-        request.open("GET", requestURL, true);
-        request.send();
-        function dataReportStatus(data) {
-            for (let i = 0; i < 10; i++) {
-                var img = data[i].image;
-                var name = data[i].name;
-                var caption = data[i].caption;
-                document.querySelector('.contain-innistar').innerHTML +=
-                    `
-                        <div class="bg-cover relative bg-no-repeat bg-img" style="background-image: url(${img});">
-                            <div class="box-innistar p-2 w-full h-full absolute space-y-2">
-                                <div class="user-ig flex space-x-1">
-                                    <img class="profile w-8" src="./img/review-ig/404-profile.png">
-                                    <p class="text-sm">${name}</p>
-                                </div>
-                                <div class="w-full h-3/4 overflow-y-auto break-words">${caption}</div>
-                            </div>
-                        </div>
-                        `
-            }
-        }
-        window.addEventListener("scroll", () => {
-            reveal();
-            setTimeout(textCheck, 300);
-        });
-        function textCheck() {
-            if (document.querySelector(".text-animation").getBoundingClientRect().top < window.innerHeight - 100) {
-                typeWrite();
-            }
-        }
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-            for (var i = 0; i < reveals.length; i++) {
-                var windowheight = window.innerHeight;
-                var revealtop = reveals[i].getBoundingClientRect().top;
-                var revealpoint = 0.5;
-                if (revealtop < windowheight - revealpoint) {
-                    console.log("Hello");
-                    // $(reveals[i]).fadeIn(300);
-                    reveals[i].classList.add('active');
-
-
-
-                }
-                else {
-                    reveals[i].classList.remove('active');
-
-                }
-            }
-        }
-    </script>
-
+    <script src="./js/loading.js"></script>
 
 </body>
+
 </html>

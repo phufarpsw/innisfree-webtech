@@ -1,5 +1,6 @@
 <!-- เหลือ navbar -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,6 @@
     <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
     <title>รีไซเคิลบรรจุภัณฑ์</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/campagin2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -17,19 +17,39 @@
     <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
-    <nav class="w-full h-24 sticky-top-0 justify-center items-center">
-        <div class="w-full h-full flex justify-between items-center">
-            <div class="flex items-center m-4 space-x-6">
-                <a href="">ผลิตภัณฑ์</a>
-                <a href="">ข้อเสนอ & อีเวนท์</a>
-                <a href="">ร้านค้า</a>
-                <a href="">เกี่ยวกับเรา</a>
-            </div>
-            <div class="w-full flex justify-center absolute">
-                <img class="w-44" src="./img/header_logo.svg" alt="">
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
+        style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="#" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="#" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="./Ingredient/green_tea.html" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="./careers.html" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
             </div>
         </div>
-        <div></div>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
+        </div>
+        </div>
     </nav>
 
 
@@ -42,7 +62,8 @@
                 <div class="flex justify-center items-center m-4 space-x-10">
                     <a href="">เรื่องราวของอินนิสฟรี</a>
                     <a href="">ส่วนผสม</a>
-                    <a href="greencampaign.html" class="p-1" style="color:#024137; border-bottom:2px solid #024137;">PLAY GREEN CAMPAIGN</a>
+                    <a href="greencampaign.html" class="p-1"
+                        style="color:#024137; border-bottom:2px solid #024137;">PLAY GREEN CAMPAIGN</a>
                     <a href="">GREEN FOREST CAMPAIGN</a>
                     <a href="">อาชีพ</a>
                 </div>
@@ -52,7 +73,8 @@
         <nav class="w-full h-20 flex justify-center items-center">
             <div class="text-center items-center">
                 <div class="flex text-sm items-center justify-center m-4 space-x-5">
-                    <a href="greencampaign.html" class="text-gray-500 px-3" style="border-right: 1px solid #D3D3D3;">ECO-HANDKERCHIEF</a>
+                    <a href="greencampaign.html" class="text-gray-500 px-3"
+                        style="border-right: 1px solid #D3D3D3;">ECO-HANDKERCHIEF</a>
                     <a href="" style="color:#024137;">รีไซเคิลบรรจุภัณฑ์</a>
                 </div>
             </div>
@@ -72,10 +94,12 @@
                 <div class="box-content h-52 w-1/2 p-4 flex flex-col items-center justify-center"
                     style="border: 1px solid hsla(0,100%,100%,.2);">
                     <p class="text-2xl text-white p-2">“หากคุณเริ่ม และพวกเราทุกคนร่วมมือกัน
-                        <br>เราสามารถประหยัดการใช้ต้นไม้ได้”</p>
+                        <br>เราสามารถประหยัดการใช้ต้นไม้ได้”
+                    </p>
                     <p class="text-sm text-gray-300">For the past 10 years, we have collected over 800,000 bottles
                         <br>through Empty Bottle Recycling Campaign and planted more than <br>860 pine trees for a
-                        better environment.</p>
+                        better environment.
+                    </p>
                 </div>
             </div>
         </div>
@@ -240,18 +264,7 @@
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".loading").animate({
-                opacity: '0'
-            });
-            $(".loading-innisfree").css("transform", "translateY(1rem)");
-            setTimeout(() => {
-                $(".loading").hide();
-            }, 2000);
-
-        })
-    </script>
+    <script src="./js/loading.js"></script>
 </body>
 
 </html>
