@@ -74,6 +74,78 @@
             cursor: pointer;
             border-bottom: 2px solid white;
         }
+        .circle-ingre{
+            width: 123px;
+            height: 123px;
+            border-radius: 50%;
+        }
+        .c-greentea{
+            background: #fff url(/img/ingredient/etc/ingredients_kind1.png) no-repeat center bottom;
+            background-color: #024137;
+        }
+        .c-mountain{
+            background: #fff url(/img/ingredient/etc/ingredients_kind2.png) no-repeat center top;
+        }
+        .c-mountain:hover{
+            background-position: bottom;
+            background-color: #402a00;
+        }
+        .c-banana{
+            background: #fff url(/img/ingredient/etc/ingredients_kind3.png) no-repeat center top;
+        }
+        .c-banana:hover{
+            background-position: bottom;
+            background-color: #300050;
+        }
+        .c-beeja{
+            background: #fff url(/img/ingredient/etc/ingredients_kind4.png) no-repeat center top;
+        }
+        .c-beeja:hover{
+            background-position: bottom;
+            background-color: #0aaecc;
+        }
+        .c-seaweed{
+            background: #fff url(/img/ingredient/etc/ingredients_kind5.png) no-repeat center top;
+        }
+        .c-seaweed:hover{
+            background-position: bottom;
+            background-color: #001b9e;
+        }
+        .c-orange{
+            background: #fff url(/img/ingredient/etc/ingredients_kind6.png) no-repeat center top;
+        }
+        .c-orange:hover{
+            background-position: bottom;
+            background-color: #f59700;
+        }
+        .c-nut{
+            background: #fff url(/img/ingredient/etc/ingredients_kind7.png) no-repeat center top;
+        }
+        .c-nut:hover{
+            background-position: bottom;
+            background-color: #623d2c;
+        }
+        .c-jawud{
+            background: #fff url(/img/ingredient/etc/ingredients_kind8.png) no-repeat center top;
+        }
+        .c-jawud:hover{
+            background-position: bottom;
+            background-color: #83a48a;
+        }
+        .c-rice{
+            background: #fff url(/img/ingredient/etc/ingredients_kind9.png) no-repeat center top;
+        }
+        .c-rice:hover{
+            background-position: bottom;
+            background-color: #97b489;
+        }
+        .c-tubtim{
+            background: #fff url(/img/ingredient/etc/ingredients_kind10.png) no-repeat center top;
+        }
+        .c-tubtim:hover{
+            background-position: bottom;
+            background-color: #ba0000;
+        }
     </style>
 </head>
 
@@ -576,7 +648,7 @@
             <!-- 미역 : E -->
         </g>
     </svg>
-    <div class="w-full flex items-center"
+    <div class="w-full flex items-center margin-top-innis"
         style="height: 370px; background:url(/img/ingredient/ingredients_greenTea.jpg)no-repeat center center / auto 100%;">
         <div class="w-full flex flex-col items-center justify-center text-white space-y-7 ">
             <p class="text-3xl">ชาเขียว</p>
@@ -742,6 +814,176 @@
             </div>
         </div>
     </div>
+    <div class="w-full h-screen flex justify-center items-center">
+        <div class="conmid video_type">
+            <div class="vod_wrap">
+                <div class="vod_area">
+                    <a href="#" class="cover play" onclick="fnVideoPlay('vodtemp',false);return false;">
+                        <div class="bg" style="background-image:url('https://www.innisfree.com/th/th/resources/images/renewal/ingredients/ingredients_greenTea7.jpg')"></div>
+                        <div class="con">
+                            <!-- <p class="txt">イニスフリー公式</p> -->
+                            <span class="ico"></span>
+                        </div>
+                    </a>
+                    <a href="#" class="cover stop" onclick="fnVideoStop('vodtemp',false);return false;"></a>
+                    <video id="vodtemp" playsinline="" loop="">
+                        <source src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_greenTea.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full flex flex-col justify-center items-center bg-cover space-y-4" style="height: 360px; background-image: url(../img/ingredient/greentea_banner.jpg); background-position: center center;">
+        <p class="text-5xl green-innisfree">Green Tea Products</p>
+        <a href="">
+            <div class="flex hover-store">
+                <p class="green-innisfree">GO TO PRODUCT</p>
+                <img src="../img/find_arrow.svg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="w-full h-screen flex justify-center" style="background-color: #fafafa;">
+        <div class="w-1/2 h-full flex flex-col space-y-2 justify-center items-center">
+            <p class="text-lg">เลือกวัตถุดิบอื่น</p>
+            <div class="flex space-x-4">
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-greentea"></div>
+                    <p class="text-sm text-gray-400 mt-4">ชาเขียว</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-mountain"></div>
+                    <p class="text-sm text-gray-400 mt-4">ตะกอนหินภูเขาไฟ</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-banana"></div>
+                    <p class="text-sm text-gray-400 mt-4">กล้วยไม้</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-beeja"></div>
+                    <p class="text-sm text-gray-400 mt-4">บีจา</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-seaweed"></div>
+                    <p class="text-sm text-gray-400 mt-4">สาหร่ายทะเล</p>
+                </div>
+                
+            </div>
+            <div class="flex space-x-4">
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-orange"></div>
+                    <p class="text-sm text-gray-400 mt-4">ส้มแมนดาริน</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-nut"></div>
+                    <p class="text-sm text-gray-400 mt-4">ถั่วเหลือง</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-jawud"></div>
+                    <p class="text-sm text-gray-400 mt-4">ป่ากดจาวัล</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-rice"></div>
+                    <p class="text-sm text-gray-400 mt-4">ข้าวบาร์เลย์สีเขียว</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="circle-ingre c-tubtim"></div>
+                    <p class="text-sm text-gray-400 mt-4">ทับทิม</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer !!!! -->
+    <div class="container-footer w-full h-screen">
+        <div class="contain-foot w-full flex flex-col items-center">
+            <div class="h-full w-full flex items-center justify-center ">
+                <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
+                    <div class="product">ผลิตภัณฑ์
+                        <div class="detail-in-foot mt-3 ">
+                            <p>ผลิตภัณฑ์บำรุงผิว</p>
+                            <p>เมคอัพ</p>
+                            <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
+                            <p>มีอะไรใหม่</p>
+                        </div>
+                    </div>
+                    <div class="product">ข้อเสนอ & อีเวนท์
+                        <div class="detail-in-foot mt-3">
+                            <p>ข้อเสนอปัจจุบัน</p>
+                            <p>ข้อเสนอหมดอายุ</p>
+                        </div>
+                    </div>
+                    <div class="product">ร้านค้า
+                        <div class="detail-in-foot mt-3">
+                            <p>ค้นหาร้านค้า</p>
+                            <p>ข่าวสารจากหน้าร้าน</p>
+                        </div>
+                    </div>
+                    <div class="product">เกี่ยวกับเรา
+                        <div class="detail-in-foot mt-3">
+                            <p>เรื่องราวของแบรนด์</p>
+                            <p>ส่วนผสม</p>
+                            <p>แตมเปญเพลย์กรีน</p>
+                            <p>แคมเปญป่าสีเขียว</p>
+                            <p>อาชีพ</p>
+                        </div>
+                    </div>
+                    <div class="product">บัญชีของฉัน
+                        <div class="detail-in-foot mt-3">
+                            <p>ประวัติการซื้อ</p>
+                            <p>คะแนนสะสม</p>
+                            <p>รีวิว</p>
+                            <p>คำถาม</p>
+                            <p>แก้ไขข้อมูลส่วนตัว</p>
+                        </div>
+                    </div>
+                    <div class="product">ลูกค้าสัมพันธ์
+                        <div class="detail-in-foot mt-3">
+                            <p>FAQs</p>
+                            <p>ติดต่อเรา</p>
+                            <p>มาย อินนิสฟรี รีวอร์ด</p>
+                        </div>
+                    </div>
+                    <div class="product">เข้าสู่ระบบ / ลงทะเบียน
+                        <div class="detail-in-foot mt-3">
+                            <p>เข้าสู่ระบบ</p>
+                            <p>ลงทะเบียน</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
+                <div class="logo-contact flex flex-col">
+                    <img width="160" src="../img/footer_logo.svg">
+                    <div class="h-full flex items-center">
+                        <div class="contact-foot flex w-1/2 justify-between ">
+                            <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
+                                    src="../img/icon_facebook.svg"></a>
+                            <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
+                                    src="../img/icon_instagram.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mark-foot">
+                    <img src="../img/footer_mark.svg">
+                </div>
+            </div>
+        </div>
+        <div class="navb-foot flex justify-center">
+            <div class="w-10/12 flex justify-between">
+                <div class="detail-left-navb h-full flex items-center">
+                    <p>ข้อกำหนดละเงื่อนไข</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ข้อกำหนดของ UGC</p>
+                </div>
+                <div class="detail-right-navb h-full flex items-center">
+                    <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="/js/ingredient.js"> </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="/js/loading.js"></script>
