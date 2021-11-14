@@ -1,62 +1,88 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
-    <title>About us</title>
+    <title>ABOUT US - BRAND STORY - BRAND HISTORY | innisfree</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/campagin2.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="w-full h-full">
-    <nav class="w-full h-24 sticky-top-0 justify-center items-center">
-        <div class="w-full h-full flex justify-between items-center">
-            <div class="flex items-center m-4 space-x-6">
-                <a href="">ผลิตภัณฑ์</a>
-                <a href="">ข้อเสนอ & อีเวนท์</a>
-                <a href="">ร้านค้า</a>
-                <a href="">เกี่ยวกับเรา</a>
-            </div>
-            <div class="w-full flex justify-center absolute">
-                <img class="w-44" src="./img/header_logo.svg" alt="">
+
+<body class="w-full">
+    <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
+        <img class="loading-innisfree" src="./img/loading.gif" alt="">
+    </div>
+    <nav class="w-full h-16 flex justify-center items-center sticky top-0 bg-white xl:h-24"
+        style="border-bottom: 1px solid #e6e6e6; z-index: 10;">
+        <div class="w-full h-full flex justify-center items-center">
+            <div class="w-11/12 hidden justify-between items-center xl:flex">
+                <div class="flex items-center m-4 space-x-6">
+                    <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
+                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <div class="dropdown">
+                        <a href="./about-2.html" class="navbar-topic text-sm py-3"><button
+                                class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <div class="dropdown-content w-full bg-white flex-col items-center py-2">
+                            <div class="w-8/12 py-4 mt-2">
+                                <a href="./about-2.html" class="text-sm">เรื่องราวของแบรนด์</a>
+                                <a href="./Ingredient/green_tea.html" class="text-sm">ส่วนผสม</a>
+                                <a href="./greencampaign.html" class="text-sm">แคมเปญเพลย์กรีน</a>
+                                <a href="#" class="text-sm">แคมเปญป่าสีเขียว</a>
+                                <a href="./careers.html" class="text-sm">อาชีพ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center space-x-6">
+                    <img src="./img/navbar/icon_search.svg" alt="">
+                    <img src="./img/navbar/icon_member.svg" alt="">
+                    <p class="text-sm">ภาษาไทย</p>
+                </div>
             </div>
         </div>
-        <div></div>
+        <div class="w-full flex justify-center absolute">
+            <a href="./homepage.html">
+                <img class="w-44" src="./img/header_logo.svg" alt="">
+            </a>
+        </div>
+        </div>
     </nav>
-
-    
 
     <!--แรก-->
     <div>
-        <h2 class="text-center text-4xl p-6">เกี่ยวกับอินนิสฟรี</h2>
+        <h2 class="text-center text-3xl h-24 flex justify-center items-center mt-5">เกี่ยวกับอินนิสฟรี</h2>
         <nav class="w-full h-5 justify-center items-center">
             <div class="w-full h-full items-center">
-                <div class="text-xl flex justify-center items-center m-4 space-x-10">
-                    <a href="" style="color:#024137; border-bottom:2px solid #024137;">เรื่องราวของอินนิสฟรี</a>
-                    <a href="">ส่วนผสม</a>
-                    <a href="" >PLAY GREEN CAMPAIGN</a>
+                <div class="flex justify-center items-center m-4 space-x-10 text-gray-500">
+                    <a href="" class="p-1"
+                        style="color:#024137; border-bottom:2px solid #024137;">เรื่องราวของอินนิสฟรี</a>
+                    <a href="./Ingredient/green_tea.html">ส่วนผสม</a>
+                    <a href="./greencampaign.html">PLAY GREEN CAMPAIGN</a>
                     <a href="">GREEN FOREST CAMPAIGN</a>
-                    <a href="">อาชีพ</a>
+                    <a href="./careers.html">อาชีพ</a>
                 </div>
             </div>
         </nav>
-
-        <nav class="w-full h-20 justify-center items-center mt-8">
-            <div class="text-center items-center">
-                <div class="flex text-base items-center justify-center m-4 space-x-8">
-                    <a href="" >คำสัญญาจากอินนิสฟรี</a>
-                    <a href="" >แนวคิดของแบรนด์</a>
-                    <a href="" >อินนิสฟรี และ เชจู</a>
-                    <a href="" style="color:#024137;">ประวัติของอินนิสฟรี</a>
-                    <a href="" >Innirang</a>
-                  
+        <nav class="w-full h-20 flex justify-center items-center">
+            <div class="text-center">
+                <div class="flex font-smaller items-center justify-center space-x-6 tracking-tight text-gray-500">
+                    <a href="./about-2.html">คำสัญญาจากอินนิสฟรี</a>
+                    <span>|</span>
+                    <a href="./about-us.html">แนวคิดของแบรนด์</a>
+                    <span>|</span>
+                    <a href="./about-3.html">อินนิสฟรี และ เชจู</a>
+                    <span>|</span>
+                    <a href="./about-4.html">ประวัติของอินนิสฟรี</a>
+                    <span>|</span>
+                    <a href="./about-5.html" class="green-innisfree">Innirang</a>
                 </div>
             </div>
         </nav>
     </div>
-
 
     <!--sec1-->
     <div class="h-auto" style="background-color: #f5f5f5;">
@@ -66,142 +92,158 @@
             <p class="text-center text-xl">การเดินทางของอินนิสฟรีตั้งแต่แรกเริ่ม</p>
         </div>
     </div>
+    <div class="flex justify-center items-center">
+        <div class="w-10/12 p-4" style="background-color: #f5f5f5;">
 
-    <div style="background-color: #f5f5f5;">
-        
-    
-        <!--sec2-->
-        <div class="text-center flex flex-col justify-center items-center">
-    
-            <div class="flex justify-center space-x-2">
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2017.jpg">
-                    <p class="text-left text-2xl">2017</p>
-                    <p class="text-left">-เปิดสาขาที่เมืองเฉิงตู</p>
-                    <p class="text-left">-เปิดสาขาแรก ประเทศอินโดนีเซีย</p>
+
+            <!--sec2-->
+            <div class="text-center flex flex-col justify-center items-center">
+
+                <div class="flex justify-center space-x-2">
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2017.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2017</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาที่เมืองเฉิงตู</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาแรก ประเทศอินโดนีเซีย</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2016.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2016</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาแรกที่เวียดนาม</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2015.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2015</p>
+                            <p class="text-left text-sm text-gray-500">-อินนิสฟรีครบรอบ 15 ปี</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาแรกที่ไทย</p>
+                            <p class="text-left text-sm text-gray-500">
+                                -เปิดร้านแสดงสัญลักษณ์ของแบรนด์ที่ใหญ่ที่สุดใน<br>วงการเครื่องสำอางค์ที่
+                                เซี่ยงไฮ้ ฮงยี่ พลาซ่า ประเทศจีน</p>
+                        </div>
+
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2014.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2017</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาที่เมืองเฉิงตู</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาแรก ประเทศอินโดนีเซีย</p>
+                        </div>
+                    </div>
                 </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2016.jpg">
-                    <p class="text-left text-2xl">2016</p>
-                    <p class="text-left">-เปิดสาขาแรกที่เวียดนาม</p>
+
+            </div>
+
+
+            <!--sec3-->
+            <div class="text-center flex flex-col justify-center items-center mt-24">
+
+                <div class="flex justify-center space-x-2">
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2013.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2013</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดบ้านเชจู</p>
+                            <p class="text-left text-sm text-gray-500">-เปิดสาขาแรกที่ สิงคโปร์ และอินเดีย</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2012.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2012</p>
+                            <p class="text-left text-sm text-gray-500">-ปิดร้านค้าสากลร้านแรกที่เซี่ยงไฮ้ ประเทศจีน</p>
+                            <p class="text-left text-sm text-gray-500">-ปล่อยคำมั่นสัญญาสีเขียว</p>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2011.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2011</p>
+                            <p class="text-left text-sm text-gray-500">-ปล่อยไลน์อีโควิทยาศาสตร์</p>
+                            <p class="text-left text-sm text-gray-500">-เข้าถึงเป้าหมายการสมัครสมาชิกอินนิสฟรี 3 ล้านคน
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2010.jpg">
+                        <div>
+                            <p class="text-left text-lg p-2">2010</p>
+                            <p class="text-left text-sm text-gray-500">-ล่อยไลน์ภูเขาไฟเชจู</p>
+                            <p class="text-left text-sm text-gray-500">-อินนิสฟรีครบรอบ 10 ปี</p>
+                            <p class="text-left text-sm text-gray-500">-ปล่อยแคมเปญผ้าเช็ดหน้ารักษ์โลก (eco
+                                handkerchief)</p>
+                        </div>
+                    </div>
                 </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2015.jpg">
-                    <p class="text-left text-2xl">2015</p>
-                    <p class="text-left">-อินนิสฟรีครบรอบ 15 ปี</p>
-                    <p class="text-left">-เปิดสาขาแรกที่ไทย</p>
-                    <p class="text-left">-เปิดร้านแสดงสัญลักษณ์ของแบรนด์ที่ใหญ่ที่สุดใน<br>วงการเครื่องสำอางค์ที่ เซี่ยงไฮ้ ฮงยี่ พลาซ่า ประเทศจีน</p>
-                    
+
+            </div>
+
+            <!--sec4-->
+            <div class="text-center flex flex-col justify-center items-center mt-24">
+
+                <div class="flex justify-center space-x-2">
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2009.jpg">
+                        <p class="text-left text-lg p-2">2009</p>
+                        <p class="text-left text-sm text-gray-500">-เริ่มสนับสนุน Jeju Olle Trail</p>
+                        <p class="text-left text-sm text-gray-500">-เข้าถึงยอดขาย 100 พันล้านเหรียญสหรัฐฯ</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2008.jpg">
+                        <p class="text-left text-lg p-2">2008</p>
+                        <p class="text-left text-sm text-gray-500">-ปล่อยไลน์ชาเขียวเชจู</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2007.jpg">
+                        <p class="text-left text-lg p-2">2007</p>
+                        <p class="text-left text-sm text-gray-500">-เปิดร้านค้าสาขาที่ 100</p>
+
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2006.jpg">
+                        <p class="text-left text-lg p-2">2006</p>
+                        <p class="text-left text-sm text-gray-500">-ปล่อยไลน์โอลีฟ (ขายผลิตภัณฑ์ไปถึง 10,000 ชิ้น)</p>
+                    </div>
                 </div>
-                <div class="space-y-3">
-                    <img class="w-96" src="img/about/history/brand_history_img2014.jpg">
-                    <p class="text-left text-2xl">2017</p>
-                    <p class="text-left">-เปิดสาขาที่เมืองเฉิงตู</p>
-                    <p class="text-left">-เปิดสาขาแรก ประเทศอินโดนีเซีย</p>
+
+            </div>
+
+            <!--sec4-->
+            <div class="text-center flex flex-col justify-center items-center mt-24">
+
+                <div class="flex justify-center space-x-2">
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2005.jpg">
+                        <p class="text-left text-lg p-2">2005</p>
+                        <p class="text-left text-sm text-gray-500">-เปิดร้านค้าสาขาแรก</p>
+                        <p class="text-left text-sm text-gray-500">-ขึ้นสู่อันดับที่ 1 ในตัววัดการบริโภคแบบสุขภาวะ </p>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2003.jpg">
+                        <p class="text-left text-lg p-2">2003</p>
+                        <p class="text-left text-sm text-gray-500">-แคมเปญรีไซเคิลได้เริ่มต้นขึ้น</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/brand_history_img2000.jpg">
+                        <p class="text-left text-lg p-2">2000</p>
+                        <p class="text-left text-sm text-gray-500">-ปล่อยอินนิสฟรี แบรนด์ธรรมชาตินิยมแบรนด์แรกในเกาหลี
+                        </p>
+
+                    </div>
+                    <div class="space-y-2">
+                        <img class="w-96" src="img/about/history/d.jpg">
+                    </div>
                 </div>
             </div>
-            
-        </div>
-
-
-        <!--sec3-->
-        <div class="text-center flex flex-col justify-center items-center mt-24">
-    
-            <div class="flex justify-center space-x-2">
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2013.jpg">
-                    <p class="text-left text-2xl">2013</p>
-                    <p class="text-left">-เปิดบ้านเชจู</p>
-                    <p class="text-left">-เปิดสาขาแรกที่ สิงคโปร์ และอินเดีย</p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2012.jpg">
-                    <p class="text-left text-2xl">2012</p>
-                    <p class="text-left">-ปิดร้านค้าสากลร้านแรกที่เซี่ยงไฮ้ ประเทศจีน</p>
-                    <p class="text-left">-ปล่อยคำมั่นสัญญาสีเขียว</p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2011.jpg">
-                    <p class="text-left text-2xl">2011</p>
-                    <p class="text-left">-ปล่อยไลน์อีโควิทยาศาสตร์</p>
-                    <p class="text-left">-เข้าถึงเป้าหมายการสมัครสมาชิกอินนิสฟรี 3 ล้านคน</p>
-                
-                    
-                </div>
-                <div>
-                    <img class="w-96" src="img/about/history/brand_history_img2010.jpg">
-                    <p class="text-left text-2xl">2010</p>
-                    <p class="text-left">-ล่อยไลน์ภูเขาไฟเชจู</p>
-                    <p class="text-left">-อินนิสฟรีครบรอบ 10 ปี</p>
-                    <p class="text-left">-ปล่อยแคมเปญผ้าเช็ดหน้ารักษ์โลก (eco handkerchief)</p>
-                </div>
-            </div>
-            
-        </div>
-
-        <!--sec4-->
-        <div class="text-center flex flex-col justify-center items-center mt-24">
-    
-            <div class="flex justify-center space-x-2">
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2009.jpg">
-                    <p class="text-left text-2xl">2009</p>
-                    <p class="text-left">-เริ่มสนับสนุน Jeju Olle Trail</p>
-                    <p class="text-left">-เข้าถึงยอดขาย 100 พันล้านเหรียญสหรัฐฯ</p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2008.jpg">
-                    <p class="text-left text-2xl">2008</p>
-                    <p class="text-left">-ปล่อยไลน์ชาเขียวเชจู</p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2007.jpg">
-                    <p class="text-left text-2xl">2007</p>
-                    <p class="text-left">-เปิดร้านค้าสาขาที่ 100</p>    
-                    
-                </div>
-                <div>
-                    <img class="w-96" src="img/about/history/brand_history_img2006.jpg">
-                    <p class="text-left text-2xl">2006</p>
-                    <p class="text-left">-ปล่อยไลน์โอลีฟ (ขายผลิตภัณฑ์ไปถึง 10,000 ชิ้น)</p>
-                </div>
-            </div>
-            
-        </div>
-
-        <!--sec4-->
-        <div class="text-center flex flex-col justify-center items-center mt-24">
-    
-            <div class="flex justify-center space-x-2">
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2005.jpg">
-                    <p class="text-left text-2xl">2005</p>
-                    <p class="text-left">-เปิดร้านค้าสาขาแรก</p>
-                    <p class="text-left">-ขึ้นสู่อันดับที่ 1 ในตัววัดการบริโภคแบบสุขภาวะ  </p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2003.jpg">
-                    <p class="text-left text-2xl">2003</p>
-                    <p class="text-left">-แคมเปญรีไซเคิลได้เริ่มต้นขึ้น</p>
-                </div>
-                <div >
-                    <img class="w-96" src="img/about/history/brand_history_img2000.jpg">
-                    <p class="text-left text-2xl">2000</p>
-                    <p class="text-left">-ปล่อยอินนิสฟรี แบรนด์ธรรมชาตินิยมแบรนด์แรกในเกาหลี</p>    
-                    
-                </div>
-                <div>
-                    <img class="w-96" src="img/about/history/d.jpg">
-                </div>
-            </div>
-            
         </div>
     </div>
-    
-
-
-
-    
 
 
 
@@ -215,102 +257,110 @@
 
 
 
-    
 
 
 
-            <!-- footer !!!! -->
-            <div class="container-footer w-full h-screen mt-48">
-                <div class="contain-foot w-full flex flex-col items-center">
-                    <div class="h-full w-full flex items-center justify-center ">
-                        <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
-                            <div class="product">ผลิตภัณฑ์
-                                <div class="detail-in-foot mt-3 ">
-                                    <p>ผลิตภัณฑ์บำรุงผิว</p>
-                                    <p>เมคอัพ</p>
-                                    <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
-                                    <p>มีอะไรใหม่</p>
-                                </div>
-                            </div>
-                            <div class="product">ข้อเสนอ & อีเวนท์
-                                <div class="detail-in-foot mt-3">
-                                    <p>ข้อเสนอปัจจุบัน</p>
-                                    <p>ข้อเสนอหมดอายุ</p>
-                                </div>
-                            </div>
-                            <div class="product">ร้านค้า
-                                <div class="detail-in-foot mt-3">
-                                    <p>ค้นหาร้านค้า</p>
-                                    <p>ข่าวสารจากหน้าร้าน</p>
-                                </div>
-                            </div>
-                            <div class="product">เกี่ยวกับเรา
-                                <div class="detail-in-foot mt-3">
-                                    <p>เรื่องราวของแบรนด์</p>
-                                    <p>ส่วนผสม</p>
-                                    <p>แตมเปญเพลย์กรีน</p>
-                                    <p>แคมเปญป่าสีเขียว</p>
-                                    <p>อาชีพ</p>
-                                </div>
-                            </div>
-                            <div class="product">บัญชีของฉัน
-                                <div class="detail-in-foot mt-3">
-                                    <p>ประวัติการซื้อ</p>
-                                    <p>คะแนนสะสม</p>
-                                    <p>รีวิว</p>
-                                    <p>คำถาม</p>
-                                    <p>แก้ไขข้อมูลส่วนตัว</p>
-                                </div>
-                            </div>
-                            <div class="product">ลูกค้าสัมพันธ์
-                                <div class="detail-in-foot mt-3">
-                                    <p>FAQs</p>
-                                    <p>ติดต่อเรา</p>
-                                    <p>มาย อินนิสฟรี รีวอร์ด</p>
-                                </div>
-                            </div>
-                            <div class="product">เข้าสู่ระบบ / ลงทะเบียน
-                                <div class="detail-in-foot mt-3">
-                                    <p>เข้าสู่ระบบ</p>
-                                    <p>ลงทะเบียน</p>
-                                </div>
-                            </div>
-            
+
+
+
+
+
+
+    <!-- footer !!!! -->
+    <div class="container-footer w-full h-screen mt-48">
+        <div class="contain-foot w-full flex flex-col items-center">
+            <div class="h-full w-full flex items-center justify-center ">
+                <div class="box-detail-foot w-10/12 h-3/5 flex flex-wrap">
+                    <div class="product">ผลิตภัณฑ์
+                        <div class="detail-in-foot mt-3 ">
+                            <p>ผลิตภัณฑ์บำรุงผิว</p>
+                            <p>เมคอัพ</p>
+                            <p>ผลิตภัณฑ์บำรุงผิวและผม</p>
+                            <p>มีอะไรใหม่</p>
                         </div>
                     </div>
-                    <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
-                        <div class="logo-contact flex flex-col">
-                            <img width="160" src="./img/footer_logo.svg">
-                            <div class="h-full flex items-center">
-                                <div class="contact-foot flex w-1/2 justify-between ">
-                                    <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
-                                            src="./img/icon_facebook.svg"></a>
-                                    <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
-                                            src="./img/icon_instagram.svg"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mark-foot">
-                            <img src="./img/footer_mark.svg">
+                    <div class="product">ข้อเสนอ & อีเวนท์
+                        <div class="detail-in-foot mt-3">
+                            <p>ข้อเสนอปัจจุบัน</p>
+                            <p>ข้อเสนอหมดอายุ</p>
                         </div>
                     </div>
-                </div>
-                <div class="navb-foot flex justify-center">
-                    <div class="w-10/12 flex justify-between">
-                        <div class="detail-left-navb h-full flex items-center">
-                            <p>ข้อกำหนดละเงื่อนไข</p>
-                            <p>นโยบายความเป็นส่วนตัว</p>
-                            <p>ข้อกำหนดของ UGC</p>
-                        </div>
-                        <div class="detail-right-navb h-full flex items-center">
-                            <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                    <div class="product">ร้านค้า
+                        <div class="detail-in-foot mt-3">
+                            <p>ค้นหาร้านค้า</p>
+                            <p>ข่าวสารจากหน้าร้าน</p>
                         </div>
                     </div>
+                    <div class="product">เกี่ยวกับเรา
+                        <div class="detail-in-foot mt-3">
+                            <p>เรื่องราวของแบรนด์</p>
+                            <p>ส่วนผสม</p>
+                            <p>แตมเปญเพลย์กรีน</p>
+                            <p>แคมเปญป่าสีเขียว</p>
+                            <p>อาชีพ</p>
+                        </div>
+                    </div>
+                    <div class="product">บัญชีของฉัน
+                        <div class="detail-in-foot mt-3">
+                            <p>ประวัติการซื้อ</p>
+                            <p>คะแนนสะสม</p>
+                            <p>รีวิว</p>
+                            <p>คำถาม</p>
+                            <p>แก้ไขข้อมูลส่วนตัว</p>
+                        </div>
+                    </div>
+                    <div class="product">ลูกค้าสัมพันธ์
+                        <div class="detail-in-foot mt-3">
+                            <p>FAQs</p>
+                            <p>ติดต่อเรา</p>
+                            <p>มาย อินนิสฟรี รีวอร์ด</p>
+                        </div>
+                    </div>
+                    <div class="product">เข้าสู่ระบบ / ลงทะเบียน
+                        <div class="detail-in-foot mt-3">
+                            <p>เข้าสู่ระบบ</p>
+                            <p>ลงทะเบียน</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+            <div class="box-contact-foot w-10/12 h-1/5 flex justify-between">
+                <div class="logo-contact flex flex-col">
+                    <img width="160" src="./img/footer_logo.svg">
+                    <div class="h-full flex items-center">
+                        <div class="contact-foot flex w-1/2 justify-between ">
+                            <a href="https://www.facebook.com/innisfreeTH" target="_blank"><img
+                                    src="./img/icon_facebook.svg"></a>
+                            <a href="https://www.instagram.com/innisfreethailand/" target="_blank"><img
+                                    src="./img/icon_instagram.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mark-foot">
+                    <img src="./img/footer_mark.svg">
+                </div>
+            </div>
+        </div>
+        <div class="navb-foot flex justify-center">
+            <div class="w-10/12 flex justify-between">
+                <div class="detail-left-navb h-full flex items-center">
+                    <p>ข้อกำหนดละเงื่อนไข</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ข้อกำหนดของ UGC</p>
+                </div>
+                <div class="detail-right-navb h-full flex items-center">
+                    <p>Copyright © 2020 Innisfree. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/loading.js"></script>
 
 </body>
+
 </html>

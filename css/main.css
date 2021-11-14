@@ -9,6 +9,9 @@
 .green-innisfree{
   color: #024137;
 }
+.font-smaller{
+  font-size: 13px;
+}
 .reveal{
   opacity: 0;
   transition-duration: 1s !important;
