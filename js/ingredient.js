@@ -150,3 +150,21 @@ document.querySelector(".bg-fade-green").addEventListener("mouseout", function()
         ico_fade_green[i].style.fill = "#757575";
     }
 })
+
+
+// ชาเขียว
+var ico_green = document.querySelectorAll(".ico-green");
+document.querySelector(".bg-green").addEventListener("mouseover", function(){
+    document.querySelector(".bg-green").style.fill = "#024137";
+    document.querySelector(".txt-green").style.fill = "white";
+    for (let i = 0; i < ico_green.length; i++) {
+        ico_green[i].style.fill = "white";
+    }
+})
+document.querySelector(".bg-green").addEventListener("mouseout", function(){
+    document.querySelector(".bg-green").style.fill = "#f9f9f9";
+    document.querySelector(".txt-green").style.fill = "#757575";
+    for (let i = 0; i < ico_green.length; i++) {
+        ico_green[i].style.fill = "#757575";
+    }
+})
