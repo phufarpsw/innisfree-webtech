@@ -368,3 +368,14 @@
 .hover-store:hover{
   border-bottom: 1px solid #024137;
 }
+.circle-items{
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+}
+.circle-items:nth-child(1):hover{
+  border: 2px solid black;
+}
+.circle-items:nth-child(2):hover{
+  border: 2px solid black;
+}

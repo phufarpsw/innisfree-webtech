@@ -8,14 +8,13 @@
     <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <title>innisfree official</title>
+    <title>innisfree Official Site | Natural benefits from JEJU island</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script rel="stylesheet" href="tailwind.config.js"></script>
 
 </head>
-
 <body class="w-full h-full flex flex-col items-center">
     <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
@@ -120,29 +119,35 @@
     <div class="product-month w-full h-screen flex justify-center mt-4 mb-4 relative">
         <div class="w-10/12 h-full flex justify-between items-center relative">
             <div class="w-1/2 h-full flex items-center relative">
-                <div class="flex flex-col items-center text-center" onmouseover="imgZoomIn(0);"
-                    onmouseout="imgZoomOut(0);">
-                    <div class="simple-label relative">
-                        <img src="./img/product-month/TH_L_41_L007_2.jpg" class="img-zoomout" alt="">
+                <a href="./lip.html">
+                    <div class="flex flex-col items-center text-center" onmouseover="imgZoomIn(0);"
+                        onmouseout="imgZoomOut(0);">
+                        <div class="simple-label relative">
+                            <img src="./img/product-month/TH_L_41_L007_2.jpg" class="img-zoomout" alt="">
+                        </div>
+                        <img src="./img/product-month/36027_l.png" class="simple-ab relative w-3/4 "
+                            style="z-index: 5; margin-top: -170px;" alt="">
+                        <p class="text-lg w-1/2 h-24">Airy Matte Tint</p>
                     </div>
-                    <img src="./img/product-month/36027_l.png" class="simple-ab relative w-3/4 "
-                        style="z-index: 5; margin-top: -170px;" alt="">
-                    <p class="text-lg">Airy Matte Tint</p>
-                </div>
-                <div class="flex flex-col items-center text-center" onmouseover="imgZoomIn(1);"
-                    onmouseout="imgZoomOut(1);">
-                    <div class="simple-label relative">
-                        <img src="./img/product-month/TH_L_41_L007_3.jpg" class="img-zoomout" alt="">
+                </a>
+                <a href="">
+                    <div class="flex flex-col items-center text-center" onmouseover="imgZoomIn(1);"
+                        onmouseout="imgZoomOut(1);">
+                        <div class="simple-label relative">
+                            <img src="./img/product-month/TH_L_41_L007_3.jpg" class="img-zoomout" alt="">
+                        </div>
+                        <img src="./img/product-month/36020_l.png" class="simple-ab relative w-3/4 "
+                            style="z-index: 5; margin-top: -170px;" alt="">
+                        <p class="text-lg w-3/4 h-24">Green Tea Seed Cream Set [2021 Green Holidays LTD Edition]</p>
                     </div>
-                    <img src="./img/product-month/36020_l.png" class="simple-ab relative w-3/4 "
-                        style="z-index: 5; margin-top: -170px;" alt="">
-                    <p class="text-lg">Green Tea Seed Cream Set [2021 Green Holidays LTD Edition]</p>
-                </div>
+                </a>
             </div>
             <div class="simple-label w-1/2 h-full relative">
-                <img src="./img/product-month/TH_L_41_L007.jpg" class="img-zoomout" alt="">
+                <a href="">
+                    <img src="./img/product-month/TH_L_41_L007.jpg" class="absolute img-zoomout" alt="">
+                </a>
             </div>
-            <p class="absolute bottom-0 text-lg">Green Tea Seed Serum Set [2021 Green Holidays LTD Edition]</p>
+            <p class="absolute text-lg" style="bottom:-4%; right:2%;">Green Tea Seed Serum Set [2021 Green Holidays LTD Edition]</p>
 
         </div>
     </div>
@@ -261,10 +266,12 @@
                 <img class="" src="img/membership.jpeg">
             </div>
         </a>
-        <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
-            <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">BRAND STORY</p>
-            <img class="" src="img/brandstory.jpeg">
-        </div>
+        <a href="./about-us.html">
+            <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
+                <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">BRAND STORY</p>
+                <img class="" src="img/brandstory.jpeg">
+            </div>
+        </a>
         <a href="./greencampaign.html">
             <div id="pim" class="simple-label flex items-center justify-center cursor-pointer">
                 <p class="absolute text-lg font-semibold text-white select-none" style="z-index: 2;">CAMPAIGN</p>
@@ -384,8 +391,8 @@
     </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/loading.js"></script>
     <script>
         var imgzoom = document.querySelectorAll(".img-zoomout")
