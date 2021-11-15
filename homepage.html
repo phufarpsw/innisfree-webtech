@@ -25,7 +25,7 @@
             <div class="w-11/12 hidden justify-between items-center xl:flex">
                 <div class="flex items-center m-4 space-x-6">
                     <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
-                    <a href="" class="navbar-topic text-sm py-4">ร้านค้า</a>
+                    <a href="./map.html" class="navbar-topic text-sm py-4">ร้านค้า</a>
                     <div class="dropdown">
                         <a href="./about-2.html" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
                         <div class="dropdown-content w-full bg-white flex-col items-center py-2">
@@ -72,7 +72,6 @@
         <div class="previous"></div>
         <!-- <div class="swiper-pagination"></div> -->
     </div>
-
     <div class="container flex flex-col items-center m-4">
         <div class="w-11/12">
             <div class="describe-slide-main space-y-2">
@@ -81,38 +80,10 @@
             </div>
         </div>
     </div>
-    <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp">
-        <div class="w-11/12">
-            <p class="text-animation"></p>
-            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
-        </div>
-    </div>
-    <!-- INNISTRINNIST OF THE MONTH -->
-    <div class="contain-innistar w-10/12 grid grid-cols-2 lg:grid-cols-5 gap-1 reveal fadeUp"></div>
-
-    <!-- REVIEWREVIEW OF THE MONTH -->
-    <!-- <div class="review-month swiper w-full">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./img/TH_R_127_L007.jpg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_125_L007.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_126_L007.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_128_L007.jpg" />
-            </div>
-        </div>
-        <div class="next"></div>
-        <div class="previous"></div>
-    </div> -->
     <!-- product of the month -->
     <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp">
         <div class="w-11/12">
-            <p class="text-animation">PRODUCT</p>
+            <p class="tc">PRODUCT</p>
             <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
         </div>
     </div>
@@ -151,6 +122,34 @@
 
         </div>
     </div>
+    <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp">
+        <div class="w-11/12">
+            <p class="text-animation"></p>
+            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+        </div>
+    </div>
+    <!-- INNISTRINNIST OF THE MONTH -->
+    <div class="contain-innistar w-10/12 grid grid-cols-2 lg:grid-cols-5 gap-1 reveal fadeUp"></div>
+
+    <!-- REVIEWREVIEW OF THE MONTH -->
+    <!-- <div class="review-month swiper w-full">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/TH_R_127_L007.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_125_L007.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_126_L007.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/TH_R_128_L007.jpg" />
+            </div>
+        </div>
+        <div class="next"></div>
+        <div class="previous"></div>
+    </div> -->
     <!-- ingredient -->
     <div class="ingredient-slide bg-cover w-full flex flex-col items-center relative margin-top-innis"
         style="height: 960px;">
@@ -406,6 +405,7 @@
         var ingredient = new Swiper('.ingredient-main-slide', {
             slidesPerView: "auto",
             spaceBetween: 25,
+            centeredSlides: true,
             speed: 400,
             direction: getDirection(),
             navigation: {
@@ -442,6 +442,7 @@
         var swiper = new Swiper(".slide-main", {
             spaceBetween: 30,
             effect: "fade",
+            
             navigation: {
                 nextEl: ".next",
                 prevEl: ".previous",
