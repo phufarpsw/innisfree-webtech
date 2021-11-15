@@ -13,7 +13,7 @@
             transition: all 1.5s;
         }
 
-        .line-topic {
+        .topic-ingredient>p {
             padding: 0 1rem;
             border-right: 1px solid #D3D3D3;
         }
@@ -214,22 +214,22 @@
     </div>
     <div class="space-y-2 h-40">
         <div class="w-full h-14 flex justify-center items-center space-x-12 text-gray-500">
-            <a href="/about-2.html">เรื่องราวของอินนิสฟรี</a>
-            <a href="./green_tea.html" class="text-black p-1" style="border-bottom: 2px solid #024137;">ส่วนผสม</a>
-            <a href="/greencampaign.html">PLAY GREEN CAMPAIGN</a>
-            <a href="/careers.html">อาชีพ</a>
+            <p>เรื่องราวของอินนิสฟรี</p>
+            <p class="text-black p-1" style="border-bottom: 2px solid #024137;">ส่วนผสม</p>
+            <p>PLAY GREEN CAMPAIGN</p>
+            <p>อาชีพ</p>
         </div>
         <div class="topic-ingredient w-full flex justify-center text-gray-400 text-sm">
-            <a class="line-topic" href="./green_tea.html" style="color: #024137;">ชาเขียว</a>
-            <a class="line-topic" href="./bija.html" >บีจา</a>
-            <a class="line-topic" href="./seaweed.html">สาหร่ายทะเล</a>
-            <a class="line-topic" href="./Orchid.html">กล้วยไม้</>
-            <a class="line-topic" href="./tubtim.html">ทับทิม</a>
-            <a class="line-topic" href="./mountain.html">ตะกอนหินภูเขาไฟ</p>
-            <a class="line-topic" href="./soybean.html">ถั่วเหลือง</a>
-            <a class="line-topic" href="./orange.html">ส้มแมนดาริน</a>
-            <a class="line-topic" href="./rice-green.html">ข้าวบาร์เลย์สีเขียว</a>
-            <a href="./jawud.html" class="px-3">ป่ากดจาวัล</a>
+            <p style="color: #024137;">ชาเขียว</p>
+            <p>บีจา</p>
+            <p>สาหร่ายทะเล</p>
+            <p>กล้วยไม้</p>
+            <p>ทับทิม</p>
+            <p>ตะกอนหินภูเขาไฟ</p>
+            <p>ถั่วเหลือง</p>
+            <p>ส้มแมนดาริน</p>
+            <p>ข้าวบาร์เลย์สีเขียว</p>
+            <h5 class="px-3">ป่ากดจาวัล</h5>
         </div>
     </div>
     <div class="w-full flex flex-col justify-end items-center"
@@ -587,13 +587,13 @@
             <a href="/th/th/BrandPage.do?pageName=brand_ingredients&pageValue=greentea#ingredients_story"
                 class="area area08">
                 <g>
-                    <path fill="#024137"
+                    <path class="bg-green" fill="#024137"
                         d="M234.138,84.582s8.557-20.228,14.335-36c0,0-17.525-25.665-33.266-48.94L153.313,5.1.5,38.036,1.713,49.007,15.815,69,32.426,91.965l25.93,35.389,4.027,58.166L42.939,218.807l75.335,8.761,64.645-34.952,54.84-2.192,37.408-14.915Z"
                         transform="translate(784.785 1865.312) rotate(3)" />
-                    <text fill="white" transform="translate(922.641 2006.479)">
+                    <text class="txt-white" fill="white" transform="translate(922.641 2006.479)">
                         <tspan x="-27.035" y="0">ชาเขียว</tspan>
                     </text>
-                    <path fill="white"
+                    <path class="ico-green" fill="white"
                         d="M357.686,157.638h0q-1.181.014-2.358.14a24.931,24.931,0,0,0-22.291,23.666l-6.1,6.1a.6.6,0,1,0,.847.847l6.105-6.106a24.962,24.962,0,0,0,23.8-24.65ZM342.575,173.6l2.542-2.543h7.013a24.025,24.025,0,0,1-2.092,2.543Zm6.283-6.283H354.3a23.435,23.435,0,0,1-1.39,2.542h-6.594Zm1.2-1.2,6.28-6.28a23.661,23.661,0,0,1-1.541,6.28Zm-8.679,8.679h7.453a23.622,23.622,0,0,1-13.648,6.2Z"
                         transform="translate(580.687 1793.804)" />
                 </g>
@@ -1011,10 +1011,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     <script src="/js/ingredient.js"> </script>
-=======
->>>>>>> b60e68c4b82040b8e99ca1e241e239e1d5fe11ef
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="/js/loading.js"></script>
     <script>
@@ -1106,160 +1103,6 @@
             document.querySelector(".photo-product").src = "/img/ingredient/ingredients_greenTea6_1.png";
             document.querySelector(".topic-product").innerHTML = "สารสกัดชาเขียวเชจู ปี 2000";
             document.querySelector(".detail-product").innerHTML = "ชาเขียวถูกใช้เป็นวัตถุดิบมาตั้งแต่อินนิสฟรีเปิดตัวเป็นครั้งแรกเมื่อปี 2000 การสร้างสมดุลชาเขียวของอินนิสฟรีด้วยส่วนผสมที่สกัดจากชาเขียวเป็นสิ่งแรก";
-        })
-
-
-        // บีจา 
-        var ico_blue = document.querySelectorAll(".ico-blue");
-        document.querySelector(".bg-blue").addEventListener("mouseover", function () {
-            document.querySelector(".bg-blue").style.fill = "#0aaecc";
-            document.querySelector(".txt-blue").style.fill = "white";
-            for (let i = 0; i < ico_blue.length; i++) {
-                ico_blue[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-blue").addEventListener("mouseout", function () {
-            document.querySelector(".bg-blue").style.fill = "#f9f9f9";
-            document.querySelector(".txt-blue").style.fill = "#757575";
-            for (let i = 0; i < ico_blue.length; i++) {
-                ico_blue[i].style.fill = "#757575";
-            }
-        })
-
-
-        // ส้มแมนดาริน
-        var ico_orange = document.querySelectorAll(".ico-orange");
-        document.querySelector(".bg-orange").addEventListener("mouseover", function () {
-            document.querySelector(".bg-orange").style.fill = "#f59700";
-            document.querySelector(".txt-orange").style.fill = "white";
-            for (let i = 0; i < ico_orange.length; i++) {
-                ico_orange[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-orange").addEventListener("mouseout", function () {
-            document.querySelector(".bg-orange").style.fill = "#f9f9f9";
-            document.querySelector(".txt-orange").style.fill = "#757575";
-            for (let i = 0; i < ico_orange.length; i++) {
-                ico_orange[i].style.fill = "#757575";
-            }
-        })
-
-
-        // ตะกอนหินภูเขาไฟ
-        var ico_choco = document.querySelectorAll(".ico-choco");
-        document.querySelector(".bg-choco").addEventListener("mouseover", function () {
-            document.querySelector(".bg-choco").style.fill = "#402a00";
-            document.querySelector(".txt-choco").style.fill = "white";
-            for (let i = 0; i < ico_choco.length; i++) {
-                ico_choco[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-choco").addEventListener("mouseout", function () {
-            document.querySelector(".bg-choco").style.fill = "#f9f9f9";
-            document.querySelector(".txt-choco").style.fill = "#757575";
-            for (let i = 0; i < ico_choco.length; i++) {
-                ico_choco[i].style.fill = "#757575";
-            }
-        })
-
-
-
-        // ถั่วเหลือง
-        var ico_brown = document.querySelectorAll(".ico-brown");
-        document.querySelector(".bg-brown").addEventListener("mouseover", function () {
-            document.querySelector(".bg-brown").style.fill = "#623d2c";
-            document.querySelector(".txt-brown").style.fill = "white";
-            for (let i = 0; i < ico_brown.length; i++) {
-                ico_brown[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-brown").addEventListener("mouseout", function () {
-            document.querySelector(".bg-brown").style.fill = "#f9f9f9";
-            document.querySelector(".txt-brown").style.fill = "#757575";
-            for (let i = 0; i < ico_brown.length; i++) {
-                ico_brown[i].style.fill = "#757575";
-            }
-        })
-
-
-
-        // กล้วยไม้
-        document.querySelector(".bg-purple").addEventListener("mouseover", function () {
-            document.querySelector(".bg-purple").style.fill = "#300050";
-            document.querySelector(".txt-purple").style.fill = "white";
-            document.querySelector(".ico-purple").style.fill = "white";
-        })
-        document.querySelector(".bg-purple").addEventListener("mouseout", function () {
-            document.querySelector(".bg-purple").style.fill = "#f9f9f9";
-            document.querySelector(".txt-purple").style.fill = "#757575";
-            document.querySelector(".ico-purple").style.fill = "#757575";
-        })
-
-
-
-        // ทับทิม
-        var ico_red = document.querySelectorAll(".ico-red");
-        document.querySelector(".bg-red").addEventListener("mouseover", function () {
-            document.querySelector(".bg-red").style.fill = "#ba0000";
-            document.querySelector(".txt-red").style.fill = "white";
-            for (let i = 0; i < ico_red.length; i++) {
-                ico_red[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-red").addEventListener("mouseout", function () {
-            document.querySelector(".bg-red").style.fill = "#f9f9f9";
-            document.querySelector(".txt-red").style.fill = "#757575";
-            for (let i = 0; i < ico_red.length; i++) {
-                ico_red[i].style.fill = "#757575";
-            }
-        })
-
-
-        // ป่ากดจาวัล
-        document.querySelector(".bg-light-green").addEventListener("mouseover", function () {
-            document.querySelector(".bg-light-green").style.fill = "#83a48a";
-            document.querySelector(".txt-light-green").style.fill = "white";
-            document.querySelector(".ico-light-green").style.fill = "white";
-        })
-        document.querySelector(".bg-light-green").addEventListener("mouseout", function () {
-            document.querySelector(".bg-light-green").style.fill = "#f9f9f9";
-            document.querySelector(".txt-light-green").style.fill = "#757575";
-            document.querySelector(".ico-light-green").style.fill = "#757575";
-        })
-
-
-        // สาหร่ายทะเล
-        var ico_ocean = document.querySelectorAll(".ico-ocean");
-        document.querySelector(".bg-ocean").addEventListener("mouseover", function () {
-            document.querySelector(".bg-ocean").style.fill = "#001b9e";
-            document.querySelector(".txt-ocean").style.fill = "white";
-            for (let i = 0; i < ico_ocean.length; i++) {
-                ico_ocean[i].style.fill = "white";
-            }
-        })
-        document.querySelector(".bg-ocean").addEventListener("mouseout", function () {
-            document.querySelector(".bg-ocean").style.fill = "#f9f9f9";
-            document.querySelector(".txt-ocean").style.fill = "#757575";
-            for (let i = 0; i < ico_ocean.length; i++) {
-                ico_ocean[i].style.fill = "#757575";
-            }
-        })
-
-        // ข้าวบาร์เลย์สีเขียว
-        var ico_fade_green = document.querySelectorAll(".ico-fade-green");
-        document.querySelector(".bg-fade-green").addEventListener("mouseover", function () {
-            document.querySelector(".bg-fade-green").style.fill = "#97b489";
-            document.querySelector(".txt-fade-green").style.fill = "#97b489";
-            for (let i = 0; i < ico_fade_green.length; i++) {
-                ico_fade_green[i].style.fill = "#97b489";
-            }
-        })
-        document.querySelector(".bg-fade-green").addEventListener("mouseout", function () {
-            document.querySelector(".bg-fade-green").style.fill = "#f9f9f9";
-            document.querySelector(".txt-fade-green").style.fill = "#757575";
-            for (let i = 0; i < ico_fade_green.length; i++) {
-                ico_fade_green[i].style.fill = "#757575";
-            }
         })
     </script>
 </body>
