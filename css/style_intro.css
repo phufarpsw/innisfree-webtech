@@ -73,7 +73,7 @@ video{
   }
   .white-box-slide{
       opacity: 0;
-      animation: box-slide 1.5s ease-in-out;
+      animation: box-slide 1s ease-in-out;
   }
   .badge{
       width: 120px;

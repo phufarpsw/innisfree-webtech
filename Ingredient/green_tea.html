@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
     <title>ABOUT US - INGREDIENTS GREENTEA | innisfree</title>
     <style>
+        video{
+            min-width: 1000px;
+        }
         body {
-            transition: all 1.5s;
+            transition: all 1s;
         }
 
         .line-topic {
@@ -827,7 +831,7 @@
                         </div>
                     </a>
                     <a href="#" class="cover stop" onclick="fnVideoStop('vodtemp',false);return false;"></a>
-                    <video id="vodtemp" playsinline="" loop="">
+                    <video id="vodtemp" playsinline="" loop="" controls>
                         <source
                             src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_greenTea.mp4"
                             type="video/mp4">
@@ -1008,10 +1012,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     <script src="/js/ingredient.js"> </script>
-=======
->>>>>>> b60e68c4b82040b8e99ca1e241e239e1d5fe11ef
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="/js/loading.js"></script>
     <script>
@@ -1025,17 +1026,17 @@
             // #123e36
             // #0b312c
             let y = window.scrollY;
-            if (y < 3000) {
+            if (y < 3500) {
                 $("body").css({ "background-color": "#f3f5f5" })
             }
-            else if (y < 3600) {
+            else if (y < 3900) {
                 $("body").css({ "background-color": "#a0b2b0" })
             }
-            else if (y < 4300) {
+            else if (y < 5000) {
                 $("body").css({ "background-color": "#738e8a" })
             }
-            else {
-                $("body").css({ "background-color": "#456862" })
+            else if (y < 5500) {
+                $("body").css({ "background-color": "#224b44" })
             }
             console.log(y);
         })

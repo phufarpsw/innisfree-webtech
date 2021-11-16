@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
+
     <title>ABOUT US - INGREDIENTS BIJA | innisfree</title>
     <style>
+        video{
+            min-width: 1000px;
+        }
         body {
             transition: all 1.5s;
         }
@@ -706,23 +711,19 @@
     </div>
 
     <div class="w-full h-screen flex justify-center items-center">
-        <div class="conmid video_type">
+        <div class="con_type video_type">
             <div class="vod_wrap">
                 <div class="vod_area">
-                    <a href="#" class="cover play" onclick="fnVideoPlay('vodtemp',false);return false;">
-                        <div class="bg"
-                            style="background-image:url('https://www.innisfree.com/th/th/resources/images/renewal/ingredients/ingredients_greenTea7.jpg')">
-                        </div>
+                    <a href="#" class="cover play" onclick="fnVideoPlay('vodtempM',false);return false;">
+                        <div class="bg" style="background-image:url('https://www.innisfree.com/th/th/resources/images/renewal/ingredients/mobile/ingredients_bija2.jpg')"></div>
                         <div class="con">
                             <!-- <p class="txt">イニスフリー公式</p> -->
-                           
+                            <span class="ico"></span>
                         </div>
                     </a>
-                    <a href="#" class="cover stop" onclick="fnVideoStop('vodtemp',false);return false;"></a>
-                    <video id="vodtemp" playsinline="" loop="">
-                        <source
-                            src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_greenTea.mp4"
-                            type="video/mp4">
+                    <a href="#" class="cover stop" onclick="fnVideoStop('vodtempM',false);return false;"></a>
+                    <video id="vodtempM" playsinline="" loop="" controls>
+                        <source src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/mobile/vod/ingredients_bija.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -909,17 +910,16 @@
             // #0091ac
             let y = window.scrollY;
             if (y < 3000) {
-                $("body").css({ "background-color": "#f3f5f5" })
+                $("body").css({ "background-color": "white" })
             }
-            else if (y < 3600) {
-                $("body").css({ "background-color": "#a0b2b0" })
+            else if(y < 3500){
+                $("body").css({ "background-color": "#eaf7f9" })
+                
             }
-            else if (y < 4300) {
-                $("body").css({ "background-color": "#738e8a" })
+            else if (y < 3800) {
+                $("body").css({ "background-color": "#0091ac" })
             }
-            else {
-                $("body").css({ "background-color": "#456862" })
-            }
+            
             console.log(y);
         })
 

@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
+
     <title>ABOUT US - INGREDIENTS MOUNTAIN | innisfree</title>
     <style>
         body {
-            transition: all 1.5s;
+            transition: all 1s;
         }
 
         .line-topic {
@@ -750,18 +752,14 @@
             <div class="vod_wrap">
                 <div class="vod_area">
                     <a href="#" class="cover play" onclick="fnVideoPlay('vodtemp',false);return false;">
-                        <div class="bg"
-                            style="background-image:url('https://www.innisfree.com/th/th/resources/images/renewal/ingredients/ingredients_greenTea7.jpg')">
-                        </div>
+                        <div class="bg" style="background-image:url('https://www.innisfree.com/th/th/resources/images/renewal/ingredients/ingredients_volcanic9.jpg');"></div>
                         <div class="con">
                             <!-- <p class="txt">イニスフリー公式</p> -->
                         </div>
                     </a>
                     <a href="#" class="cover stop" onclick="fnVideoStop('vodtemp',false);return false;"></a>
-                    <video id="vodtemp" playsinline="" loop="">
-                        <source
-                            src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_greenTea.mp4"
-                            type="video/mp4">
+                    <video id="vodtemp" playsinline="" loop="" controls
+                        <source src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_volcanic.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -948,17 +946,17 @@
             //#5f4e30
             //#342811
             let y = window.scrollY;
-            if (y < 3000) {
+            if (y < 2800) {
                 $("body").css({ "background-color": "#f3f5f5" })
             }
-            else if (y < 3600) {
-                $("body").css({ "background-color": "#a0b2b0" })
+            else if (y < 3400) {
+                $("body").css({ "background-color": "#bfb095" })
             }
             else if (y < 4300) {
-                $("body").css({ "background-color": "#738e8a" })
+                $("body").css({ "background-color": "#5f4e30" })
             }
             else {
-                $("body").css({ "background-color": "#456862" })
+                $("body").css({ "background-color": "#342811" })
             }
             console.log(y);
         })
