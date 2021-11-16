@@ -54,7 +54,7 @@
     </nav>
     <!--pink area-->
     <div style="background: #f9e4ec;"><br><br>
-        <div class="" style="background: url(./img/eyebrow/UB_calli.png)no-repeat ">
+        <div style="background: url(./img/eyebrow/UB_calli.png) no-repeat top center">
             <img src="img/eyebrow/lip_matte.png" class="m-auto">
             <p class="text-center text-3xl">Airy Matte Tint 3.8g</p><br>
             <p class="text-center text-sm">แป้งฝุ่นโปร่งแสงจะเกาะติดริมฝีปากบางเบาราวกับอากาศ
@@ -142,7 +142,18 @@
         </div>
     </div>
     <!--รูป-->
+    <div class="flex flex-col items-center mt-24 mb-24">
 
+        <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp ">
+            <div class="w-11/12">
+                <p class="text-center text-md tracking-wider">#INNISFREE #INNISTAR</p>
+                <p class="text-center text-6xl mt-2">INNIST<i class="star"></i>R</p>
+
+            </div>
+        </div>
+        <!-- INNISTRINNIST OF THE MONTH -->
+        <div class="contain-innistar w-10/12 grid grid-cols-5 gap-1 reveal fadeUp"></div>
+    </div>
 
     <!-- footer !!!! -->
     <div class="container-footer w-full h-screen">
@@ -239,6 +250,57 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/loading.js"></script>
     <script>
+        let requestURL = 'data.json';
+        let request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+        function dataReportStatus(data) {
+            for (let i = 0; i < 10; i++) {
+                var img = data[i].image;
+                var name = data[i].name;
+                var caption = data[i].caption;
+                document.querySelector('.contain-innistar').innerHTML +=
+                    `
+                        <div class="bg-cover relative bg-no-repeat bg-img" style="background-image: url(${img});">
+                            <div class="box-innistar p-2 w-full h-full absolute space-y-2">
+                                <div class="user-ig flex space-x-1">
+                                    <img class="profile w-8" src="./img/review-ig/404-profile.png">
+                                    <p class="text-sm">${name}</p>
+                                </div>
+                                <div class="w-full h-3/4 overflow-y-auto break-words">${caption}</div>
+                            </div>
+                        </div>
+                        `
+            }
+        }
+        window.addEventListener("scroll", () => {
+            reveal();
+            setTimeout(textCheck, 300);
+        });
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 0.5;
+                if (revealtop < windowheight - revealpoint) {
+                    // $(reveals[i]).fadeIn(300);
+                    reveals[i].classList.add('active');
+
+
+
+                }
+                else {
+                    reveals[i].classList.remove('active');
+
+                }
+            }
+        }
         var circle = document.querySelectorAll(".circle-items");
         for (const ic of circle) {
             ic.addEventListener("mouseover", function () {

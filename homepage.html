@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script rel="stylesheet" href="tailwind.config.js"></script>
 
 </head>
+
 <body class="w-full h-full flex flex-col items-center">
     <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
@@ -27,7 +29,8 @@
                     <a href="./offer&event-now.html" class="navbar-topic text-sm py-4">ข้อเสนอ & อีเวนท์</a>
                     <a href="./map.html" class="navbar-topic text-sm py-4">ร้านค้า</a>
                     <div class="dropdown">
-                        <a href="./about-2.html" class="navbar-topic text-sm py-3"><button class="dropbtn">เกี่ยวกับเรา</button></a>
+                        <a href="./about-2.html" class="navbar-topic text-sm py-3"><button
+                                class="dropbtn">เกี่ยวกับเรา</button></a>
                         <div class="dropdown-content w-full bg-white flex-col items-center py-2">
                             <div class="w-8/12 py-4 mt-2">
                                 <a href="./about-2.html" class="text-sm">เรื่องราวของแบรนด์</a>
@@ -67,13 +70,12 @@
         </div>
         <div class="next"></div>
         <div class="previous"></div>
-        <!-- <div class="swiper-pagination"></div> -->
     </div>
     <div class="container flex flex-col items-center m-4">
         <div class="w-11/12">
             <div class="describe-slide-main space-y-2">
-                <p class="text-3xl">A Clean Vegan Makeup With Simple Label</p>
-                <p class="text-lg">For you and For earth</p>
+                <p class="text-2xl">Holiday Set ด้วยดีไซน์ลิมิเตดอิดิ</p>
+                <p class="text-lg">ชั่นจากศิลปินชื่อดัง Steven Harrington</p>
             </div>
         </div>
     </div>
@@ -98,7 +100,7 @@
                         <p class="text-lg w-1/2 h-24">Airy Matte Tint</p>
                     </div>
                 </a>
-                <a href="./greenteaseed.html">
+                <a href="./greeanteamid.html">
                     <div class="flex flex-col items-center text-center" onmouseover="imgZoomIn(1);"
                         onmouseout="imgZoomOut(1);">
                         <div class="simple-label relative">
@@ -111,11 +113,12 @@
                 </a>
             </div>
             <div class="simple-label w-1/2 h-full relative">
-                <a href="">
+                <a href="./greenteaseed.html">
                     <img src="./img/product-month/TH_L_41_L007.jpg" class="absolute img-zoomout" alt="">
                 </a>
             </div>
-            <p class="absolute text-lg" style="bottom:-4%; right:2%;">Green Tea Seed Serum Set [2021 Green Holidays LTD Edition]</p>
+            <p class="absolute text-lg" style="bottom:-4%; right:2%;">Green Tea Seed Serum Set [2021 Green Holidays LTD
+                Edition]</p>
 
         </div>
     </div>
@@ -127,26 +130,279 @@
     </div>
     <!-- INNISTRINNIST OF THE MONTH -->
     <div class="contain-innistar w-10/12 grid grid-cols-2 lg:grid-cols-5 gap-1 reveal fadeUp"></div>
+    <!-- Review -->
+    <div class="margin-top-innis w-full relative flex items-center justify-center space-x-6"
+    style="height: 780px; background-color: #bfdfcb;">
+    <div class="w-10/12 absolute top-0" style="transform: translate(0,-3.6rem);">
+        <div class="absolute top-0 left-0">
+            <p class="tc">REVIEW</p>
+            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+        </div>
+    </div>
+        <div class="w-full" id="review-slick">
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Jeju Cherry Blossom Tone-up Cream</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">A light tone up cream for when you need to instantly look fresh</p>
+                    <p class="txt">A light tone up cream for when you need to instantly look fresh
 
-    <!-- REVIEWREVIEW OF THE MONTH -->
-    <!-- <div class="review-month swiper w-full">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./img/TH_R_127_L007.jpg" alt="">
+                        Gotta admit that this tone up cream is really good. This cream is not too thick, kinda like
+                        lotion, has pinkish color and soft powdery fragrance. Upon application it is readily absorbed,
+                        it feels light and doesn't leave sticky or heavy feeling, really suitable for my oily skin. It
+                        has matte fin ish so if you have dry skin you might need to add another moisturizer before this
+                        cream. What i like most about it is that it does give an instant tone up effect but not too much
+                        that makes you looked like wearing mask, the tone up effect looked really natural even for my
+                        medium skin tone, just right to erase dullness in my face and doesn't give whitecast. It's
+                        perfect for when you don't want to wear make up, but still need to look fresh.
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>MAY 11, 2021</p>
+                        <p>Arie* S</p>
+                        <p>
+                            <span id="skinTpInfo_32156">ไวต่อการเกิดสิว</span>|<span id="gnrtInfo_32156">13~18</span>
+
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_125_L007.jpg" />
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Volcanic Calming Pore Clay Mask</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_4.0.png" alt="">
+                    </p>
+                    <p class="tit">Fantastic Product.</p>
+                    <p class="txt">Good texture. When first time apply to my skin, the texture is very easy to spread,
+                        and with a gentle, nice fragrant. I have sensitive skin, but i don't feel the mask is hurting.
+                        easy to peel off, and leave a nice smooth, matt finish. I think it will help to improve the oily
+                        skin condition. looking forward...
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>JUN 21, 2021
+
+                        </p>
+                        <p>yina* X</p>
+                        <p>
+                            <span id="skinTpInfo_32156">ไวต่อการเกิดสิว</span>|<span id="gnrtInfo_32156">13~18</span>
+
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_126_L007.jpg" />
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">My Hair Refreshing Shampoo for Oily Scalp</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">Best Shampoo I've ever used.</p>
+                    <p class="txt">I have thick blonde hair, and it used to be very long (cut short now), so a big
+                        shampoo
+                        bottle was important as it always ran out quickly. Not with this product.
+                        Applying it with 1-2 pumps was enough to wash my hair completely and I could apply extra just to
+                        make
+                        sure. I've had it for over 2 Months now and it's only 2/3 full.
+                        Ever since I have been using this product, my hair oil has been controlled and it has become so
+                        soft.
+                        It works great with bleached hair too, and doesn't discolour or dry up the hair like with most
+                        other
+                        advertised products.
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>MAY 11, 2021</p>
+                        <p>Arie* S</p>
+                        <p>
+                            <span id="skinTpInfo_32156">ไวต่อการเกิดสิว</span>|<span id="gnrtInfo_32156">13~18</span>
+
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_R_128_L007.jpg" />
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Volcanic Calming Pore Clay Mask</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_4.0.png" alt="">
+                    </p>
+                    <p class="tit">Must have mask for all skin types</p>
+                    <p class="txt">Overall my skin feels more smoother and hydrated after using the mask a couple of
+                        times. I have sensitive and oily/combination skin and there are some wash off masks i have used
+                        where it's too invasive and leaves my skin feeling stripped all moisture. But this clay mask
+                        helped soothed my redness and really helped clean my skin! Definitely using this again!
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>JUL 03, 2021
+
+                        </p>
+                        <p>Norl***** R</p>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Light Fit Cushion SPF33 PA++</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_4.0.png" alt="">
+                    </p>
+                    <p class="tit">very natural finish, stays on pretty long, sweat-proof, decent coverage</p>
+                    <p class="txt">this product has a semi-matte finish and i think it looks pretty natural (if you want
+                        something matte or dewy, they have other cushion ranges for you to choose ) i’m using N23 and it
+                        matches my skin tone super well coverage-wise, it’s not super heavy and i like it that way. I
+                        have quite a few acne scars, uneven skin tone, redness in some areas of my skin and occasionally
+                        pimples. it only partially covers my acne scars, even after multiple layers, so you probably
+                        need something thicker - maybe foundation or throw in concealer before using this. it helps to
+                        balance out the redness and uneven skin tone pretty well. it also lightens my under eye circles
+                        by ~70-80% without concealer so that’s great i could probably get more coverage with foundation
+                        but i prefer using this over foundation because it’s super easy and quick to apply! it’s very
+                        light so it’s quite blendable. very beginner friendly :) i’ve tried using other foundations
+                        before but i’m not experienced with makeup so the foundation tends to become really patchy and
+                        streaky. i don’t wear makeup often so i’m also not used to thick layers of foundation. i find
+                        them too uncomfortable and i can feel a layer sitting on top my skin. this one is so lightweight
+                        and breathable, i don’t realised i’m wearing makeup so i love it!! also, the staying power is
+                        pretty good!! downside is, you need to give it about 20minutes to set otherwise it will
+                        transfer, especially now that we wear masks. but after about 20min, it stays on for ~8h (i
+                        haven’t worn it for longer than that). i’ve also done a workout with it and it is sweatproof !!!
+                        i also love how it’s not smudgeable. i avoided wearing makeup in the past because i have a bad
+                        habit of touching my face and that would mess up my makeup but this foundation stays put :)
+                        there’s also no pilling! for the price, i would say this is a steal! it didn’t make me break out
+                        and the only flaw would be the setting time. i need to wait 20min before i can put on my mask
+                        and leave the house. would recommend if you have mild to moderate blemishes! if you have very
+                        dark scars, the coverage for this product won’t be enough for you
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>AUG 08, 2021</p>
+                        <p>Geor*** L</p>
+                        <p class="">
+                            <span id="skinTpInfo_32156">ไวต่อการเกิดสิว</span> <span> | </span> <span
+                                id="gnrtInfo_32156">19~24</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Green Tea Seed Serum Special Set</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">Lightweight ula</p>
+                    <p class="txt">Bought this set when it first launches! Highly recommended, the new technology used
+                        in the serum bottle and the ula is definitely life changing could feel the softness after the
+                        first application. Also love how the Green Tea Seed Cream is very lightweight on the skin not
+                        sticky and very moisturising suitable to be used during daytime as for the foam cleanser it
+                        doesn’t fully strip off my skin it still gives a very moisturised feeling after washing it off.
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>MAY 12, 2021
+
+ 
+
+                        </p>
+                        <p>Chlo* H </p>
+                        <p>
+                            <span id="skinTpInfo_32156">ธรรมดา/ผสม</span>|<span id="gnrtInfo_32156">19~24</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Forest for Men Bubble Cleanser</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">My friends love so much!</p>
+                    <p class="txt">I had introduced my friends to get a try of this products and he is looking for a
+                        cleanser prefer flavorless at the same time. His face is combination of dry skin and oily. Oily
+                        face when pering outdoor activities. He love this products because could save time and
+                        convenient too. Doesn't need to rub on hand palm until it bubble foam before washing face. Just
+                        a few pushes and hand palm covered with full bubble foam. Apply directly at face and gently
+                        massage. "Take it out- few pushes-apply on face- gentle massage-wash with lukewarm water- DONE!"
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>JUN 22, 2021
+
+                        </p>
+                        <p>Zaxc******** B </p>
+                        <p>
+                            <span id="skinTpInfo_32156">ธรรมดา/ผสม</span>|<span id="gnrtInfo_32156">35~44</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-review">
+                <div class="con" id="reviewContent_32156">
+                    <p class="agi">Volcanic Calming Pore Clay Mask</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">Clearer Skin and Soothing!!!</p>
+                    <p class="txt">Thank God for this! Madecassoside Mask Sheet is a life saver for my acne skin and
+                        this volcanic pore clay mask with madecassoside is yet another one too!!! It has been 2-3 week
+                        since ive started using this mask and i must say its living up to its name!!! Before this, my
+                        skincare wouldnt absorb very well and everytime after my daily skin care routine, my face would
+                        gradually become slightly oily by the end of the day. However after applying this mask daily,
+                        the clogged pores are gradually cleared and my skincare is more absorbed and my face is clearer
+                        day by day, it wouldnt leave my face as oily as it usually would. Also not to mention it leaves
+                        your face feeling smooth and fresh!!! Loving this product and would definitely buy them again.
+
+                        10/10</p>
+                    <div class="opt">
+                        <p>AUG 10, 2021</p>
+                        <p>Ko* J</p>
+                        <p>
+                            <span id="skinTpInfo_32156">ไวต่อการเกิดสิว</span>|<span id="gnrtInfo_32156">13~18</span>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-review">
+                    
+                            <img src="/th/th/resources/upload/review/32455_1.jpeg" alt="">
+                    
+                    <div class="con" id="reviewContent_32455">
+                        <p class="agi">Intensive Anti-pollution Sunscreen SPF50+ PA++++</p>
+                        <p class="leaf"><img src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt=""></p>
+                        <p class="tit">Love it!</p>
+                        <p class="txt">So far this has been my favourite sunscreen! It smells great and refreshing. My favourite part is that it’s not oily and makes my skin looks brighter. Highly recommend tbh!❤️</p>
+                        <div class="opt">
+                            <p>AUG 14, 2021</p>
+                            <p>wanl*** N
+                            </p>
+                            <p>
+                                
+                                    <span id="skinTpInfo_32455">
+                                        ธรรมดา/ผสม
+                                    </span>
+                                |
+                                    <span id="gnrtInfo_32455">
+                                        19~24
+                                    </span>
+                                
+                            </p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="next"></div>
-        <div class="previous"></div>
-    </div> -->
+    </div>
     <!-- ingredient -->
     <div class="ingredient-slide bg-cover w-full flex flex-col items-center relative margin-top-innis"
         style="height: 960px;">
@@ -159,8 +415,8 @@
         <div class="w-full absolute" style="bottom: 60px;">
             <div class="ingredient-main-slide swiper w-8/12">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
-                        style="background-color: #795c4f;">
+                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center cursor-pointer abc"
+                        style="z-index: 100; background-color: #795c4f;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_soybean.png" alt="">
                         </p>
@@ -244,10 +500,10 @@
     <div class="w-10/12 md:mx-auto slide-main swiper reveal fadeUp select-none mt-4">
         <div class="swiper-wrapper box-content h-30">
             <div class="swiper-slide">
-                <img src="./img/new_1.jpg" alt="">
+                <img src="./img/TH_M_256_L007.jpg" />
             </div>
             <div class="swiper-slide">
-                <img src="./img/new_2.jpg" />
+                <img src="./img/TH_M_255_L007.jpg" alt="">
             </div>
         </div>
         <div class="next"></div>
@@ -295,7 +551,6 @@
             </div>
         </div>
     </div>
-
     <!-- footer !!!! -->
     <div class="container-footer w-full h-screen">
         <div class="contain-foot w-full flex flex-col items-center">
@@ -389,8 +644,24 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/link_ingredient.js"></script>
     <script src="./js/loading.js"></script>
     <script>
+        $('#review-slick').slick({
+            slidesToShow: 4.5,
+            slidesToScroll: 1,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 8000,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            dots: false,
+            prevArrow: false,
+            nextArrow: false,
+            centerPadding: '400px',
+        });
         var imgzoom = document.querySelectorAll(".img-zoomout")
         function imgZoomIn(e) {
             imgzoom[e].style.transform = "scale(1.04)";
@@ -404,14 +675,16 @@
             spaceBetween: 25,
             centeredSlides: true,
             speed: 400,
+            grabCursor: true,
             direction: getDirection(),
             navigation: {
                 nextEl: '.next',
                 prevEl: '.previous',
             },
             loop: true,
-            autoplay: true,
+            autoplayDisableOnInteration: false
         });
+
 
         function getDirection() {
             var windowWidth = window.innerWidth;
@@ -439,7 +712,7 @@
         var swiper = new Swiper(".slide-main", {
             spaceBetween: 30,
             effect: "fade",
-            
+
             navigation: {
                 nextEl: ".next",
                 prevEl: ".previous",
