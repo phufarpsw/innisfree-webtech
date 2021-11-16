@@ -135,6 +135,30 @@
 
         </div>
     </div>
+
+    <!-- news of the month -->
+    <div class="innistar-text container container flex flex-col items-center mb-8 mt-24">
+        <div class="w-11/12">
+            <p class="tc">NEWS</p>
+            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+        </div>
+    </div>
+    <div class="w-10/12 md:mx-auto slide-main swiper reveal fadeUp select-none mt-4 mb-24">
+        <div class="swiper-wrapper box-content h-full">
+            <div class="swiper-slide">
+                <img src="./img/november.jpg">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/november special.jpg" alt="">
+            </div>
+        </div>
+        <div class="next"></div>
+        <div class="previous"></div>
+    </div>
+
+
+
+
     <div class="innistar-text container container flex flex-col items-center m-8 reveal fadeUp">
         <div class="w-11/12">
             <p class="text-animation"></p>
@@ -430,21 +454,6 @@
 
             </div>
         </a>
-        <!-- <div class="slide-main swiper select-none">
-            <div class="swiper-wrapper">
-                <a href="./main-1.html" class="swiper-slide">
-                    <img src="./img/TH_R_129_L007.jpeg" alt="">
-                </a>
-                <a href="./main-2.html" class="swiper-slide">
-                    <img src="./img/TH_R_130_L007.jpeg" />
-                </a>
-                <a href="./main-3.html" class="swiper-slide">
-                    <img src="./img/TH_R_131_L007.jpeg" />
-                </a>
-            </div>
-            <div class="next"></div>
-            <div class="previous"></div>
-        </div> -->
         <div class="w-full absolute" style="bottom: 80px;">
             <div class="ingredient-main-slide swiper w-8/12 select-none">
                 <div class="swiper-wrapper">
@@ -524,24 +533,7 @@
             <div class="prev-ingredient" id="btn-ing"></div>
         </div>
     </div>
-    <div class="innistar-text container container flex flex-col items-center mb-8 reveal fadeUp margin-top-innis">
-        <div class="w-11/12">
-            <p class="text-animation">NEWS</p>
-            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
-        </div>
-    </div>
-    <div class="w-10/12 md:mx-auto slide-main swiper reveal fadeUp select-none mt-4">
-        <div class="swiper-wrapper box-content h-30">
-            <div class="swiper-slide">
-                <img src="./img/TH_M_256_L007.jpg" />
-            </div>
-            <div class="swiper-slide">
-                <img src="./img/TH_M_255_L007.jpg" alt="">
-            </div>
-        </div>
-        <div class="next"></div>
-        <div class="previous"></div>
-    </div>
+    
 
     <!--member brandstory campaign-->
     <div class="w-10/12 flex justify-between space-x-6 mt-4">
@@ -711,7 +703,7 @@
         }
 
         function interval() {
-            percentTime += 1 / (time + 3.9);
+            percentTime += 1 / (time + 4.3);
             $('.inProgress' + progressBarIndex).css({
                 width: percentTime + "%"
             });

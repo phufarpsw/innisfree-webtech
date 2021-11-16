@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="https://www.innisfree.com/th/th/resources/images/renewal/favicon/favicon-new.ico">
     <title>ABOUT US - INGREDIENTS GREENTEA | innisfree</title>
     <style>
+        video{
+            min-width: 1000px;
+        }
         body {
-            transition: all 1.5s;
+            transition: all 1s;
         }
 
         .line-topic {
@@ -216,8 +220,8 @@
                         <p class="text-3xl">ส่วนผสม</p>
                     </div>
                     <div class="w-full h-24 flex flex-col justify-center leading-7">
-                        <p class="green">อินนิสฟรี,</p>
-                        <p class="green">ใส่ความบริสุทธิ์ของเชจู</p>
+                        <p class="green-innisfree">อินนิสฟรี,</p>
+                        <p class="green-innisfree">ใส่ความบริสุทธิ์ของเชจู</p>
                     </div>
                     <div class="w-full text-sm leading-6 tracking-wide">
                         <p>แนวคิดเกี่ยวกับธรรมชาตินิยมเริ่มขึ้นเมื่อมีการปรากฎตัวของแบรนด์ต่างๆ
@@ -827,7 +831,7 @@
                         </div>
                     </a>
                     <a href="#" class="cover stop" onclick="fnVideoStop('vodtemp',false);return false;"></a>
-                    <video id="vodtemp" playsinline="" loop="">
+                    <video id="vodtemp" playsinline="" loop="" controls>
                         <source
                             src="https://www.innisfree.com/th/th/resources/images/renewal/ingredients/vod/ingredients_greenTea.mp4"
                             type="video/mp4">
@@ -1008,9 +1012,13 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- <script src="/js/ingredient.js"> </script> -->
+=======
+>>>>>>> f5ba4f9136b27455fac3d9b9722e19fba47261d5
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="/js/loading.js"></script>
+    <script src="../js/ingredient.js"></script>
+    <script src="../js/loading.js"></script>
     <script>
         //background-color
         window.addEventListener("scroll", function () {
@@ -1022,17 +1030,17 @@
             // #123e36
             // #0b312c
             let y = window.scrollY;
-            if (y < 3000) {
+            if (y < 3500) {
                 $("body").css({ "background-color": "#f3f5f5" })
             }
-            else if (y < 3600) {
+            else if (y < 3900) {
                 $("body").css({ "background-color": "#a0b2b0" })
             }
-            else if (y < 4300) {
+            else if (y < 5000) {
                 $("body").css({ "background-color": "#738e8a" })
             }
-            else {
-                $("body").css({ "background-color": "#456862" })
+            else if (y < 5500) {
+                $("body").css({ "background-color": "#224b44" })
             }
             console.log(y);
         })
