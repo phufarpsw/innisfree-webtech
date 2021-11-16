@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="w-full h-full flex flex-col items-center">
+<body class="w-full h-full flex flex-col items-center overflow-x-hidden">
     <div class="loading w-full h-screen fixed bg-white flex justify-center items-center ">
         <img class="loading-innisfree" src="./img/loading.gif" alt="">
     </div>
@@ -57,24 +57,38 @@
     </nav>
     <div class="slide-main swiper select-none">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <a href="./main-1.html" class="swiper-slide">
                 <img src="./img/TH_R_129_L007.jpeg" alt="">
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="./main-2.html" class="swiper-slide">
                 <img src="./img/TH_R_130_L007.jpeg" />
-            </div>
-            <div class="swiper-slide">
+            </a>
+            <a href="./main-3.html" class="swiper-slide">
                 <img src="./img/TH_R_131_L007.jpeg" />
-            </div>
+            </a>
         </div>
         <div class="next"></div>
         <div class="previous"></div>
     </div>
     <div class="container flex flex-col items-center m-4">
-        <div class="w-11/12">
+        <div class="w-11/12 flex justify-between">
             <div class="describe-slide-main space-y-2">
-                <p class="text-2xl">Holiday Set ด้วยดีไซน์ลิมิเตดอิดิ</p>
-                <p class="text-lg">ชั่นจากศิลปินชื่อดัง Steven Harrington</p>
+                <p class="text-2xl text-head1">Holiday Set ด้วยดีไซน์ลิมิเตดอิดิ</p>
+                <p class="text-lg text-head2">ชั่นจากศิลปินชื่อดัง Steven Harrington</p>
+            </div>
+            <div class="">
+                <div class="sliderContainer select-none">
+                    <div class="slider single-item">
+                    </div>
+                    <div class="progressBarContainer top-0 flex ml-32 items-center space-x-4">
+                        <p class="w-16 num-slide" style="font-size: 14px;">1 / 3</p>
+                        <div class="flex">
+                            <span data-slick-index="0" class="progressBar"></span>
+                        </div>
+                        <p class="text-slides" style="font-size: 12px;">มอบเป็นของขวัญสุดพิเศษให้กับตัวคุณหรือคนพิเศษ
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -131,13 +145,13 @@
     <div class="contain-innistar w-10/12 grid grid-cols-2 lg:grid-cols-5 gap-1 reveal fadeUp"></div>
     <!-- Review -->
     <div class="margin-top-innis w-full relative flex items-center justify-center space-x-6"
-    style="height: 780px; background-color: #bfdfcb;">
-    <div class="w-10/12 absolute top-0" style="transform: translate(0,-3.6rem);">
-        <div class="absolute top-0 left-0">
-            <p class="tc">REVIEW</p>
-            <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+        style="height: 780px; background-color: #bfdfcb;">
+        <div class="w-10/12 absolute top-0" style="transform: translate(0,-3.6rem);">
+            <div class="absolute top-0 left-0">
+                <p class="tc">REVIEW</p>
+                <p class="text-xl" style="letter-spacing: 3.5px;">OF THE MONTH</p>
+            </div>
         </div>
-    </div>
         <div class="w-full" id="review-slick">
             <div class="box-review">
                 <div class="con" id="reviewContent_32156">
@@ -307,7 +321,7 @@
                     <div class="opt">
                         <p>MAY 12, 2021
 
- 
+
 
                         </p>
                         <p>Chlo* H </p>
@@ -373,121 +387,141 @@
                 </div>
             </div>
             <div class="box-review">
-                    
-                            <img src="/th/th/resources/upload/review/32455_1.jpeg" alt="">
-                    
-                    <div class="con" id="reviewContent_32455">
-                        <p class="agi">Intensive Anti-pollution Sunscreen SPF50+ PA++++</p>
-                        <p class="leaf"><img src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt=""></p>
-                        <p class="tit">Love it!</p>
-                        <p class="txt">So far this has been my favourite sunscreen! It smells great and refreshing. My favourite part is that it’s not oily and makes my skin looks brighter. Highly recommend tbh!❤️</p>
-                        <div class="opt">
-                            <p>AUG 14, 2021</p>
-                            <p>wanl*** N
-                            </p>
-                            <p>
-                                
-                                    <span id="skinTpInfo_32455">
-                                        ธรรมดา/ผสม
-                                    </span>
-                                |
-                                    <span id="gnrtInfo_32455">
-                                        19~24
-                                    </span>
-                                
-                            </p>
-                        </div>
+
+                <img src="/th/th/resources/upload/review/32455_1.jpeg" alt="">
+
+                <div class="con" id="reviewContent_32455">
+                    <p class="agi">Intensive Anti-pollution Sunscreen SPF50+ PA++++</p>
+                    <p class="leaf"><img
+                            src="https://www.innisfree.com/th/th/resources/images/renewal/review_leaf_5.0.png" alt="">
+                    </p>
+                    <p class="tit">Love it!</p>
+                    <p class="txt">So far this has been my favourite sunscreen! It smells great and refreshing. My
+                        favourite part is that it’s not oily and makes my skin looks brighter. Highly recommend tbh!❤️
+                    </p>
+                    <div class="opt">
+                        <p>AUG 14, 2021</p>
+                        <p>wanl*** N
+                        </p>
+                        <p>
+
+                            <span id="skinTpInfo_32455">
+                                ธรรมดา/ผสม
+                            </span>
+                            |
+                            <span id="gnrtInfo_32455">
+                                19~24
+                            </span>
+
+                        </p>
                     </div>
+                </div>
                 </a>
             </div>
         </div>
     </div>
     <!-- ingredient -->
-    <div class="ingredient-slide bg-cover w-full flex flex-col items-center relative margin-top-innis"
-        style="height: 960px;">
-        <div class="ingredient-display bg-white flex flex-col justify-center items-center absolute">
-            <p class="text-lg">INGREDIENT</p>
-            <p class="green-innisfree text-5xl">Green Tea</p>
-            <img src="./img/ingredient/material_greentea.jpg" alt="">
+    <div class="ingredient-slide w-full flex flex-col items-center relative margin-top-innis" style="height: 960px;">
+        <a href="./Ingredient/green_tea.html" class="link-ingredient">
+            <div class="ingredient-display bg-white flex flex-col justify-center items-center absolute">
+                <p class="text-lg head-ingredient">INGREDIENT</p>
+                <p class="green-innisfree text-4xl mt-2 subhead-ingredient h-16">Green Tea</p>
+                <img class="img-ingredient" src="./img/ingredient/material_greentea.jpg" alt="">
 
-        </div>
-        <div class="w-full absolute" style="bottom: 60px;">
-            <div class="ingredient-main-slide swiper w-8/12">
+            </div>
+        </a>
+        <!-- <div class="slide-main swiper select-none">
+            <div class="swiper-wrapper">
+                <a href="./main-1.html" class="swiper-slide">
+                    <img src="./img/TH_R_129_L007.jpeg" alt="">
+                </a>
+                <a href="./main-2.html" class="swiper-slide">
+                    <img src="./img/TH_R_130_L007.jpeg" />
+                </a>
+                <a href="./main-3.html" class="swiper-slide">
+                    <img src="./img/TH_R_131_L007.jpeg" />
+                </a>
+            </div>
+            <div class="next"></div>
+            <div class="previous"></div>
+        </div> -->
+        <div class="w-full absolute" style="bottom: 80px;">
+            <div class="ingredient-main-slide swiper w-8/12 select-none">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center cursor-pointer abc"
-                        style="z-index: 100; background-color: #795c4f;">
-                        <p class="icon-ingredient">
-                            <img src="./img/ingredient/icon/icon_soybean.png" alt="">
-                        </p>
-                        <p>Soy Bean</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
-                        style="background-color:#e5ad54;">
-                        <p class="icon-ingredient">
-                            <img src="./img/ingredient/icon/icon_tangerine.png" alt="">
-                        </p>
-                        <p>Hallabong</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
-                        style="background-color:#97b489;">
-                        <p class="icon-ingredient">
-                            <img src="./img/ingredient/icon/icon_greenbarley.png" alt="">
-                        </p>
-                        <p>Green Barley</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
-                        style="background-color: #afc7b5;;">
-                        <p class="icon-ingredient">
-                            <img src="./img/ingredient/icon/icon_forestformen.png" alt="">
-                        </p>
-                        <p>Gotjawal</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    <a href="./Ingredient/green_tea.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center "
                         style="background-color: #2e6259;;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_greentea.png" alt="">
                         </p>
                         <p>Green Tea</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    </a>
+                    <a href="./Ingredient/bija.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
                         style="background-color: #5dc7db;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_bija.png" alt="">
                         </p>
                         <p>Bija</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    </a>
+                    <a href="./Ingredient/seaweed.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
                         style="background-color: #5a75fc;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_seeweed.png" alt="">
                         </p>
                         <p>Seaweed</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    </a>
+                    <a href="./Ingredient/Orchid.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
                         style="background-color: #b388d0;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_orchid.png" alt="">
                         </p>
                         <p>Orchid</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    </a>
+                    <a href="./Ingredient/tubtim.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
                         style="background-color: #f48080;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_pomegranate.png" alt="">
                         </p>
                         <p>Pomeg-ranate</p>
-                    </div>
-                    <div class="swiper-slide card-ingredient bg-red-500 flex flex-col flex-wrap items-center justify-center"
+                    </a>
+                    <a href="./Ingredient/mountain.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
                         style="background-color: #5c503b;">
                         <p class="icon-ingredient">
                             <img src="./img/ingredient/icon/icon_greentea.png" alt="">
                         </p>
                         <p>Volcanic Cluster</p>
-                    </div>
+                    </a>
+                    <a href="./Ingredient/soybean.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center cursor-pointer "
+                        style="z-index: 100; background-color: #795c4f;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_soybean.png" alt="">
+                        </p>
+                        <p>Soy Bean</p>
+                    </a>
+                    <a href="./Ingredient/orange.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color:#e5ad54;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_tangerine.png" alt="">
+                        </p>
+                        <p>Hallabong</p>
+                    </a>
+                    <a href="./Ingredient/rice-green.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color:#97b489;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_greenbarley.png" alt="">
+                        </p>
+                        <p>Green Barley</p>
+                    </a>
+                    <a href="./Ingredient/jawud.html" class="swiper-slide card-ingredient flex flex-col flex-wrap items-center justify-center"
+                        style="background-color: #afc7b5;;">
+                        <p class="icon-ingredient">
+                            <img src="./img/ingredient/icon/icon_forestformen.png" alt="">
+                        </p>
+                        <p>Gotjawal</p>
+                    </a>
                 </div>
             </div>
-            <div class="next"></div>
-            <div class="previous"></div>
+            <div class="next-ingredient" id="btn-ing"></div>
+            <div class="prev-ingredient" id="btn-ing"></div>
         </div>
     </div>
     <div class="innistar-text container container flex flex-col items-center mb-8 reveal fadeUp margin-top-innis">
@@ -542,7 +576,7 @@
                 เวลาเปิดและข้อมูลการติดต่อของร้านที่ใกล้คุณที่สุด</p>
             <div class="flex p-5">
                 <div class="hover-store">
-                    <a href="https://www.innisfree.com/th/th/store/storeList.do" class="flex">
+                    <a href="./map.html" class="flex">
                         <p class="flex green-innisfree text-sm">ค้นหาร้านของคุณ</p>
                         <img src="./img/find_arrow.svg" class="ml-2" alt="">
                     </a>
@@ -646,7 +680,77 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/link_ingredient.js"></script>
     <script src="./js/loading.js"></script>
+    <!-- Slick -->
     <script>
+        $(".slider").slick({
+            infinite: true,
+            arrows: true,
+            dots: false,
+            autoplay: false,
+            speed: 800,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+
+        //ticking machine
+        var pbIndex = 1;
+        var percentTime;
+        var tick;
+        var time = 1;
+        var progressBarIndex = 0;
+
+        $('.progressBarContainer .progressBar').each(function (index) {
+            var progress = "<div class='inProgress inProgress" + index + "'></div>";
+            $(this).html(progress);
+        });
+
+        function startProgressbar() {
+            resetProgressbar();
+            percentTime = 0;
+            tick = setInterval(interval, 10);
+        }
+
+        function interval() {
+            percentTime += 1 / (time + 3.9);
+            $('.inProgress' + progressBarIndex).css({
+                width: percentTime + "%"
+            });
+            if (percentTime >= 100) {
+                if (pbIndex == 3) {
+                    pbIndex = 0;
+                    document.querySelector(".text-slides").innerHTML = "มอบเป็นของขวัญสุดพิเศษให้กับตัวคุณหรือคนพิเศษ";
+                    document.querySelector(".text-head1").innerHTML = "Holiday Set ด้วยดีไซน์ลิมิเตดอิดิ";
+                    document.querySelector(".text-head2").innerHTML = "ชั่นจากศิลปินชื่อดัง Steven Harrington";
+                }
+                else if (pbIndex == 1) {
+                    document.querySelector(".text-slides").innerHTML = "It's Happier with another 1";
+                    document.querySelector(".text-head1").innerHTML = "Happy กว่าเพราะได้อีก 1";
+                    document.querySelector(".text-head2").innerHTML = "โปรสุดคุ้มสำหรับเดือนพฤศจิกายน";
+                }
+                else if (pbIndex == 2) {
+                    document.querySelector(".text-slides").innerHTML = "Green Tea Seed Serum & Green Tea Seed Cream";
+                    document.querySelector(".text-head1").innerHTML = "Hydrate, Hydrate, Hydrate !";
+                    document.querySelector(".text-head2").innerHTML = "Daily Hydrating Duo";
+
+                }
+                pbIndex++;
+                document.querySelector(".num-slide").innerHTML = `${pbIndex} / 3`;
+                $('.single-item').slick('slickNext');
+                startProgressbar();
+            }
+        }
+
+        function resetProgressbar() {
+            $('.inProgress').css({
+                width: 0 + '%'
+            });
+            clearInterval(tick);
+        }
+        setTimeout(() => {
+            startProgressbar();
+        }, 800);
+        // End ticking machine
+
         $('#review-slick').slick({
             slidesToShow: 4.5,
             slidesToScroll: 1,
@@ -661,35 +765,119 @@
             nextArrow: false,
             centerPadding: '400px',
         });
-        var imgzoom = document.querySelectorAll(".img-zoomout")
-        function imgZoomIn(e) {
-            imgzoom[e].style.transform = "scale(1.04)";
-        }
-        function imgZoomOut(e) {
-            imgzoom[e].style.transform = "scale(1.00)";
-        }
-        $(".img-zoomout")
+    </script>
+    <!-- Ingredient -->
+    <script>
         var ingredient = new Swiper('.ingredient-main-slide', {
             slidesPerView: "auto",
-            spaceBetween: 25,
-            centeredSlides: true,
+            spaceBetween: 42,
             speed: 400,
-            grabCursor: true,
+            centeredSlides: true,
             direction: getDirection(),
             navigation: {
-                nextEl: '.next',
-                prevEl: '.previous',
+                nextEl: '.next-ingredient',
+                prevEl: '.prev-ingredient',
             },
-            loop: true,
-            autoplayDisableOnInteration: false
-        });
+            loop: true
 
+        });
+        var ingredient_image = ["url(../img/ingredient/bg_ingredient_greentea.jpg) no-repeat",
+            "url('./img/ingredient/bg_ingredient_bija.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_seaweed.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_orchid.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_pomegranate.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_volcanic.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_soybean.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_tangerine.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_greenbarley.jpg') no-repeat",
+            "url('./img/ingredient/bg_ingredient_forestformen.jpg') no-repeat",];
+        ingredient.on('slideChange', function () {
+            document.querySelector(".ingredient-slide").style.background = `${ingredient_image[ingredient.realIndex]}`;
+        });
 
         function getDirection() {
             var windowWidth = window.innerWidth;
             var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
 
             return direction;
+        }
+        var list_in = document.querySelectorAll("#btn-ing");
+        var img_ing = document.querySelector(".img-ingredient");
+        var subhead = document.querySelector(".subhead-ingredient");
+        var link_ing = document.querySelector(".link-ingredient");
+        for (const btn of list_in) {
+            btn.addEventListener("click", function () {
+                if (ingredient.realIndex == 1) {
+                    img_ing.src = "./img/ingredient/material_bija.jpg";
+                    subhead.innerHTML = "Bija";
+                    subhead.style.color = "#0aaecc";
+                    link_ing.href = "./Ingredient/bija.html";
+                }
+                else if (ingredient.realIndex == 2) {
+                    img_ing.src = "./img/ingredient/material_seaweed.jpg";
+                    subhead.innerHTML = "Seaweed";
+                    subhead.style.color = "#1639e4";
+                    link_ing.href = "./Ingredient/seaweed.html";
+                }
+                else if (ingredient.realIndex == 3) {
+                    img_ing.src = "./img/ingredient/material_orchid.jpg";
+                    subhead.innerHTML = "Orchid";
+                    subhead.style.color = "#43016e";
+                    link_ing.href = "./Ingredient/Orchid.html";
+                }
+                else if (ingredient.realIndex == 4) {
+                    img_ing.src = "./img/ingredient/material_pomegranate.jpg";
+                    subhead.innerHTML = "Pomegranate";
+                    subhead.style.color = "#bb2929";
+                    link_ing.href = "./Ingredient/tubtim.html";
+                }
+                else if (ingredient.realIndex == 5) {
+                    img_ing.src = "./img/ingredient/material_volcanic.jpg";
+                    subhead.innerHTML = "Volcanic Cluster";
+                    subhead.style.color = "#402b00";
+                    link_ing.href = "./Ingredient/mountain.html";
+                }
+                else if (ingredient.realIndex == 6) {
+                    img_ing.src = "./img/ingredient/material_soybean.jpg";
+                    subhead.innerHTML = "Soy Bean";
+                    subhead.style.color = "#623d2c";
+                    link_ing.href = "./Ingredient/soybean.html";
+                }
+                else if (ingredient.realIndex == 7) {
+                    img_ing.src = "./img/ingredient/material_tangerine.jpg";
+                    subhead.innerHTML = "Hallabong";
+                    subhead.style.color = "#ea9000";
+                    link_ing.href = "./Ingredient/orange.html";
+                }
+                else if (ingredient.realIndex == 8) {
+                    img_ing.src = "./img/ingredient/material_greenbarley.jpg";
+                    subhead.innerHTML = "Green Barley";
+                    subhead.style.color = "#97b489";
+                    link_ing.href = "./Ingredient/rice-green.html";
+                }
+                else if (ingredient.realIndex == 9) {
+                    img_ing.src = "./img/ingredient/material_forestformen.jpg";
+                    subhead.innerHTML = "Gotjawal";
+                    subhead.style.color = "#83a48a";
+                    link_ing.href = "./Ingredient/jawud.html";
+                }
+                else {
+                    img_ing.src = "./img/ingredient/material_greentea.jpg";
+                    subhead.innerHTML = "Green Tea";
+                    subhead.style.color = "#024137";
+                    link_ing.href = "./Ingredient/green_tea.html";
+                }
+            })
+        }
+    </script>
+    <!-- Common Javascript -->
+    <script>
+        var imgzoom = document.querySelectorAll(".img-zoomout")
+        function imgZoomIn(e) {
+            imgzoom[e].style.transform = "scale(1.04)";
+        }
+        function imgZoomOut(e) {
+            imgzoom[e].style.transform = "scale(1.00)";
         }
         var i = 0;
         var check = ["O", "X", "I", "O", "r", "s", "N", "I", "X", "e", "N", "O", "l", "W", "I", "Q", "o", "a", "S", "n", "P", "o", "T", "P", "D", "x", "R"];
@@ -718,27 +906,10 @@
             },
             autoplay:
             {
-                delay: 2500,
+                delay: 4500,
             },
             loop: true,
         });
-        // var review = new Swiper(".review-month", {
-        //     speed:15000,
-        //     // spaceBetween: 30,
-        //     centeredSlides: true,
-        //     autoplay: {
-        //         delay: 1000,
-        //         disableOnInteraction: false,
-        //     },
-        //     pagination: {
-        //         el: ".swiper-pagination",
-        //         clickable: true,
-        //     },
-        //     navigation: {
-        //         nextEl: ".next",
-        //         prevEl: ".previous",
-        //     },
-        // });
         let requestURL = 'data.json';
         let request = new XMLHttpRequest();
         request.onreadystatechange = function () {
@@ -783,7 +954,6 @@
                 var revealtop = reveals[i].getBoundingClientRect().top;
                 var revealpoint = 0.5;
                 if (revealtop < windowheight - revealpoint) {
-                    // $(reveals[i]).fadeIn(300);
                     reveals[i].classList.add('active');
 
 
